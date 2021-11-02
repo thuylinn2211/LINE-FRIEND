@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_ChoXacNhan">
-
+    tools:context=".Activity_ChoLayHang">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,29 +14,29 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-                <ImageView
-                    android:id="@+id/imvBack"
-                    android:layout_width="42dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_baseline_arrow_back_24" />
-                <TextView
-                    android:id="@+id/txtDonHang"
-                    android:layout_width="275dp"
-                    android:layout_height="wrap_content"
-                    android:text="Đơn hàng"
-                    android:textSize="25dp"
-                    android:padding="10dp"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    android:layout_gravity="center" />
-                <ImageView
-                    android:id="@+id/imvSearch"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_baseline_search_24"/>
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+            <TextView
+                android:id="@+id/txtDonHang"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/imvSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_search_24"/>
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -64,9 +63,8 @@
                                 android:layout_height="50dp"
                                 android:gravity="center"
                                 android:text="Chờ xác nhận"
-                                android:textColor="#FF0000"
-                                android:textSize="21sp"
-                                android:textStyle="bold" />
+                                android:textColor="@color/black"
+                                android:textSize="21sp" />
 
                             <TextView
                                 android:id="@+id/txtChoLayHang"
@@ -75,7 +73,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:gravity="center"
                                 android:text="Chờ lấy hàng"
-                                android:textColor="@color/black"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
                                 android:textSize="21sp" />
 
                             <TextView
@@ -104,16 +103,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center">
-
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icon_truck" />
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginEnd="16dp"
-                        android:gravity="right"
-                        android:text="Chờ thanh toán"
+                        android:text="Chờ lấy hàng"
                         android:textColor="#3BB8C3"
+                        android:textStyle="bold"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:gravity="right"
+                        android:layout_marginEnd="16dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -348,7 +352,7 @@
                         <TextView
                             android:layout_width="255dp"
                             android:layout_height="wrap_content"
-                            android:text="Sản phẩm sẽ được Shop xác nhận trước:"/>
+                            android:text="Sản phẩm sẽ được chuyển đi trước:"/>
                         <TextView
                             android:id="@+id/txtNgayChoXacNhan"
                             android:layout_width="220dp"
