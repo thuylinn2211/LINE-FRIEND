@@ -41,7 +41,8 @@
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -286,6 +287,79 @@
                                 android:text="1"/>
                         </LinearLayout>
                     </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/txtSumSL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sản phẩm"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/icon_pocket"
+                        android:layout_marginLeft="36dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thành tiền: "
+                        android:layout_marginLeft="8dp"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/txtSumGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150000"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#FF0000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF0000"
+                        android:text="@string/đ"
+                        android:layout_marginLeft="1dp"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="255dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm sẽ được Shop xác nhận trước:"/>
+                        <TextView
+                            android:id="@+id/txtNgayChoXacNhan"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:text="01-01-2022"/>
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Liên hệ Shop"
+                        android:backgroundTint="#00D665"/>
+
                 </LinearLayout>
 
             </LinearLayout>
