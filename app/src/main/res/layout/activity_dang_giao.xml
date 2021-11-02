@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_ChoLayHang">
+    tools:context=".Activity_DangGiao">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,8 +73,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:gravity="center"
                                 android:text="Chờ lấy hàng"
-                                android:textColor="#FF0000"
-                                android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:textSize="21sp" />
 
                             <TextView
@@ -84,7 +83,8 @@
                                 android:layout_marginLeft="10dp"
                                 android:gravity="center"
                                 android:text="Đang giao"
-                                android:textColor="@color/black"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
                                 android:textSize="21sp"/>
                             <TextView
                                 android:id="@+id/txtDaGiao"
@@ -106,13 +106,13 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_marginLeft="220dp"
+                        android:layout_marginLeft="200dp"
                         android:layout_marginRight="16dp"
                         android:src="@drawable/icon_truck" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:text="Chờ lấy hàng"
+                        android:text="Đang giao hàng"
                         android:textColor="#3BB8C3"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -350,12 +350,12 @@
                         android:orientation="vertical"
                         android:layout_marginLeft="8dp">
                         <TextView
-                            android:layout_width="245dp"
+                            android:layout_width="235dp"
                             android:layout_height="wrap_content"
-                            android:text="Sản phẩm sẽ được chuyển đi trước:"/>
+                            android:text="Sản phẩm sẽ được giao trong vòng 14 ngày kể từ"/>
                         <TextView
-                            android:id="@+id/txtNgayChoLayHang"
-                            android:layout_width="245dp"
+                            android:id="@+id/txtNgayGiao"
+                            android:layout_width="235dp"
                             android:layout_height="wrap_content"
                             android:text="01-01-2022"/>
                     </LinearLayout>
@@ -364,6 +364,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Liên hệ Shop"
+                        android:layout_marginLeft="8dp"
                         android:backgroundTint="#00D665"/>
 
                 </LinearLayout>

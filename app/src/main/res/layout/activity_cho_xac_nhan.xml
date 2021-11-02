@@ -344,18 +344,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        >
+                        android:layout_marginLeft="8dp">
                         <TextView
-                            android:layout_width="255dp"
+                            android:layout_width="245dp"
                             android:layout_height="wrap_content"
                             android:text="Sản phẩm sẽ được Shop xác nhận trước:"/>
                         <TextView
                             android:id="@+id/txtNgayChoXacNhan"
-                            android:layout_width="220dp"
+                            android:layout_width="245dp"
                             android:layout_height="wrap_content"
                             android:text="01-01-2022"/>
                     </LinearLayout>
                     <Button
+                        android:id="@+id/btnLienHeShop"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Liên hệ Shop"

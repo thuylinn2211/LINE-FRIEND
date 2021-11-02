@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_cho_lay_hang.xml" value="0.25" />
-        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_cho_xac_nhan.xml" value="0.1694736842105263" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_cho_xac_nhan.xml" value="0.33" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_da_giao.xml" value="0.27239583333333334" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_dang_giao.xml" value="0.25833333333333336" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_gio_hang.xml" value="0.27291666666666664" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_main.xml" value="0.11851851851851852" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_tai_khoan.xml" value="0.27291666666666664" />

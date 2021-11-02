@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Activity_DaGiao"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_DangGiao"
+            android:exported="true" />
+        <activity
             android:name=".Activity_ChoLayHang"
             android:exported="true" />
         <activity
@@ -23,7 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
