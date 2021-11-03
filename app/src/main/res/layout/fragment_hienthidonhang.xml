@@ -280,22 +280,123 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp">
                     <TextView
                         android:id="@+id/txtVoucher"
                         android:layout_width="300dp"
                         android:layout_height="40dp"
                         android:background="@drawable/custom_vien"
                         android:text="Chọn Voucher áp dụng"
+                        android:textSize="16dp"
                         android:padding="8dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/next"/>
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:text="Tạm tính"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:id="@+id/txtTamTinh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text="150000"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textColor="#000000"
+                            android:text="@string/đ"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:text="Vận chuyển"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:id="@+id/txtVanChuyen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="30000"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textColor="#000000"
+                            android:text="@string/đ"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="260dp"
+                            android:layout_height="25dp"
+                            android:text="Tổng cộng"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text="VND"
+                            android:textSize="13dp"/>
+                        <TextView
+                            android:id="@+id/txtTong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="180000"
+                            android:textColor="#000000"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textColor="#000000"
+                            android:text="@string/đ"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
