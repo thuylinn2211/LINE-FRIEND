@@ -9,81 +9,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:paddingTop="16dp">
+            android:layout_height="50dp">
 
-                <ImageView
-                    android:id="@+id/imvBack"
-                    android:layout_width="30dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_baseline_arrow_back_24" />
-                <TextView
-                    android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:text="Thanh toán"
-                    android:textSize="25dp"
-                    android:padding="10dp"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    android:layout_gravity="center" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="30dp"
                 android:layout_height="50dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:paddingStart="8dp">
-
-                    <ImageView
-                        android:id="@+id/imvGioHang"
-                        android:layout_width="25dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/icon_giohang"/>
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text="Hiển thị thông tin đơn hàng"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:id="@+id/imvDown"
-                        android:layout_width="25dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
-
-                    <TextView
-                        android:id="@+id/txtSumGia"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="150.000"
-                        android:layout_marginLeft="40dp"
-                        android:textColor="#FF0000"
-                        android:textSize="20dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#FF0000"
-                        android:text="@string/đ"
-                        android:layout_marginLeft="1dp"
-                        android:textSize="20dp"/>
-                </LinearLayout>
-            </LinearLayout>
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center" />
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -93,12 +40,59 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:orientation="vertical"
-                    android:layout_marginTop="8dp">
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingStart="8dp">
+
+                            <ImageView
+                                android:id="@+id/imvGioHang"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_giohang"/>
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:text="Hiển thị thông tin đơn hàng"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imvDown"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+                            <TextView
+                                android:id="@+id/txtSumGia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="150.000"
+                                android:layout_marginLeft="40dp"
+                                android:textColor="#FF0000"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#FF0000"
+                                android:text="đ"
+                                android:layout_marginLeft="1dp"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -165,8 +159,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
-                    android:paddingTop="8dp">
+                    android:paddingRight="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -252,8 +245,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
-                    android:layout_marginTop="24dp">
+                    android:paddingRight="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -322,7 +314,7 @@
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
-                                android:text="KTX Khu B ĐHQG, TP.HCM"
+                                android:text="Phạm Thị Thùy Linh"
                                 android:textSize="14dp"
                                 android:padding="4sp"
                                 android:textColor="@color/black"/>
@@ -333,59 +325,57 @@
                                 android:src="@drawable/icon_chinhsua"/>
                         </LinearLayout>
                     </LinearLayout>
+
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thêm mới địa chỉ"
+                        android:textColor="#FF0000"
+                        android:backgroundTint="@color/white"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/imvBack2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_baseline_arrow_back_24" />
+                    <TextView
+                        android:id="@+id/txtQuayLaiGioHang"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Quay lại iỏ hàng"
+                        android:textSize="14dp"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center" />
+                    <Button
+                        android:id="@+id/btnHinhThucVanChuyen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hình thức vận chuyển"
+                        android:backgroundTint="#00D665"/>
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:paddingTop="8dp">
-            <ImageButton
-                android:layout_marginLeft="40dp"
-                android:paddingLeft="12dp"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_baseline_add_circle_24"/>
-
-            <Button
-                android:layout_width="match_parent"
-                android:paddingRight="12dp"
-                android:layout_height="wrap_content"
-                android:text="Thêm mới địa chỉ nhận hàng"
-                android:textColor="#FF0000"
-                android:gravity="left"
-                android:layout_gravity="center_vertical"
-                android:backgroundTint="@color/white"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <ImageView
-                android:id="@+id/imvBack2"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_baseline_arrow_back_24" />
-            <TextView
-                android:id="@+id/txtQuayLaiGioHang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Quay lại giỏ hàng"
-                android:textSize="14dp"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center" />
-            <Button
-                android:id="@+id/btnHinhThucVanChuyen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hình thức vận chuyển"
-                android:backgroundTint="#00D665"/>
-        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
