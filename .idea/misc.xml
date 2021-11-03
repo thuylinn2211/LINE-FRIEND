@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18888888888888888" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/custom_vien.xml" value="0.1" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.18888888888888888" />
@@ -31,7 +32,13 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_turn_on_app.xml" value="0.2128623188405797" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_voucher.xml" value="0.22" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/fragment_hienthidonhang.xml" value="0.25" />
+=======
+>>>>>>> 3ed2de44f56ae208984d5d5db8b70e1dfe59d884
         <entry key="..\:/Projects2021/Team5_Android/app/src/main/res/layout/activity_main.xml" value="0.2341485507246377" />
+        <entry key="..\:/UEL/20212022/HKI/PhatTrienThuongMaiDiDong/team5/Team5_Android/app/src/main/res/layout/activity_chat.xml" value="0.24615384615384617" />
+        <entry key="..\:/UEL/20212022/HKI/PhatTrienThuongMaiDiDong/team5/Team5_Android/app/src/main/res/layout/activity_liked_products.xml" value="0.2359375" />
+        <entry key="..\:/UEL/20212022/HKI/PhatTrienThuongMaiDiDong/team5/Team5_Android/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/UEL/20212022/HKI/PhatTrienThuongMaiDiDong/team5/Team5_Android/app/src/main/res/layout/activity_search_product.xml" value="0.28640776699029125" />
         <entry key="..\:/android_project/Team5_Android/app/src/main/res/layout/activity_gio_hang.xml" value="0.4" />
         <entry key="..\:/android_project/Team5_Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>

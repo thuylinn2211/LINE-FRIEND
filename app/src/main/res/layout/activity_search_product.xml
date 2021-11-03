@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_SearchProduct"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:backgroundTint="@color/white"
+            android:gravity="center"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:completionThreshold="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DCD6D6"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Gợi ý"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"/>
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/txtBT21"
+            android:layout_height="30dp"
+            android:text="BT21"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtMissha"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:text="Missha"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+    </TableLayout>
+
+
+</LinearLayout>
