@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_DangGiao">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+            <TextView
+                android:id="@+id/txtDonHang"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/imvSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_search_24"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/txtChoXacNhan"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:text="Chờ xác nhận"
+                                android:textColor="@color/black"
+                                android:textSize="21sp" />
+
+                            <TextView
+                                android:id="@+id/txtChoLayHang"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="Chờ lấy hàng"
+                                android:textColor="@color/black"
+                                android:textSize="21sp" />
+
+                            <TextView
+                                android:id="@+id/txtDangGiao"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="Đang giao"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="21sp"/>
+                            <TextView
+                                android:id="@+id/txtDaGiao"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="Đã giao"
+                                android:textColor="@color/black"
+                                android:textSize="21sp"/>
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icon_truck" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Đang giao hàng"
+                        android:textColor="#3BB8C3"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="right"
+                        android:layout_marginEnd="16dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imvButbi"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/butbihinhtraitim"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/txtButbi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bút bi hình trái tim"
+                            android:textSize="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₫50.000"
+                                android:textSize="15dp"
+                                android:textColor="#6ADE8B"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm ₫10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:paddingLeft="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Số lượng: "/>
+                            <TextView
+                                android:id="@+id/txtSoLuong1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imvGiadodt"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/giadodt"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/txtGiadodt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Giá đỡ điện thoại Thỏ Cony"
+                            android:textSize="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₫50.000"
+                                android:textSize="15dp"
+                                android:textColor="#6ADE8B"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm ₫10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:paddingLeft="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Số lượng: "/>
+                            <TextView
+                                android:id="@+id/txtSoLuong2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imvMockhoa"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mockhoatho"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/txtMockhoa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Móc khóa hình Thỏ Cony"
+                            android:textSize="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₫50.000"
+                                android:textSize="15dp"
+                                android:textColor="#6ADE8B"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm ₫10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:paddingLeft="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Số lượng: "/>
+                            <TextView
+                                android:id="@+id/txtSoLuong3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/txtSumSL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sản phẩm"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/icon_pocket"
+                        android:layout_marginLeft="36dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thành tiền: "
+                        android:layout_marginLeft="8dp"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/txtSumGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150000"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#FF0000"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF0000"
+                        android:text="@string/đ"
+                        android:layout_marginLeft="1dp"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+                        <TextView
+                            android:layout_width="235dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm sẽ được giao trong vòng 14 ngày kể từ"/>
+                        <TextView
+                            android:id="@+id/txtNgayGiao"
+                            android:layout_width="235dp"
+                            android:layout_height="wrap_content"
+                            android:text="01-01-2022"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnLienHeShop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Liên hệ Shop"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#00D665"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
