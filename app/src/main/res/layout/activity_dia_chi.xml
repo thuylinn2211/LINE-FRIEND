@@ -162,7 +162,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Đổi địa chỉ"
+            android:text="Thêm địa chỉ mới"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:backgroundTintMode="screen"
