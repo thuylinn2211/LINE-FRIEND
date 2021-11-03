@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Activity_Voucher"
+            android:exported="true" />
+        <activity
             android:name=".Activity_DaGiao"
             android:exported="true" />
         <activity
