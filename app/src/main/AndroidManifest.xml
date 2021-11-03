@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Activity_Voucher"
+            android:exported="true" />
+        <activity
             android:name=".Activity_DaGiao"
             android:exported="true" />
         <activity
