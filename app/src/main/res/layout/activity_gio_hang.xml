@@ -346,10 +346,19 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="160dp"
+                    android:text="@string/đ"
+                    android:textColor="#FA3E3E"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
-                    android:text="₫150.000"
+                    android:layout_marginLeft="2dp"
+                    android:text="150.000"
                     android:textColor="#FA3E3E"
                     android:textSize="20sp"
                     android:textStyle="bold" />
