@@ -148,16 +148,39 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="₫50.000"
+                                android:textColor="#6ADE8B"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="1dp"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50.000"
                                 android:textSize="15dp"
+                                android:layout_marginLeft="2dp"
                                 android:textColor="#6ADE8B"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Giảm ₫10.000"
+                                android:text="Giảm:"
                                 android:textColor="#A7A7A7"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#A7A7A7"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="2dp"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -206,16 +229,39 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="₫50.000"
+                                android:textColor="#6ADE8B"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="1dp"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50.000"
                                 android:textSize="15dp"
+                                android:layout_marginLeft="2dp"
                                 android:textColor="#6ADE8B"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Giảm ₫10.000"
+                                android:text="Giảm:"
                                 android:textColor="#A7A7A7"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#A7A7A7"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="2dp"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -264,16 +310,39 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="₫50.000"
+                                android:textColor="#6ADE8B"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="1dp"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50.000"
                                 android:textSize="15dp"
+                                android:layout_marginLeft="2dp"
                                 android:textColor="#6ADE8B"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Giảm ₫10.000"
+                                android:text="Giảm:"
                                 android:textColor="#A7A7A7"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#A7A7A7"
+                                android:text="@string/đ"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10.000"
+                                android:textColor="#A7A7A7"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="2dp"/>
                         </LinearLayout>
 
                         <LinearLayout
