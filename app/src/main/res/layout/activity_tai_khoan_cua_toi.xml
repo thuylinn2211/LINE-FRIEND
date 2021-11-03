@@ -39,7 +39,7 @@
                     android:textSize="25dp"/>
 
                 <ImageView
-                    android:id="@+id/imvSetting"
+                    android:id="@+id/imvSearch"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
