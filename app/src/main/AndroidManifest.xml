@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-            android:name=".Activity_ThongBao"
+            android:name=".Activity_Chat"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,12 +19,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_DiaChi"
+            android:name=".Activity_ThongBao"
             android:exported="true">
         </activity>
         <activity
-            android:name=".Activity_TaiKhoanCuaToi"
+            android:name=".Activity_DiaChi"
             android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TaiKhoanCuaToi"
+            android:exported="true" />
         <activity
             android:name=".Activity_Voucher"
             android:exported="true" />
