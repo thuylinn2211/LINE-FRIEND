@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-            android:name=".Activity_GioHang"
+            android:name=".Activity_Chat"
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
