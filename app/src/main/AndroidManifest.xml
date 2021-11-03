@@ -10,18 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Register"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResetPassword"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".TurnOnApp"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".Activity_GioHang"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
