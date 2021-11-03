@@ -314,7 +314,7 @@
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
-                                android:text="Phạm Thị Thùy Linh"
+                                android:text="KTX Khu B ĐHQG, TP.HCM"
                                 android:textSize="14dp"
                                 android:padding="4sp"
                                 android:textColor="@color/black"/>
