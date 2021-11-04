@@ -317,7 +317,6 @@
                             android:spinnerMode="dropdown" />
 
                         <!--Spinner Xã-->
-
                         <Spinner
                             android:id="@+id/spXa"
                             android:layout_width="match_parent"
