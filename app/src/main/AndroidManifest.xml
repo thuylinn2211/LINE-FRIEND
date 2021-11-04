@@ -10,56 +10,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-<<<<<<< HEAD
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-            android:exported="true" >
-=======
-<<<<<<< HEAD
+            android:exported="true" />
+
+        <activity
             android:name=".Activity_LikedProducts"
-=======
+            android:exported="true"/>
+
+        <activity
             android:name=".Activity_DanhGiaSanPham"
->>>>>>> 067bb944985bd3484907d4f9cd0ec4ea4882ecfb
             android:exported="true">
->>>>>>> 2c9b395eb4b7cef7263f2c6e6307f5c3b8501394
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-<<<<<<< HEAD
-            android:name=".Activity_XacNhanMatKhau"
-=======
-<<<<<<< HEAD
-            android:name=".Activity_SearchProduct"
-=======
-            android:name=".Activity_XacNhanMatKhau"
->>>>>>> 067bb944985bd3484907d4f9cd0ec4ea4882ecfb
->>>>>>> 2c9b395eb4b7cef7263f2c6e6307f5c3b8501394
-            android:exported="true">
 
+        <activity
+            android:name=".Activity_XacNhanMatKhau"
+            android:exported="true">
         </activity>
-        <activity
-<<<<<<< HEAD
-            android:name=".Activity_ThayDoiMatKhau1"
-=======
-<<<<<<< HEAD
-            android:name=".Activity_DoiNgonNgu"
-=======
-            android:name=".Activity_ThayDoiMatKhau1"
->>>>>>> 067bb944985bd3484907d4f9cd0ec4ea4882ecfb
->>>>>>> 2c9b395eb4b7cef7263f2c6e6307f5c3b8501394
-            android:exported="true"></activity>
-        <activity
-            android:name=".Activity_LikedProducts"
-            android:exported="true" />
+
         <activity
             android:name=".Activity_SearchProduct"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".Activity_ThayDoiMatKhau1"
+            android:exported="true"/>
+        
         <activity
             android:name=".Activity_DoiNgonNgu"
-            android:exported="true" />
+            android:exported="true"/>
+
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
             android:exported="true" />
