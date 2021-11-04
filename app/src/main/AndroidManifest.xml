@@ -10,15 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-            android:exported="true" />
-
-        <activity
-            android:name=".Activity_LikedProducts"
-            android:exported="true"/>
-
-        <activity
-            android:name=".Activity_DanhGiaSanPham"
+            android:name=".Activity_DetailedProduct"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,29 +18,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_LikedProducts"
+            android:exported="true">
 
+        </activity>
+        <activity
+            android:name=".Activity_DanhGiaSanPham"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true">
-        </activity>
 
+        </activity>
         <activity
             android:name=".Activity_SearchProduct"
             android:exported="true">
-        </activity>
 
+        </activity>
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
-            android:exported="true"/>
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> 2c9a50dd7bb9dd5bc69cb93753e63f9c0d1944d2
+            android:exported="true" />
         <activity
             android:name=".Activity_DoiNgonNgu"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
             android:exported="true" />
