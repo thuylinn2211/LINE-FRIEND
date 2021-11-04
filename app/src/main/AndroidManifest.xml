@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-            android:name=".Activity_LikedProducts"
-            android:exported="true" />
-        <activity
-            android:name=".Activity_SearchProduct"
+            android:name=".Activity_XacNhanMatKhau"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_DoiNgonNgu"
+            android:name=".Activity_ThayDoiMatKhau1"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activity_LikedProducts"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_SearchProduct"
             android:exported="true"></activity>
+        <activity
+            android:name=".Activity_DoiNgonNgu"
+            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
             android:exported="true" />
