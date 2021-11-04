@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Team5_Android_Final</string>
+<<<<<<< HEAD
     <string name="đ"><u>đ</u></string>
     <string name="tinh">Thành phố/ Tỉnh thành*</string>
     <string name="huyen">Quận/ Huyện*</string>
@@ -47,4 +48,9 @@
 
         <item>Phường/ Xã (*)</item>
     </string-array>
+=======
+    <string name="đ"><u>đ50.000</u></string>
+    <string name="giảm">Giảm đ10.000</string>
+
+>>>>>>> 2c9b395eb4b7cef7263f2c6e6307f5c3b8501394
 </resources>
