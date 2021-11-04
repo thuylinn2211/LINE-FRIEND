@@ -166,7 +166,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:backgroundTintMode="screen"
-            android:backgroundTint="#00D665"/>
+            android:backgroundTint="#34C759"/>
     </LinearLayout>
 
 </LinearLayout>

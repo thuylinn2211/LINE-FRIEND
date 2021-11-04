@@ -148,7 +148,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#6ADE8B"
+                                android:textColor="#34C759"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="1dp"
                                 android:textSize="15dp"/>
@@ -159,18 +159,18 @@
                                 android:text="50.000"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"
-                                android:textColor="#6ADE8B"/>
+                                android:textColor="#34C759"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Giảm:"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="8dp"
                                 android:textSize="15dp"/>
@@ -178,7 +178,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="10.000"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"/>
                         </LinearLayout>
@@ -229,7 +229,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#6ADE8B"
+                                android:textColor="#34C759"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="1dp"
                                 android:textSize="15dp"/>
@@ -240,18 +240,18 @@
                                 android:text="50.000"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"
-                                android:textColor="#6ADE8B"/>
+                                android:textColor="#34C759"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Giảm:"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="8dp"
                                 android:textSize="15dp"/>
@@ -259,7 +259,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="10.000"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"/>
                         </LinearLayout>
@@ -310,7 +310,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#6ADE8B"
+                                android:textColor="#34C759"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="1dp"
                                 android:textSize="15dp"/>
@@ -321,18 +321,18 @@
                                 android:text="50.000"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"
-                                android:textColor="#6ADE8B"/>
+                                android:textColor="#34C759"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Giảm:"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:paddingLeft="20dp"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:text="@string/đ"
                                 android:layout_marginLeft="8dp"
                                 android:textSize="15dp"/>
@@ -340,7 +340,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="10.000"
-                                android:textColor="#A7A7A7"
+                                android:textColor="#8C8C8C"
                                 android:textSize="15dp"
                                 android:layout_marginLeft="2dp"/>
                         </LinearLayout>
@@ -433,13 +433,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Đánh giá"
-                        android:backgroundTint="#00D665"/>
+                        android:backgroundTint="#34C759"/>
                     <Button
                         android:id="@+id/btnMuaLai"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mua lại"
-                        android:backgroundTint="#00D665"
+                        android:backgroundTint="#34C759"
                         android:layout_marginLeft="8dp"/>
 
                 </LinearLayout>

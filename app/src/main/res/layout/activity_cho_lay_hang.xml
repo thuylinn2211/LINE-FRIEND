@@ -433,7 +433,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Liên hệ Shop"
-                        android:backgroundTint="#00D665"/>
+                        android:backgroundTint="#34C759"/>
 
                 </LinearLayout>
 

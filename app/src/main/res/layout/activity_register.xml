@@ -123,6 +123,6 @@
             android:text="Đăng ký"
             android:textSize="16sp"
             android:layout_marginLeft="20dp"
-            android:backgroundTint="#00D665"/>
+            android:backgroundTint="#34C759"/>
     </LinearLayout>
 </LinearLayout>

@@ -155,7 +155,7 @@
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
             android:textSize="16sp"
-            android:backgroundTint="#00D765"
+            android:backgroundTint="#34C759"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"/>

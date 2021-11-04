@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_ThanhToan_TTDC">
+    tools:context=".Activity_frag_thanhtoan_chinhsuadonhang">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,48 +45,48 @@
                     android:layout_height="50dp"
                     android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="8dp">
+
+                        <ImageView
+                            android:id="@+id/imvGioHang"
+                            android:layout_width="25dp"
                             android:layout_height="50dp"
-                            android:paddingStart="8dp">
+                            android:src="@drawable/icon_giohang"/>
 
-                            <ImageView
-                                android:id="@+id/imvGioHang"
-                                android:layout_width="25dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/icon_giohang"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="Hiển thị thông tin đơn hàng"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
 
-                            <TextView
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:gravity="center"
-                                android:text="Hiển thị thông tin đơn hàng"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:textSize="16sp" />
+                        <ImageView
+                            android:id="@+id/imvDown"
+                            android:layout_width="25dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
 
-                            <ImageView
-                                android:id="@+id/imvDown"
-                                android:layout_width="25dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
-
-                            <TextView
-                                android:id="@+id/txtSumGia"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="150.000"
-                                android:layout_marginLeft="40dp"
-                                android:textColor="#FF0000"
-                                android:textSize="20dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="#FF0000"
-                                android:text="@string/đ"
-                                android:layout_marginLeft="2dp"
-                                android:textSize="20dp"/>
-                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtSumGia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="150.000"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#FF0000"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF0000"
+                            android:text="@string/đ"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
 
                 </LinearLayout>
                 <LinearLayout
@@ -229,7 +229,7 @@
                         android:orientation="horizontal">
                         <CheckBox
                             android:id="@+id/chkThongTin"
-                            android:layout_width="30dp"
+                            android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"/>
                         <TextView
@@ -251,7 +251,7 @@
                         android:layout_height="50dp"
                         android:orientation="horizontal">
                         <ImageView
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="50dp"
                             android:src="@drawable/local"/>
                         <TextView
@@ -260,95 +260,95 @@
                             android:layout_height="50dp"
                             android:text="Địa chỉ nhận hàng"
                             android:textStyle="bold"
-                            android:textSize="22dp"
+                            android:textSize="18dp"
                             android:gravity="center_vertical"
                             android:textColor="@color/black"/>
                     </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/txtTen"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:orientation="horizontal"
-                            android:paddingStart="4dp"
-                            android:gravity="center_vertical">
-                            <CheckBox
-                                android:id="@+id/chkDiaChi1"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"/>
-                            <TextView
-                                android:layout_width="300dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:text="thôn 18, xã Ea Ktur, huyện Cư Kuin, tỉnh Đắk Lắk"
-                                android:textSize="12dp"
-                                android:padding="4sp"
-                                android:textColor="@color/black"/>
-                            <ImageView
-                                android:id="@+id/imvSua2"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/icon_chinhsua"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <LinearLayout
+                        android:text="Tên (tùy chọn)"
+                        android:background="@drawable/custom_vien"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="16dp"/>
+                    <TextView
+                        android:id="@+id/txtHo"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:orientation="horizontal">
+                        android:text="Họ"
+                        android:background="@drawable/custom_vien"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="16dp"/>
 
-                        <LinearLayout
+                    <TextView
+                        android:id="@+id/txtDiaChi"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/custom_vien"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:text="Địa chỉ: số nhà, đường, tòa nhà ..." />
+
+                        <!--Spinner Tỉnh/ Thành phố-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/spTinh"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:orientation="horizontal"
-                            android:paddingStart="4dp"
-                            android:gravity="center_vertical">
-                            <CheckBox
-                                android:id="@+id/chkDiaChi2"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"/>
-                            <TextView
-                                android:layout_width="300dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:text="KTX Khu B ĐHQG, TP.HCM"
-                                android:textSize="14dp"
-                                android:padding="4sp"
-                                android:textColor="@color/black"/>
-                            <ImageView
-                                android:id="@+id/imvSua3"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/icon_chinhsua"/>
-                        </LinearLayout>
-                    </LinearLayout>
+                            android:background="@drawable/custom_vien"
+                            android:layout_marginTop="4dp"
+                            android:spinnerMode="dropdown"/>
+                        <!--Spinner Huyện-->
+
+                        <Spinner
+                            android:id="@+id/spHuyen"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/spTinh"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/custom_vien"
+                            android:spinnerMode="dropdown" />
+
+                        <!--Spinner Xã-->
+
+                        <Spinner
+                            android:id="@+id/spXa"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/spHuyen"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/custom_vien"
+                            android:spinnerMode="dropdown" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/thumb"
+                        app:track="@drawable/track"
+                        app:showText="true"
+                        android:textOn="On"
+                        android:textOff="Off"/>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp">
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Thêm mới địa chỉ"
-                        android:textColor="#FF0000"
-                        android:backgroundTint="@color/white"/>
-
-                </LinearLayout>
-
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp">
+                    android:layout_marginTop="16dp">
 
                     <ImageView
                         android:id="@+id/imvBack2"
@@ -378,4 +378,4 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
