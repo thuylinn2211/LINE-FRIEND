@@ -39,7 +39,9 @@
         android:layout_height="500dp"
         android:orientation="vertical"
         android:paddingLeft="10dp"
-        android:layout_gravity="center">
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_vien">
 
         <EditText
             android:id="@+id/edtPhone"

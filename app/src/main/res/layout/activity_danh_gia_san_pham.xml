@@ -9,13 +9,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/white"
         android:orientation="horizontal">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/custom_bottom_line"
+
+            android:padding="8dp">
 
             <TableRow android:layout_height="match_parent">
 
@@ -24,22 +28,20 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_arrow_back_24" />
 
                 <TextView
-                    android:id="@+id/txtDanhGia"
-                    android:layout_width="260dp"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:padding="10dp"
                     android:text="Đánh giá sản phẩm"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="20dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btnDang"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00D665"
                     android:text="Đăng"/>
@@ -56,12 +58,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
 
                 <ImageView
                     android:id="@+id/imvButBi"
@@ -139,6 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginTop="8dp"
                 android:gravity="center">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -149,55 +151,75 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:id="@+id/btnCamera1"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_vien">
 
-                <ImageButton
-                    android:id="@+id/btnThemHinhAnh1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="60dp"
-                    android:src="@drawable/icon_chuphinhdanhgia"/>
-                <ImageButton
-                    android:id="@+id/btnThemVideo1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="30dp"
-                    android:src="@drawable/icon_quayphimdanhgia"/>
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/ic_baseline_camera_alt_24"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm hình ảnh"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/btnVideo1"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Thêm hình ảnh"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="53dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thêm video"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="22dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/custom_vien">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/icon_quayphimdanhgia"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm Video"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <EditText
                 android:id="@+id/edtDanhGia1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_height="160dp"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:background="#DDDCDC"
+                android:textColorHint="@color/black"
+                android:gravity="top"
                 android:hint="Hãy chia sẻ cảm nhận của bạn về sản phẩm này nhé."
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
 
             <LinearLayout
@@ -281,6 +303,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginTop="8dp"
                 android:gravity="center">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -291,56 +314,77 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
+                android:gravity="center_vertical">
+                <LinearLayout
 
-                <ImageButton
-                    android:id="@+id/btnThemHinhAnh2"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btnCamera2"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="60dp"
-                    android:src="@drawable/icon_chuphinhdanhgia"/>
-                <ImageButton
-                    android:id="@+id/btnThemVideo2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="30dp"
-                    android:src="@drawable/icon_quayphimdanhgia"/>
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_vien">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/ic_baseline_camera_alt_24"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm hình ảnh"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+
+                    android:id="@+id/btnVideo2"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Thêm hình ảnh"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="53dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thêm video"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="22dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/custom_vien">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/icon_quayphimdanhgia"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm Video"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <EditText
                 android:id="@+id/edtDanhGia2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_height="160dp"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:background="#DDDCDC"
+                android:textColorHint="@color/black"
+                android:gravity="top"
                 android:hint="Hãy chia sẻ cảm nhận của bạn về sản phẩm này nhé."
-                android:textSize="18sp" />
-
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -423,6 +467,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginTop="8dp"
                 android:gravity="center">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -433,55 +478,75 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:id="@+id/btnCamera3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_vien">
 
-                <ImageButton
-                    android:id="@+id/btnThemHinhAnh3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="60dp"
-                    android:src="@drawable/icon_chuphinhdanhgia"/>
-                <ImageButton
-                    android:id="@+id/btnThemVideo3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTintMode="screen"
-                    android:layout_marginStart="30dp"
-                    android:src="@drawable/icon_quayphimdanhgia"/>
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/ic_baseline_camera_alt_24"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm hình ảnh"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/btnVideo3"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:text="Thêm hình ảnh"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="53dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thêm video"
-                    android:textColor="#FF0000"
-                    android:layout_marginStart="22dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/custom_vien">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/icon_quayphimdanhgia"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm Video"
+                            android:gravity="center_horizontal"
+                            android:textSize="13dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#FF0000"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <EditText
                 android:id="@+id/edtDanhGia3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_height="160dp"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:background="#DDDCDC"
+                android:textColorHint="@color/black"
+                android:gravity="top"
                 android:hint="Hãy chia sẻ cảm nhận của bạn về sản phẩm này nhé."
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 

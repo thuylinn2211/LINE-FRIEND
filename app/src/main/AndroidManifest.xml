@@ -40,11 +40,7 @@
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true"/>
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 2c9a50dd7bb9dd5bc69cb93753e63f9c0d1944d2
         <activity
             android:name=".Activity_DoiNgonNgu"
             android:exported="true"/>

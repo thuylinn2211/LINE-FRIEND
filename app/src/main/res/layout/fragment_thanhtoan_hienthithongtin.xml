@@ -407,7 +407,7 @@
                             android:text="Hoàn thành đơn hàng"
                             android:textSize="14dp"
                             android:textColor="@color/white"
-                            android:backgroundTint="#FF00D665" />
+                            android:backgroundTint="#34C759" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
