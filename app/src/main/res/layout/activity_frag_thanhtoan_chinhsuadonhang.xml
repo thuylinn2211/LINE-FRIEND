@@ -369,7 +369,7 @@
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
                         android:text="Quay lại giỏ hàng"
-                        android:textSize="14dp"
+                        android:textSize="12dp"
                         android:padding="10dp"
                         android:textColor="@color/black"
                         android:layout_gravity="center" />
