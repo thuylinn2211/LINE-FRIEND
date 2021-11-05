@@ -72,9 +72,11 @@
         <item>Vĩnh Long</item>
         <item>Vĩnh Phúc</item>
         <item>Yên Bái</item>
+
     </string-array>
 
     <string-array name="arrray_default_huyen">
+
         <item>Quận/ Huyện (*)</item>
     </string-array>
 
@@ -95,16 +97,6 @@
         <item>Huyện Krông Pắk</item>
         <item>Huyện Lắk</item>
         <item>Huyện M’Đrắk</item>
-    </string-array>
-
-    <string-array name="array_hanam_huyen">
-        <item>Quận/ Huyện (*)</item>
-        <item>Thành phố Phủ Lý</item>
-        <item>Huyện Duy Tiên</item>
-        <item>Huyện Kim Bảng</item>
-        <item>Huyện Lý Nhân</item>
-        <item>Huyện Thanh Liêm</item>
-        <item>Huyện Bình Lục</item>
     </string-array>
 
     <string-array name="arrray_default_xa">

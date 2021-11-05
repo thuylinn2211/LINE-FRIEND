@@ -10,11 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
-            android:name=".Activity_ThemTheNganHang"
-            android:exported="true"/>
-        <activity
-            android:name=".Activity_ThongTinDonHang"
-            android:exported="true" >
+            android:name=".Activity_TatCaSanPham"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,16 +19,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_DetailedProduct"
+            android:name=".Activity_ThemTheNganHang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ThongTinDonHang"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".Activity_DetailedProduct"
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
             android:exported="true" />
         <activity
             android:name=".Activity_LikedProducts"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_DanhGiaSanPham"
             android:exported="true">
@@ -46,9 +49,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_SearchProduct"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true" />
