@@ -210,9 +210,9 @@
                 android:id="@+id/btnAddLikedProduct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#0D999999"
                 android:text="Thêm vào mục yêu thích"
-                android:textColor="#00D665"
-                android:backgroundTint="#23999999"/>
+                android:textColor="#00D665" />
 
             <View
                 android:layout_width="match_parent"
@@ -237,7 +237,6 @@
                             android:textColor="@color/black"
                             android:textSize="16sp"/>
                     </TableRow>
-
                     <TableRow
                         android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
@@ -363,7 +362,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="80dp"
-                        android:backgroundTint="#14B5B5B5"
+                        android:backgroundTint="#08B5B5B5"
                         android:text="Xem thêm"
                         android:textColor="#13A7FA"
                         android:textSize="16sp"/>
@@ -453,25 +452,283 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
-                    <TextView
+                    <TableLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Các sản phẩm khác"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"/>
+                        android:stretchColumns="*">
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Các sản phẩm khác"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
 
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#0AB5B5B5"
+                                android:text="Xem thêm"
+                                android:textColor="#13A7FA"
+                                android:textSize="14sp" />
+                        </TableRow>
 
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="130dp"
+                                    android:src="@drawable/mockhoavitvang"/>
 
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Móc khóa hình vịt vàng"
+                                    android:textSize="14sp"/>
+
+                                <LinearLayout
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/đ"
+                                                android:textColor="#6ADE8B"
+                                                android:textSize="14sp"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="50000"
+                                                android:textColor="#6ADE8B"
+                                                android:textSize="14sp"/>
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/giảm"
+                                            android:textSize="12sp"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/imvLike"
+                                            android:layout_gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/whiteheart"/>
+
+                                        <ImageView
+                                            android:id="@+id/imvCart"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="15dp"
+                                            android:src="@drawable/cartitem"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="130dp"
+                                    android:src="@drawable/gaubonghinhtraitim"/>
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thú nhồi bông hình trái tim"
+                                    android:textSize="14sp"/>
+
+                                <LinearLayout
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/đ"
+                                                android:textColor="#6ADE8B"
+                                                android:textSize="14sp"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="50000"
+                                                android:textColor="#6ADE8B"
+                                                android:textSize="14sp"/>
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/giảm"
+                                            android:textSize="12sp"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/imvLike2"
+                                            android:layout_gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/whiteheart"/>
+
+                                        <ImageView
+                                            android:id="@+id/imvCart2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="15dp"
+                                            android:src="@drawable/cartitem"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
                 </LinearLayout>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/btnBackHome"
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/itemhome"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trang chủ"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/btnLike"
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/heart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yêu thích"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/btnCart"
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/cartitem"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mua sắm"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/searchitem"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tìm kiếm"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/btnAccount"
+                        android:layout_width="55dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/login"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tài khoản"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
+
 
 </LinearLayout>
