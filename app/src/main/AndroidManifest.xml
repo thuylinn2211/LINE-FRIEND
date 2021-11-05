@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Activity_TinTuc"
+            android:exported="true" />
+        <activity
             android:name=".Activity_ThongTinDonHang"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,20 +27,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+            android:name=".Activity_LikedProducts"
             android:exported="true" />
         <activity
-            android:name=".Activity_LikedProducts"
-            android:exported="true"></activity>
-        <activity
             android:name=".Activity_DanhGiaSanPham"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_XacNhanMatKhau"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_SearchProduct"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true" />
