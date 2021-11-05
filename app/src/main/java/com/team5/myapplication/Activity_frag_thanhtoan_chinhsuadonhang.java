@@ -50,9 +50,9 @@ public class Activity_frag_thanhtoan_chinhsuadonhang extends AppCompatActivity {
                         case "Đắk Lắk": huyenAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_daklak_huyen, R.layout.fragment_spinner_layout);
                         break;
-                        case "Hà Nam": huyenAdapter = ArrayAdapter.createFromResource(parent.getContext(),
-                                R.array.array_hanam_huyen, R.layout.fragment_spinner_layout);
-                        break;
+//                        case "Hà Nam": huyenAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+//                                R.array.array_hanam_huyen, R.layout.fragment_spinner_layout);
+//                        break;
                         default: break;
                     }
                     huyenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
