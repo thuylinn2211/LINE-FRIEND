@@ -99,10 +99,18 @@
         <item>Huyện M’Đrắk</item>
     </string-array>
 
+    <string-array name="array_hanam_huyen">
+        <item>Quận/ Huyện (*)</item><item>Thành phố Phủ Lý</item>
+        <item>Huyện Thanh Liêm</item><item>Huyện Bình Lục</item><item>Huyện Duy Tiên</item>
+        <item>Huyện Lý Nhân</item><item>Huyện Kim Băng</item>
+    </string-array>
+
     <string-array name="arrray_default_xa">
 
         <item>Phường/ Xã (*)</item>
     </string-array>
+
+
     <string name="giảm">Giảm đ10.000</string>
 
 </resources>

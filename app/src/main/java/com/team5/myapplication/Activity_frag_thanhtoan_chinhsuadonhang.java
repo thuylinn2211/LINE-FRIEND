@@ -56,7 +56,6 @@ public class Activity_frag_thanhtoan_chinhsuadonhang extends AppCompatActivity {
                         default: break;
                     }
                     huyenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
                     huyenSpinner.setAdapter(huyenAdapter);
                 }
             }
