@@ -217,7 +217,7 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/imvSua1"
+                            android:id="@+id/btnSua"
                             android:layout_width="30dp"
                             android:layout_height="120dp"
                             android:src="@drawable/icon_chinhsua"/>
@@ -264,8 +264,8 @@
                             android:gravity="center_vertical"
                             android:textColor="@color/black"/>
                     </LinearLayout>
-                    <TextView
-                        android:id="@+id/txtTen"
+                    <EditText
+                        android:id="@+id/edtTen"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="Tên (tùy chọn)"
@@ -273,8 +273,8 @@
                         android:gravity="center_vertical"
                         android:layout_marginTop="8dp"
                         android:paddingLeft="16dp"/>
-                    <TextView
-                        android:id="@+id/txtHo"
+                    <EditText
+                        android:id="@+id/edtHo"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="Họ"
@@ -283,8 +283,8 @@
                         android:layout_marginTop="8dp"
                         android:paddingLeft="16dp"/>
 
-                    <TextView
-                        android:id="@+id/txtDiaChi"
+                    <EditText
+                        android:id="@+id/edtDiaChi"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="8dp"
@@ -298,13 +298,14 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <Spinner
                             android:id="@+id/spTinh"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:background="@drawable/custom_vien"
                             android:layout_marginTop="4dp"
-                            android:spinnerMode="dropdown"/>
+                            android:background="@drawable/custom_vien"
+                            android:spinnerMode="dropdown" />
                         <!--Spinner Huyện-->
 
                         <Spinner
@@ -338,16 +339,22 @@
                         android:layout_height="wrap_content"
                         android:thumb="@drawable/thumb"
                         app:track="@drawable/track"
-                        app:showText="true"
-                        android:textOn="On"
-                        android:textOff="Off"/>
+                        app:showText="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đặt làm địa chỉ mặc định"
+                        android:textColor="#FF3BB8C3"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="16dp"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginTop="16dp">
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp">
 
                     <ImageView
                         android:id="@+id/imvBack2"
@@ -361,7 +368,7 @@
                         android:id="@+id/txtQuayLaiGioHang"
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
-                        android:text="Quay lại iỏ hàng"
+                        android:text="Quay lại giỏ hàng"
                         android:textSize="14dp"
                         android:padding="10dp"
                         android:textColor="@color/black"

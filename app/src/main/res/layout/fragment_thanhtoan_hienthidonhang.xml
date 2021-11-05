@@ -90,7 +90,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
                     <ImageView
                         android:id="@+id/imvButbi"
                         android:layout_width="100dp"
@@ -282,12 +283,12 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:paddingLeft="20dp">
-                    <TextView
+                    <EditText
                         android:id="@+id/txtVoucher"
                         android:layout_width="300dp"
                         android:layout_height="40dp"
                         android:background="@drawable/custom_vien"
-                        android:text="Chọn Voucher áp dụng"
+                        android:text="Nhập Voucher áp dụng"
                         android:textSize="16dp"
                         android:padding="8dp"/>
                     <ImageView
@@ -396,7 +397,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="vertical"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="50dp">
@@ -543,6 +545,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingLeft="12dp"
+                    android:layout_marginTop="16dp"
                     android:paddingRight="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -628,22 +631,31 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:orientation="vertical"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp">
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/custom_vien"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:text="Thêm mới địa chỉ"
                         android:textColor="#FF0000"
+                        android:gravity="left"
                         android:backgroundTint="@color/white"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp">
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp">
 
                     <ImageView
                         android:id="@+id/imvBack2"
@@ -657,9 +669,9 @@
                         android:id="@+id/txtQuayLaiGioHang"
                         android:layout_width="125dp"
                         android:layout_height="wrap_content"
-                        android:text="Quay lại iỏ hàng"
+                        android:text="Quay lại giỏ hàng"
                         android:textSize="14dp"
-                        android:padding="10dp"
+                        android:padding="5dp"
                         android:textColor="@color/black"
                         android:layout_gravity="center" />
                     <Button
@@ -667,7 +679,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hình thức vận chuyển"
-                        android:backgroundTint="#00D665"/>
+                        android:backgroundTint="#34C759"/>
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
