@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team5.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Team5_Android_Final">
+        <activity
+<<<<<<< HEAD
+            android:name=".Activity_TinTuc"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ThongTinDonHang"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+            android:exported="true" >
+=======
+            android:name=".Activity_TatCaSanPham"
+            android:exported="true">
+>>>>>>> 51ff5898a8b6a9027cc89fcf3aa9193349673e1b
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+<<<<<<< HEAD
+=======
+            android:name=".Activity_ThemTheNganHang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ThongTinDonHang"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity_DetailedProduct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+            android:exported="true" />
+        <activity
+>>>>>>> 51ff5898a8b6a9027cc89fcf3aa9193349673e1b
+            android:name=".Activity_LikedProducts"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity_DanhGiaSanPham"
+<<<<<<< HEAD
+            android:exported="true" />
+=======
+            android:exported="true">
+
+        </activity>
+>>>>>>> 51ff5898a8b6a9027cc89fcf3aa9193349673e1b
+        <activity
+            android:name=".Activity_XacNhanMatKhau"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_SearchProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ThayDoiMatKhau1"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_DoiNgonNgu"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TaiKhoanCuaToi"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_Voucher"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_DaGiao"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_DangGiao"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_ChoLayHang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_GioHang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TaiKhoan"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
