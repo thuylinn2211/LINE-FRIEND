@@ -2,16 +2,13 @@ package com.team5.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.widget.TextView;
 
-public class Activity_ChoXacNhan extends AppCompatActivity {
-
+public class Activity_SanPhamHot extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gio_hang);
+        setContentView(R.layout.activity_san_pham_hot);
     }
 }

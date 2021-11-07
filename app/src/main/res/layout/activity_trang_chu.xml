@@ -4,111 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_TatCaSanPham"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activity_TrangChu">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="horizontal">
-
-        <TableLayout
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="LINE FRIENDS"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="100dp"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_baseline_message_2_24"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_giohangfill"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"/>
 
-            <TableRow android:layout_height="match_parent">
+        </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/imvBack"
-                    android:layout_width="42dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_baseline_arrow_back_24" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
                 <TextView
-                    android:id="@+id/txtTatCaSanPham"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Tất cả sản phẩm"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="Giới thiệu"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
-
-                <ImageView
-                    android:id="@+id/imvNhanTin"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
+                    android:textSize="18dp"
                     android:gravity="center"
-                    android:layout_marginLeft="7dp"
-                    android:src="@drawable/icon_nhantin" />
-                <ImageView
-                    android:id="@+id/imvGioHang"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/icon_giohangfill"/>
-            </TableRow>
-        </TableLayout>
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_bottom_line"/>
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="Sản phẩm hot"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="Tin tức"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="10dp"
-        android:stretchColumns="*"
-        android:gravity="center">
-
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Danh mục"
-                android:textColor="#A7A7A7"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phổ biến"
-                android:textColor="#6ADE8B"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mới Nhất"
-                android:textColor="#272727"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bán Chạy"
-                android:textColor="#272727"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Giá"
-                android:textColor="#272727"/>
-        </TableRow>
-    </TableLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:paddingRight="15dp"
-        android:paddingLeft="15dp"
+        android:paddingLeft="10dp"
         android:scrollbars="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="10dp"
-            android:paddingLeft="15dp"
+            android:paddingLeft="10dp"
             android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/banner"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Tất cả sản phẩm"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Xem thêm..."
+                    android:textSize="12sp"
+                    android:textColor="#13A7FA"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="90dp"/>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +213,6 @@
                     </TableLayout>
                 </LinearLayout>
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -308,6 +314,20 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Sản phẩm hot"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -405,7 +425,6 @@
                     </TableLayout>
                 </LinearLayout>
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -506,11 +525,55 @@
                 </LinearLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Tin tức"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/tintuc1"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Các sản phẩm gấu bông phụ kiện được yêu thích nhất hiện nay"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/time"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/10/2021"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
         </LinearLayout>
-
-
-
     </ScrollView>
-
-
 </LinearLayout>

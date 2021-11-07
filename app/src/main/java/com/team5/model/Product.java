@@ -1,9 +1,10 @@
-package com.team5.myapplication.model;
+package com.team5.model;
 
-public class Products {
+public class Product {
+
     private  String productName;
 
-    public Products(int butbihinhtraitim, String productName) {
+    public Product(int butbihinhtraitim, String productName) {
         this.productName = productName;
     }
 
@@ -15,4 +16,3 @@ public class Products {
         this.productName = productName;
     }
 }
-

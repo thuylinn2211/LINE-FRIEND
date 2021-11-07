@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
-import com.team5.myapplication.model.Products;
+import com.team5.model.Product;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ public class Activity_LikedProducts extends AppCompatActivity {
     GridView gvProducts;
 
     ArrayAdapter<String> adapter;
-    ArrayList<Products> products;
+    ArrayList<Product> products;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,9 @@ public class Activity_LikedProducts extends AppCompatActivity {
     }
 
     private void getData() {
-        products  = new ArrayList<Products>();
-        products.add(new Products(R.drawable.butbihinhtraitim, "Bút bi hình trái tim"));
-        products.add(new Products(R.drawable.gaubonghinhtraitim, "Gấu bông hình trái tim"));
+        products  = new ArrayList<Product>();
+        products.add(new Product(R.drawable.butbihinhtraitim, "Bút bi hình trái tim"));
+        products.add(new Product(R.drawable.gaubonghinhtraitim, "Gấu bông hình trái tim"));
     }
 
 }
