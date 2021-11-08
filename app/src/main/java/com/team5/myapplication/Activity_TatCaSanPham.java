@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
-import com.team5.myapplication.model.Products;
+import com.team5.model.Product;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ public class Activity_TatCaSanPham extends AppCompatActivity {
     GridView gvTatCaSanPham;
 
     ArrayAdapter<String> adapter;
-    ArrayList<Products> products;
+    ArrayList<Product> product;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

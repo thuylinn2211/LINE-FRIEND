@@ -258,15 +258,7 @@
                         android:background="@drawable/custom_vien"
                         android:textColor="#FF0000"
                         android:textSize="14sp"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:layout_marginTop="8dp"
-                        android:text="Vận chuyển tiêu chuẩn                               40.000đ"
-                        android:background="@drawable/custom_vien"
-                        android:textColor="#FF0000"
-                        android:textSize="14sp"/>
+
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -280,6 +272,17 @@
 
             </LinearLayout>
         </ScrollView>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_vien"
+            android:padding="16dp"
+            android:text="Vận chuyển tiêu chuẩn                               40.000đ"
+            android:textColor="#FF0000"
+            android:textSize="14sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
