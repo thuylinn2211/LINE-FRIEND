@@ -57,11 +57,7 @@
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_GioHang"
@@ -134,6 +130,11 @@
         <activity
             android:name=".Activity_TinTuc"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
