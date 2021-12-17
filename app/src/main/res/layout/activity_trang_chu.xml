@@ -1,42 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
     tools:context=".Activity_TrangChu">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:weightSum="10">
             <TextView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
                 android:text="LINE FRIENDS"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:layout_marginLeft="100dp"/>
             <ImageView
+                android:id="@+id/imvChat"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_weight="0.5"
                 android:layout_marginLeft="12dp"
-                android:src="@drawable/ic_baseline_message_2_24"/>
+                android:src="@drawable/ic_baseline_message_2_24"
+                />
             <ImageView
+                android:id="@+id/imvGioHang"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/icon_giohangfill"
+                android:layout_weight="0.5"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="16dp"/>
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_giohang"/>
 
         </LinearLayout>
 
@@ -44,536 +48,43 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="match_parent"
-                    android:text="Giới thiệu"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:background="@drawable/custom_bottom_line"/>
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="match_parent"
-                    android:text="Sản phẩm hot"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="match_parent"
-                    android:text="Tin tức"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:gravity="center"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingRight="15dp"
-        android:paddingLeft="10dp"
-        android:scrollbars="vertical">
-        <LinearLayout
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layouttrangchu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabSelectedTextColor="@color/black" />
+        </LinearLayout>
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="15dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/banner"/>
+            android:scrollbars="vertical">
             <LinearLayout
+                android:id="@+id/layoutContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Tất cả sản phẩm"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="5dp"/>
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Xem thêm..."
-                    android:textSize="12sp"
-                    android:textColor="#13A7FA"
-                    android:backgroundTint="@color/white"
-                    android:layout_marginLeft="90dp"/>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/View_pagertrangchu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="15dp">
+    <com.google.android.material.bottomnavigation.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/custom_bottom_navigation"
+        app:itemTextColor="@color/custom_bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/mockhoagaubrown"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Móc khóa hình Gấu Brown"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/butbihinhtraitim"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Bút bi hình trái tim"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="15dp">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/gaubong"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Thú nhồi bông Gấu Brown"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/tuixach"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Túi xách thỏ Cony"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Sản phẩm hot"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="15dp">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/mockhoatho"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Móc khóa hình vịt vàng"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/giadodt"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Giá đỡ điện thoại  Thỏ Cony"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="15dp">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/mockhoavitvang"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Thú nhồi bông hình trái tim"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/gaubonghinhtraitim"/>
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="Thú nhồi bông hình trái tim"
-                        android:textColor="#272727"
-                        android:textSize="15sp"/>
-                    <TableLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TableRow>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="₫50.000"
-                                android:textColor="#6ADE8B"
-                                android:textSize="13sp"/>
-                            <ImageView
-                                android:src="@drawable/icon_traitim"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="5dp"/>
-                            <ImageView
-                                android:src="@drawable/icon_giohang"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginLeft="6dp"/>
-                        </TableRow>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Giảm ₫10.000"
-                            android:textColor="#A7A7A7"
-                            android:textSize="12sp"/>
-                    </TableLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Tin tức"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:src="@drawable/tintuc1"/>
-
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Các sản phẩm gấu bông phụ kiện được yêu thích nhất hiện nay"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_gravity="center"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="15dp"
-                android:gravity="center">
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/time"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="24/10/2021"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="16dp"
-                    android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</RelativeLayout>
