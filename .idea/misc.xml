@@ -7,6 +7,7 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/custom_bottom_line.xml" value="0.22777777777777777" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/custom_vien.xml" value="0.1" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.18888888888888888" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.2064814814814815" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.18888888888888888" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1935185185185185" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.18703703703703703" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_cho_xac_nhan.xml" value="0.33" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_da_giao.xml" value="0.25" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_dang_giao.xml" value="0.25833333333333336" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_danh_gia_san_pham.xml" value="0.5" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_dia_chi.xml" value="0.27291666666666664" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_doi_ngon_ngu.xml" value="0.27291666666666664" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_forgot_password.xml" value="0.2128623188405797" />
