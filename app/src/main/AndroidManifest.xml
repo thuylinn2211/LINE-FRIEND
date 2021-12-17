@@ -15,146 +15,106 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ChoLayHang"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_ChoXacNhan"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DaGiao"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DangGiao"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DanhGiaSanPham"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DetailedProduct"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DiaChi"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_DoiNgonNgu"
-             >
-        </activity>
+            android:exported="true"></activity>
+        <activity android:name=".Activity_DoiNgonNgu"></activity>
         <activity
             android:name=".ForgotPassword"
-            android:exported="true"/>
-        <activity
-            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-            android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".Activity_GioHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_LikedProducts"
-            android:exported="true" >
-        </activity>
-
-        <activity
-            android:name=".Login"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Register"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".ResetPassword"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_SanPhamHot"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_SearchProduct"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_TaiKhoan"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_TaiKhoanCuaToi"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_TaiKhoanNganHang"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_TatCaSanPham"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_ThanhToan_TTDC"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_ThayDoiMatKhau1"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_ThemTheNganHang"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_ThongBao"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_ThongTinDonHang"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".Activity_TinTuc"
-            android:exported="true" >
+            android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity_GioHang"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_LikedProducts"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Register"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ResetPassword"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_SanPhamHot"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TimKiem"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TaiKhoan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TaiKhoanCuaToi"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TaiKhoanNganHang"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TatCaSanPham"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_ThanhToan_TTDC"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_ThayDoiMatKhau1"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_ThemTheNganHang"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_ThongBao"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_ThongTinDonHang"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activity_TinTuc"
+            android:exported="true">
 
+        </activity>
         <activity
             android:name=".Activity_TrangChu"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".TurnOnApp"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_Voucher"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_XacNhanMatKhau"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
