@@ -12,6 +12,6 @@ public class Activity_ChoXacNhan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gio_hang);
+        setContentView(R.layout.activity_cho_xac_nhan);
     }
 }
