@@ -1,6 +1,8 @@
 package com.team5.model;
 
-public class SanPham {
+import java.io.Serializable;
+
+public class SanPham implements Serializable {
     private int sanphamHinh;
     private String sanphamTen;
     private double sanphamGia;

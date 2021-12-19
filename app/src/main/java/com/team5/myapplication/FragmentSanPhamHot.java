@@ -1,9 +1,11 @@
 package com.team5.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import androidx.annotation.NonNull;
@@ -28,6 +30,14 @@ public class FragmentSanPhamHot extends Fragment {
         View view = inflater.inflate(R.layout.frag_san_pham_hot, container, false);
 
         gvSanPham = view.findViewById(R.id.gvSanPham);
+        gvSanPham.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), Activity_DetailedProduct.class);
+                intent.putExtra("thongtinsanpham", sanpham.get(i));
+                startActivity(intent);
+            }
+        });
 
         adapter = new SanPhamAdapter(getContext(), R.layout.item_list, iniData());
         gvSanPham.setAdapter(adapter);

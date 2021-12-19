@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.team5.model.SanPham;
 import com.team5.myapplication.Activity_Chat;
 import com.team5.myapplication.Activity_LikedProducts;
+import com.team5.myapplication.Activity_TatCaSanPham;
 import com.team5.myapplication.Activity_TrangChu;
 import com.team5.myapplication.FragmentGioiThieu;
 import com.team5.myapplication.R;
@@ -74,7 +75,6 @@ public class SanPhamAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 //chuyển qua trang yêu thich
-
             }
         });
 
