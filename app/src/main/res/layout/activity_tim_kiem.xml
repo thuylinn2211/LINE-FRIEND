@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:weightSum="10"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/custom_bottom_line">
         <ImageView
             android:id="@+id/btnBack"
             android:layout_width="0dp"
@@ -20,70 +21,36 @@
             android:src="@drawable/ic_baseline_arrow_back_24"
             android:backgroundTint="@color/white" />
 
-        <ImageView
+        <SearchView
             android:id="@+id/btnSearch"
             android:layout_width="0dp"
+            android:layout_weight="7"
             android:layout_height="60dp"
-            android:layout_weight="1.3"
-            android:src="@drawable/ic_baseline_search_24"
-            android:backgroundTint="@color/white"
-            android:gravity="center"/>
+            android:queryHint="Search here"
+            android:iconifiedByDefault="false"/>
 
-        <AutoCompleteTextView
-            android:id="@+id/edtTimKiem"
-            android:layout_width="0dp"
-            android:layout_weight="6"
-            android:layout_height="60dp"
-            android:textSize="16sp"
-            android:hint="Select a product"
-            android:textColor="@color/black"
-            android:completionThreshold="1"
-            android:completionHint="Select a product"/>
         <ImageView
             android:id="@+id/btnSearchCamera"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1.5"
-            android:src="@android:drawable/ic_menu_camera"
-            android:gravity="center"/>
+            android:src="@android:drawable/ic_menu_camera"/>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#DCD6D6"/>
 
     <TextView
         android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:text="Gợi ý"
         android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:gravity="center_vertical"/>
-
-    <TableLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="35dp"
+    <ListView
+        android:id="@+id/lvSearch"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txtBT21"
-            android:layout_height="30dp"
-            android:text="BT21"
-            android:textSize="18sp"
-            android:gravity="center_vertical"
-            android:textColor="@color/black"/>
+    </ListView>
 
-        <TextView
-            android:id="@+id/txtMissha"
-            android:layout_marginTop="10dp"
-            android:layout_height="30dp"
-            android:text="Missha"
-            android:textSize="18sp"
-            android:gravity="center_vertical"
-            android:textColor="@color/black"/>
-    </TableLayout>
 </LinearLayout>
