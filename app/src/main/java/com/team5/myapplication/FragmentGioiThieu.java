@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -34,7 +35,24 @@ public class FragmentGioiThieu extends Fragment {
         View view = inflater.inflate(R.layout.frag_gioi_thieu, container, false);
 
         gvSanPham1 = view.findViewById(R.id.gvSanPham1);
+        gvSanPham1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), Activity_DetailedProduct.class);
+                intent.putExtra("thongtinsanpham", sanpham.get(i));
+                startActivity(intent);
+            }
+        });
+
         gvSanPham2 = view.findViewById(R.id.gvSanPham2);
+        gvSanPham2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), Activity_DetailedProduct.class);
+                intent.putExtra("thongtinsanpham", sanpham2.get(i));
+                startActivity(intent);
+            }
+        });
         imvTinTuc1 = view.findViewById(R.id.imvTinTuc1);
         imvTinTuc1.setOnClickListener(new View.OnClickListener() {
             @Override

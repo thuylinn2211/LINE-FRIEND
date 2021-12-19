@@ -77,6 +77,7 @@ public class Activity_TrangChu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     public void trangchu(MenuItem item) {
