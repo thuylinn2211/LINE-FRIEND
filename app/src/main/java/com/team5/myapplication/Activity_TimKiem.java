@@ -20,10 +20,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+
 import com.team5.adapter.SanPhamAdapter;
 import com.team5.model.SanPham;
 
 import java.text.DecimalFormat;
+import com.team5.model.SanPham;
+
 import java.util.ArrayList;
 
 public class Activity_TimKiem extends AppCompatActivity {

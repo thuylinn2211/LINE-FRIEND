@@ -46,6 +46,9 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_turn_on_app.xml" value="0.2128623188405797" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_voucher.xml" value="0.22" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_xac_nhan_mat_khau.xml" value="0.13069908814589665" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_gioi_thieu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_san_pham_hot.xml" value="0.27291666666666664" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_tin_tuc.xml" value="0.27239583333333334" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_tintuc1.xml" value="0.33" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_tintuc2.xml" value="0.26875" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/frag_tintuc3.xml" value="0.26875" />
@@ -64,7 +67,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/drawable/outline_shopping_cart_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_detailed_product.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_frag_thanhtoan_chinhsuadonhang.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_gio_hang.xml" value="0.4" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_gio_hang.xml" value="0.23641304347826086" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_san_pham_hot.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tai_khoan_ngan_hang.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_thanh_toan_ttdc.xml" value="0.25416666666666665" />
@@ -81,8 +84,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/frag_tintuc1.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/frag_tintuc2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/frag_tintuc3.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_hienthidonhang.xml" value="0.4" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_hienthithongtin.xml" value="0.253125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_hienthidonhang.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/item_list.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1" />
         <entry key="..\:/android_project/Team5_Android/app/src/main/res/layout/activity_cho_xac_nhan.xml" value="0.12360688956433637" />
