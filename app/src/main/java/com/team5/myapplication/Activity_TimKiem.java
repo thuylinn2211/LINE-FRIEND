@@ -5,6 +5,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -13,20 +15,29 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+import com.team5.adapter.SanPhamAdapter;
+import com.team5.model.SanPham;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Activity_TimKiem extends AppCompatActivity {
 
     SearchView btnSearch;
+    GridView gvSearch;
     ListView lvSearch;
     ImageView btnSearchCamera, btnBack;
 
     ArrayList<String> list;
     ArrayAdapter<String> adapter;
+
+    ArrayList<SanPham> sanpham;
+    SanPhamAdapter sanPhamAdapter;
 
 
     @Override
@@ -42,14 +53,19 @@ public class Activity_TimKiem extends AppCompatActivity {
     private void linkViews() {
         btnSearch = findViewById(R.id.btnSearch);
         btnSearchCamera = findViewById(R.id.btnSearchCamera);
-        lvSearch = findViewById(R.id.lvSearch);
+        gvSearch = findViewById(R.id.gvSearch);
         btnBack = findViewById(R.id.btnBack);
+        lvSearch = findViewById(R.id.lvSearch);
     }
 
     private void loadData() {
 
+        sanpham = new ArrayList<SanPham>();
+        sanpham.add(new SanPham(R.drawable.gaubong,"Thú nhồi bông gấu Brown", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(R.drawable.tuixach, "Túi xách thỏ Cony", 50000, "Giảm 10000"));
+
         list = new ArrayList<String>();
-        list.add("Thú nhồi bông gấu Brown");
         list.add("Móc khóa Thỏ Cony");
         list.add("Giá đỡ điện thoại Thỏ Cony");
         list.add("Bút bi hình trái tim");
@@ -57,7 +73,10 @@ public class Activity_TimKiem extends AppCompatActivity {
     }
 
     private void addEvents() {
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
+        sanPhamAdapter = new SanPhamAdapter(Activity_TimKiem.this, R.layout.item_list, sanpham);
+        gvSearch.setAdapter(sanPhamAdapter);
+
+        adapter = new ArrayAdapter<String>(Activity_TimKiem.this,android.R.layout.simple_list_item_1, list);
         lvSearch.setAdapter(adapter);
 
         btnSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -73,17 +92,22 @@ public class Activity_TimKiem extends AppCompatActivity {
             }
         });
 
-        lvSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        gvSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    //em moi lam chi tiet thu bong Grown
-                    startActivity(new Intent(Activity_TimKiem.this, Activity_DetailedProduct.class));
-
+                    Intent intent = new Intent(getApplicationContext(), Activity_DetailedProduct.class);
+                    intent.putExtra("thongtinsanpham", sanpham.get(position));
+                    startActivity(intent);
                 }else if(position == 1){
-
+                    Intent intent = new Intent(getApplicationContext(), Activity_DetailedProduct.class);
+                    intent.putExtra("thongtinsanpham", sanpham.get(position));
+                    startActivity(intent);
                 }else {
-
+                    Intent intent = new Intent(getApplicationContext(), Activity_DetailedProduct.class);
+                    intent.putExtra("thongtinsanpham", sanpham.get(position));
+                    startActivity(intent);
                 }
             }
         });
