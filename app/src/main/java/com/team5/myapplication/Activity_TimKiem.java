@@ -17,16 +17,19 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+import com.team5.model.SanPham;
+
 import java.util.ArrayList;
 
 public class Activity_TimKiem extends AppCompatActivity {
 
     SearchView btnSearch;
-    ListView lvSearch;
+    ListView lvTimKiem;
     ImageView btnSearchCamera, btnBack;
 
-    ArrayList<String> list;
+    ArrayList<String> sanpham;
     ArrayAdapter<String> adapter;
+
 
 
     @Override
@@ -42,23 +45,26 @@ public class Activity_TimKiem extends AppCompatActivity {
     private void linkViews() {
         btnSearch = findViewById(R.id.btnSearch);
         btnSearchCamera = findViewById(R.id.btnSearchCamera);
-        lvSearch = findViewById(R.id.lvSearch);
+        lvTimKiem = findViewById(R.id.lvTimKiem);
         btnBack = findViewById(R.id.btnBack);
     }
 
     private void loadData() {
 
-        list = new ArrayList<String>();
-        list.add("Thú nhồi bông gấu Brown");
-        list.add("Móc khóa Thỏ Cony");
-        list.add("Giá đỡ điện thoại Thỏ Cony");
-        list.add("Bút bi hình trái tim");
-        list.add("Túi xách Thỏ Cony");
+        sanpham = new ArrayList<String>();
+        sanpham.add("Móc khóa hình Gấu Brown");
+        sanpham.add("Bút bi hình trái tim");
+        sanpham.add("Thú nhồi bông Gấu Brown");
+        sanpham.add("Túi xách thỏ Cony");
+        sanpham.add("Móc khóa hình Thỏ Cony");
+        sanpham.add("Giá đỡ điện thoại Thỏ Cony");
+        sanpham.add("Móc khóa hình vịt vàng");
+        sanpham.add("Thú nhồi bông hình trái tim");
     }
 
     private void addEvents() {
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
-        lvSearch.setAdapter(adapter);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sanpham);
+        lvTimKiem.setAdapter(adapter);
 
         btnSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -73,11 +79,11 @@ public class Activity_TimKiem extends AppCompatActivity {
             }
         });
 
-        lvSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lvTimKiem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    //em moi lam chi tiet thu bong Grown
+
                     startActivity(new Intent(Activity_TimKiem.this, Activity_DetailedProduct.class));
 
                 }else if(position == 1){
@@ -110,6 +116,8 @@ public class Activity_TimKiem extends AppCompatActivity {
         });
     }
 
+
+
     //    @Override
 //    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 //        super.onActivityResult(requestCode, resultCode, data);
@@ -118,4 +126,6 @@ public class Activity_TimKiem extends AppCompatActivity {
 //
 //        }
 //    }
+
+
 }
