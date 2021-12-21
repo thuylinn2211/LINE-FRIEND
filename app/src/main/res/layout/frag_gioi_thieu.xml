@@ -5,8 +5,9 @@
     android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingBottom="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -14,7 +15,7 @@
             android:orientation="vertical"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:paddingRight="15dp">
+            android:paddingRight="10dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -96,41 +97,47 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imvTinTuc1"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:src="@drawable/tintuc1" />
-
-            <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="Các sản phẩm gấu bông phụ kiện được yêu thích nhất hiện nay"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="15dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
+                android:orientation="vertical">
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
+                    android:id="@+id/imvTinTuc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/tintuc1" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
-                    android:text="24/10/2021"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Các sản phẩm gấu bông phụ kiện được yêu thích nhất hiện nay"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
                     android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/time"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="26/12/2021"
+                        android:textSize="16dp" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.team5.model.SanPham;
 import com.team5.myapplication.Activity_Chat;
+import com.team5.myapplication.Activity_DetailedProduct;
 import com.team5.myapplication.Activity_LikedProducts;
 import com.team5.myapplication.Activity_TatCaSanPham;
 import com.team5.myapplication.Activity_TrangChu;

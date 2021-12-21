@@ -76,6 +76,8 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tim_kiem.xml" value="0.253125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tin_tuc.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tin_tuc1.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tin_tuc2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_tin_tuc3.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_trang_chu.xml" value="0.128" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/activity_voucher.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/frag_gioi_thieu.xml" value="0.1" />
@@ -86,6 +88,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/frag_tintuc3.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_hienthidonhang.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/item_list.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/layout/tintuc_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1" />
         <entry key="..\:/android_project/Team5_Android/app/src/main/res/layout/activity_cho_xac_nhan.xml" value="0.12360688956433637" />
         <entry key="..\:/android_project/Team5_Android/app/src/main/res/layout/activity_danh_gia_san_pham.xml" value="0.12360688956433637" />

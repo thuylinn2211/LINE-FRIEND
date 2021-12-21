@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Activity_TinTuc3"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TinTuc2"
+            android:exported="true" />
+        <activity
             android:name=".Activity_TinTuc1"
             android:exported="true" />
         <activity
@@ -34,9 +40,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_DetailedProduct"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
@@ -46,7 +50,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_GioHang"
             android:exported="true" />
@@ -67,9 +71,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" />
