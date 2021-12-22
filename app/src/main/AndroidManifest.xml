@@ -72,11 +72,7 @@
         <activity
             android:name=".Activity_TimKiem"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_TaiKhoan"
@@ -108,6 +104,11 @@
         <activity
             android:name=".Activity_TrangChu"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".TurnOnApp"

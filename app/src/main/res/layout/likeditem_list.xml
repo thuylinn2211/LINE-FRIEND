@@ -47,12 +47,12 @@
                     android:layout_weight="0.5"
                     android:src="@drawable/heart"/>
 
-                <ImageView
-                    android:id="@+id/imvGioHang"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_weight="0.5"
-                    android:src="@drawable/icon_giohang"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/imvGioHang"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:src="@drawable/icon_giohang"/>-->
             </TableRow>
 
             <TextView

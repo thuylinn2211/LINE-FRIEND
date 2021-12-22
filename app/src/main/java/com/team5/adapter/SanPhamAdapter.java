@@ -60,7 +60,7 @@ public class SanPhamAdapter extends BaseAdapter {
             holder.txtGiamGia = view.findViewById(R.id.txtGiamGia);
             holder.imvHinh = view.findViewById(R.id.imvHinh);
 //            holder.imvYeuThich = view.findViewById(R.id.im);
-            holder.imvGioHang = view.findViewById(R.id.imvGioHang);
+//            holder.imvGioHang = view.findViewById(R.id.imvGioHang);
             view.setTag(holder);
         }else {
             holder = (ViewHolder) view.getTag();
