@@ -25,7 +25,7 @@ public class FragmentGioiThieu extends Fragment {
     ImageView imvTinTuc1;
 
     SanPhamAdapter adapter;
-    ArrayList<SanPham> sanpham;
+    public static ArrayList<SanPham> sanpham;
 
     ArrayList<SanPham> sanpham2;
 

@@ -32,6 +32,7 @@ public class SanPhamAdapter extends BaseAdapter {
         this.sanpham = sanpham;
     }
 
+
     @Override
     public int getCount() {
         return sanpham.size();
