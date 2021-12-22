@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Github/Team5_Android - Copy/app/src/main/res/menu/menu.xml" value="0.27291666666666664" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18888888888888888" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/custom_bottom_line.xml" value="0.22777777777777777" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/drawable/custom_vien.xml" value="0.1" />
@@ -40,7 +41,7 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_thay_doi_mat_khau1.xml" value="0.13069908814589665" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_thong_bao.xml" value="0.27291666666666664" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_thong_tin_don_hang.xml" value="0.13272543059777103" />
-        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_tim_kiem.xml" value="0.25" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_tim_kiem.xml" value="0.2178988326848249" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_tin_tuc.xml" value="0.5" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_trang_chu.xml" value="0.13069908814589665" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/activity_turn_on_app.xml" value="0.2128623188405797" />
@@ -57,8 +58,10 @@
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_hienthithongtin.xml" value="0.17481884057971014" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_momo.xml" value="0.11666666666666667" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/fragment_thanhtoan_vanchuyen.xml" value="0.23333333333333334" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/item_list.xml" value="0.23346303501945526" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/item_products.xml" value="0.13272543059777103" />
         <entry key="..\:/Github/Team5_Android/app/src/main/res/layout/item_products2.xml" value="0.2463768115942029" />
+        <entry key="..\:/Github/Team5_Android/app/src/main/res/menu/menu.xml" value="0.27239583333333334" />
         <entry key="..\:/Projects2021/Team5_Android/app/src/main/res/layout/activity_main.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/drawable/outline_account_circle_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team5_Android/app/src/main/res/drawable/outline_favorite_24.xml" value="0.1" />

@@ -58,7 +58,7 @@ public class SanPhamAdapter extends BaseAdapter {
             holder.txtGia = view.findViewById(R.id.txtGia);
             holder.txtGiamGia = view.findViewById(R.id.txtGiamGia);
             holder.imvHinh = view.findViewById(R.id.imvHinh);
-            holder.imvYeuThich = view.findViewById(R.id.imvYeuThich);
+//            holder.imvYeuThich = view.findViewById(R.id.im);
             holder.imvGioHang = view.findViewById(R.id.imvGioHang);
             view.setTag(holder);
         }else {
@@ -72,19 +72,19 @@ public class SanPhamAdapter extends BaseAdapter {
 
         holder.imvHinh.setImageResource(s.getSanphamHinh());
 
-        holder.imvYeuThich.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //chuyển qua trang yêu thich
-            }
-        });
+//        holder.imvYeuThich.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //chuyển qua trang yêu thich
+//            }
+//        });
 
-        holder.imvGioHang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //chuyển qua trang giỏ hàng
-            }
-        });
+//        holder.imvGioHang.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //chuyển qua trang giỏ hàng
+//            }
+//        });
         return view;
     }
 
