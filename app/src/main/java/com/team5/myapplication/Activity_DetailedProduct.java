@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class Activity_DetailedProduct extends AppCompatActivity {
 
     GridView gvSanPham;
-    ImageView imvPhoto;
+    ImageView imvHinh;
     TextView txtTenSanPham, txtGia, txtGiamGia;
 
     Button btnAddProduct, btnBuy, btnAddLikedProduct;
@@ -48,13 +48,15 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         loadData();
         getData();
         addEvents();
+
+
     }
 
     private void linkViews() {
         spPhanLoai = findViewById(R.id.spPhanLoai);
         gvSanPham = findViewById(R.id.gvSanPham);
 
-        imvPhoto = findViewById(R.id.imvPhoto);
+        imvHinh = findViewById(R.id.imvHinh);
 
         txtGia = findViewById(R.id.txtGia);
         txtGiamGia = findViewById(R.id.txtGiamGia);
@@ -78,12 +80,16 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         giasanpham = sanPham.getSanphamGia();
         giamgia = sanPham.getSanphamGiamGia();
         hinhanh = sanPham.getSanphamHinh();
-
+//        Intent intent = getIntent();
+//        if (intent.getExtras() != null){
+//            sanpham = (ArrayList<SanPham>) intent.getSerializableExtra("item");
+//            imvHinh.set
+//        }
         txtTenSanPham.setText(tensanpham);
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         txtGia.setText(decimalFormat.format(giasanpham));
         txtGiamGia.setText(giamgia);
-        imvPhoto.setImageResource(hinhanh);
+        imvHinh.setImageResource(hinhanh);
 
 
     }

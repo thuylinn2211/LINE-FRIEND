@@ -8,6 +8,13 @@ public class SanPham implements Serializable {
     private double sanphamGia;
     private String sanphamGiamGia;
 
+    public SanPham(int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia) {
+        this.sanphamHinh = sanphamHinh;
+        this.sanphamTen = sanphamTen;
+        this.sanphamGia = sanphamGia;
+        this.sanphamGiamGia = sanphamGiamGia;
+    }
+
     public int getSanphamHinh() {
         return sanphamHinh;
     }
@@ -37,13 +44,6 @@ public class SanPham implements Serializable {
     }
 
     public void setSanphamGiamGia(String sanphamGiamGia) {
-        this.sanphamGiamGia = sanphamGiamGia;
-    }
-
-    public SanPham(int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia) {
-        this.sanphamHinh = sanphamHinh;
-        this.sanphamTen = sanphamTen;
-        this.sanphamGia = sanphamGia;
         this.sanphamGiamGia = sanphamGiamGia;
     }
 }
