@@ -4,8 +4,6 @@
     <item
         android:id="@+id/btnBack"
         android:title="Back"
-        app:actionViewClass="android.widget.TextView"
-
         android:icon="@drawable/ic_baseline_arrow_back_24"
         app:showAsAction="ifRoom"
         />
@@ -14,12 +12,11 @@
     android:title="Search View"
     app:actionViewClass="android.widget.SearchView"
     android:icon="@android:drawable/ic_menu_search"
-    app:showAsAction="ifRoom"
+    app:showAsAction="always"
     />
     <item
         android:id="@+id/btnSearchCamera"
         android:title="Search Camera"
-        app:actionViewClass="android.widget.Button"
         android:icon="@android:drawable/ic_menu_camera"
         app:showAsAction="ifRoom"
         />

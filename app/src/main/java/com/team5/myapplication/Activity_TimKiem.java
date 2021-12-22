@@ -30,6 +30,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 
 import com.team5.adapter.SanPhamAdapter;
@@ -103,33 +104,12 @@ public class Activity_TimKiem extends AppCompatActivity {
             }
         });
 
-        MenuItem menuItem1 = menu.findItem(R.id.btnBack);
-        TextView btnBack = (TextView) menuItem1.getActionView();
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Activity_TimKiem.this, Activity_TrangChu.class));
-            }
-        });
-
-
         //open camera
         if( ContextCompat.checkSelfPermission(Activity_TimKiem.this,
                 Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(Activity_TimKiem.this, new String[]{Manifest.permission.CAMERA}, 101);
 
         }
-
-        MenuItem menuItem2 = menu.findItem(R.id.btnSearchCamera);
-        Button btnSearchCamera = (Button) menuItem2.getActionView();
-        btnSearchCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 101);
-            }
-        });
-
         return true;
     }
 
@@ -138,8 +118,14 @@ public class Activity_TimKiem extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.btnSearch){
             return  true;
+        } else if( id == R.id.btnBack){
+            startActivity(new Intent(Activity_TimKiem.this, Activity_TrangChu.class));
+        } else if( id == R.id.btnSearchCamera){
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            startActivityForResult(intent, 101);
         }
         return super.onOptionsItemSelected(item);
+
     }
 
     private void addEvents() {
