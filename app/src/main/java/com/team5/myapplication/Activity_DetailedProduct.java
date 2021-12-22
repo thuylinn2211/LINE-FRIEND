@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,6 +33,11 @@ public class Activity_DetailedProduct extends AppCompatActivity {
 
     ArrayList<SanPham> sanpham;
     SanPhamAdapter sanPhamAdapter;
+
+    String tensanpham = "";
+    double giasanpham = 0;
+    String giamgia = "";
+    int hinhanh = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,6 +134,7 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         btnAddLikedProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                FragmentGioiThieu.sanpham.add(new SanPham(hinhanh, tensanpham, giasanpham, giamgia));
                 Intent intent = new Intent(Activity_DetailedProduct.this, Activity_LikedProducts.class);
                 startActivity(intent);
             }
