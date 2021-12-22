@@ -188,7 +188,7 @@ public class Activity_TimKiem extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            View view = getLayoutInflater().inflate(R.layout.item_list, null);
+            View view = getLayoutInflater().inflate(R.layout.item_list_search, null);
             ImageView imvHinh = view.findViewById(R.id.imvHinh);
             TextView txtTenSanPham = view.findViewById(R.id.txtTenSanPham);
             TextView txtGia = view.findViewById(R.id.txtGia);
