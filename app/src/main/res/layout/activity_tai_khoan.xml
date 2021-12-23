@@ -8,31 +8,21 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/txtGiohang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:padding="10dp"
-            android:layout_marginStart="170dp"
-            android:text="Tôi"
+            android:layout_gravity="center"
+            android:text="@string/toi"
             android:textColor="@color/black"
             android:textSize="25dp" />
-
-        <ImageView
-            android:id="@+id/imvSetting"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginLeft="120dp"
-            android:src="@drawable/ic_baseline_settings_24"/>
     </LinearLayout>
 
     <ScrollView
@@ -66,19 +56,19 @@
 
                 <TableRow>
                     <ImageView
-                        android:id="@+id/btnDonHang"
+                        android:id="@+id/imvDonHang"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
                         android:src="@drawable/donhang"/>
                     <ImageView
-                        android:id="@+id/btnVoucher"
+                        android:id="@+id/imvVoucher"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
                         android:src="@drawable/voucher"/>
                     <ImageView
-                        android:id="@+id/btnThongBao"
+                        android:id="@+id/imvThongBao"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
@@ -89,7 +79,7 @@
                         android:id="@+id/txtDonHang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đơn hàng"
+                        android:text="@string/donhang"
                         android:layout_gravity="center"
                         android:textColor="#F16667"
                         android:backgroundTint="@color/white"/>
@@ -97,7 +87,7 @@
                         android:id="@+id/txtVoucher"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Voucher"
+                        android:text="@string/voucher"
                         android:layout_gravity="center"
                         android:textColor="#F16667"
                         android:backgroundTint="@color/white"/>
@@ -105,7 +95,7 @@
                         android:id="@+id/txtThongBao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thông báo"
+                        android:text="@string/thongbao"
                         android:layout_gravity="center"
                         android:textColor="#F16667"
                         android:backgroundTint="@color/white"/>
@@ -126,13 +116,13 @@
                     android:src="@drawable/icon_shoppingbag"/>
                 <TextView
                     android:layout_gravity="center_vertical"
-                    android:text="Mua lại"
+                    android:text="@string/mualai"
                     android:textColor="#272727"
                     android:textSize="20sp" />
                 <TextView
                     android:layout_marginRight="50dp"
                     android:paddingLeft="185dp"
-                    android:text="Xem thêm..."
+                    android:text="@string/them"
                     android:textColor="#13A7FA"
                     android:layout_gravity="center_vertical"/>
             </TableRow>
@@ -343,118 +333,133 @@
                 android:layout_height="match_parent">
 
                 <TableRow
-                    android:paddingLeft="10dp">
+                    android:paddingLeft="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_me2"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Tài khoản của tôi"
+                        android:text="@string/tkct"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/btnRight1"
+                        android:id="@+id/imvRight1"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-                </TableRow>
-
-                <TableRow
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
-
-                    <ImageView
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_diachi"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"/>
-                    <TextView
-                        android:layout_gravity="center_vertical"
-                        android:text="Địa chỉ"
-                        android:textSize="20dp"
-                        android:textColor="#272727"/>
-                    <ImageButton
-                        android:id="@+id/btnRight2"
-                        android:backgroundTintMode="screen"
-                        android:layout_width="42dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-                </TableRow>
-
-                <TableRow
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
-
-                    <ImageView
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_taikhoan"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"/>
-                    <TextView
-                        android:layout_gravity="center_vertical"
-                        android:text="Tài khoản ngân hàng"
-                        android:textSize="20dp"
-                        android:textColor="#272727"/>
-                    <ImageButton
-                        android:id="@+id/btnRight3"
-                        android:backgroundTintMode="screen"
-                        android:layout_width="42dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-                </TableRow>
-
-                <TableRow
-                    android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
-
-                    <ImageView
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_thongbao"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"/>
-                    <TextView
-                        android:layout_gravity="center_vertical"
-                        android:text="Thông báo"
-                        android:textSize="20dp"
-                        android:textColor="#272727"/>
-                    <ImageButton
-                        android:id="@+id/btnRight4"
-                        android:backgroundTintMode="screen"
-                        android:layout_width="42dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
                 </TableRow>
 
                 <TableRow
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_diachi"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/diachi"
+                        android:textSize="20dp"
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
+                    <ImageButton
+                        android:id="@+id/imvRight2"
+                        android:backgroundTintMode="screen"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="115dp"
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_taikhoan"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/tknh"
+                        android:textSize="20dp"
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
+                    <ImageButton
+                        android:id="@+id/imvRight3"
+                        android:backgroundTintMode="screen"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="115dp"
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_thongbao"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/dnn"
+                        android:textSize="20dp"
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
+                    <ImageButton
+                        android:id="@+id/imvRight4"
+                        android:backgroundTintMode="screen"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="115dp"
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_hotro"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Hỗ trợ"
+                        android:text="@string/hotro"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/btnRight5"
+                        android:id="@+id/imvRight5"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
                 </TableRow>
             </TableLayout>
             <LinearLayout
@@ -466,7 +471,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="10dp"
-                    android:text="Đăng xuất"
+                    android:text="@string/dangxuat"
                     android:backgroundTintMode="screen"
                     android:backgroundTint="#95FF0000"/>
             </LinearLayout>

@@ -76,21 +76,21 @@
                     android:src="@drawable/icon_chinhsua"/>
             </TableRow>
 
-                <TextView
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
-                    android:text="Thôn 18, xã Ea Ktur, huyện Cư Kuin, tỉnh Đắk Lắk"
-                    android:textSize="17sp"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Thôn 18, xã Ea Ktur, huyện Cư Kuin, tỉnh Đắk Lắk"
+                android:textSize="17sp"/>
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:paddingTop="5dp"
                 android:orientation="horizontal">
                 <ImageView
-                android:layout_width="10dp"
-                android:layout_height="20dp"
-                android:src="@drawable/icon_flag"/>
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_flag"/>
 
                 <TextView
                     android:layout_width="match_parent"
