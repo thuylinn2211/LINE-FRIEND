@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Team5_Android_Final</string>
+    <string name="app_name">Line Friends</string>
 
 
     <string name="tinh">Thành phố/ Tỉnh thành*</string>
@@ -76,7 +76,6 @@
     </string-array>
 
     <string-array name="arrray_default_huyen">
-
         <item>Quận/ Huyện (*)</item>
     </string-array>
 
@@ -98,6 +97,20 @@
         <item>Huyện Lắk</item>
         <item>Huyện M’Đrắk</item>
     </string-array>
+    <string-array name="array_angiang_huyen">
+        <item>Quận/ Huyện (*)</item>
+        <item>Thành phố Long Xuyên</item>
+        <item>Thành phố Châu Đốc</item>
+        <item>Huyện An Phú</item>
+        <item>Thị xã Tân Châu</item>
+        <item>Huyện Phú Tân</item>
+        <item>Huyện Châu Phú</item>
+        <item>Huyện Tịnh Biên</item>
+        <item>Huyện Tri Tôn</item>
+        <item>Huyện Châu Thành</item>
+        <item>Huyện Chợ Mới</item>
+        <item>Huyện Thoại Sơn</item>
+    </string-array>
 
     <string-array name="array_hanam_huyen">
         <item>Quận/ Huyện (*)</item>
@@ -110,8 +123,24 @@
     </string-array>
 
     <string-array name="arrray_default_xa">
-
         <item>Phường/ Xã (*)</item>
+    </string-array>
+
+    <string-array name="array_angiang_thanhpholongxuyen_xa">
+        <item>Phường/ Xã (*)</item>
+        <item>Phường Mỹ Bình</item>
+        <item>Phường Mỹ Long</item>
+        <item>Phường Đông Xuyên</item>
+        <item>Phường Mỹ Xuyên</item>
+        <item>Phường Bình Đức</item>
+        <item>Phường Bình Khánh</item>
+        <item>Phường Mỹ Phước</item>
+        <item>Phường Mỹ Quý</item>
+        <item>Phường Mỹ Thới</item>
+        <item>Phường Mỹ Thạnh</item>
+        <item>Phường Mỹ Hòa</item>
+        <item>Xã Mỹ Khánh</item>
+        <item>Xã Mỹ Hoà Hưng</item>
     </string-array>
 
     <string name="giảm">Giảm đ10.000</string>

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Activity_SanPhamHot extends AppCompatActivity {
+public class Activity_TinTuc1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_san_pham_hot);
+        setContentView(R.layout.activity_tin_tuc1);
     }
 }
