@@ -66,19 +66,11 @@
             android:name=".ResetPassword"
             android:exported="true" />
         <activity
-            android:name=".Activity_SanPhamHot"
-            android:exported="true" />
-        <activity
-            android:name=".Activity_SearchProduct"
+            android:name=".Activity_TimKiem"
             android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
@@ -102,11 +94,23 @@
             android:name=".Activity_ThongTinDonHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_TinTuc"
+            android:name=".Activity_TinTuc1"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TinTuc2"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TinTuc3"
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".TurnOnApp"
             android:exported="true" />

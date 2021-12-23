@@ -105,15 +105,7 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         phanloai.add("Size vừa");
         phanloai.add("Size nhỏ");
 
-        Intent intent = getIntent();
-        if(intent.getExtras() != null){
-            sanpham = (ArrayList<SanPham>) intent.getSerializableExtra("thongtinsanpham");
-            tensanpham = sanPham.getSanphamTen();
-//            giasanpham = sanPham.getSanphamGia();
-//            giamgia = sanPham.getSanphamGiamGia();
-            hinhanh = sanPham.getSanphamHinh();
 
-        }
 
     }
 
