@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team5.myapplication">
-
-    <uses-permission android:name="android.permission.CAMERA" />
+    package="com.team5.myapplication" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Team5_Android_Final">
+        android:theme="@style/Theme.Team5_Android_Final" >
         <activity
-            android:name=".Activity_TinTuc3"
+            android:name=".Fragment_TaiKhoan_Voucher"
             android:exported="true" />
         <activity
-            android:name=".Activity_TinTuc2"
-            android:exported="true" />
-        <activity
-            android:name=".Activity_TinTuc1"
+            android:name=".Fragment_TaiKhoan_ThongBao"
             android:exported="true" />
         <activity
             android:name=".Activity_Chat"
@@ -70,7 +66,13 @@
             android:name=".ResetPassword"
             android:exported="true" />
         <activity
-            android:name=".Activity_TimKiem"
+            android:name=".Activity_SanPhamHot"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_SearchProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TaiKhoan"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,9 +80,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity_TaiKhoan"
-            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
             android:exported="true" />
@@ -100,20 +99,16 @@
             android:name=".Activity_ThemTheNganHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_ThongBao"
-            android:exported="true" />
-        <activity
             android:name=".Activity_ThongTinDonHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_TrangChu"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".TurnOnApp"
+            android:name=".Activity_TinTuc"
             android:exported="true" />
         <activity
-            android:name=".Activity_Voucher"
+            android:name=".Activity_TrangChu"
+            android:exported="true" />
+        <activity
+            android:name=".TurnOnApp"
             android:exported="true" />
         <activity
             android:name=".Activity_XacNhanMatKhau"
