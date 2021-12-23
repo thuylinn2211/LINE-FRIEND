@@ -47,60 +47,72 @@
                 android:paddingTop="10dp"
                 android:textColor="#272727"
                 android:layout_gravity="center"/>
-
-            <TableLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:stretchColumns="*"
-                android:paddingTop="20dp">
-
-                <TableRow>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:id="@+id/btnDonHang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/imvDonHang"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
+                        android:layout_gravity="center_horizontal"
                         android:src="@drawable/donhang"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/donhang"
+                        android:textColor="#F16667"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/imvVoucher"
+                        android:layout_gravity="center_horizontal"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
                         android:src="@drawable/voucher"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/voucher"
+                        android:textColor="#F16667"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnThongBao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/imvThongBao"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
+                        android:layout_gravity="center_horizontal"
                         android:src="@drawable/thongbao"/>
-                </TableRow>
-                <TableRow>
                     <Button
-                        android:id="@+id/txtDonHang"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/donhang"
-                        android:layout_gravity="center"
-                        android:textColor="#F16667"
-                        android:backgroundTint="@color/white"/>
-                    <Button
-                        android:id="@+id/txtVoucher"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/voucher"
-                        android:layout_gravity="center"
-                        android:textColor="#F16667"
-                        android:backgroundTint="@color/white"/>
-                    <Button
-                        android:id="@+id/txtThongBao"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:text="@string/thongbao"
                         android:layout_gravity="center"
                         android:textColor="#F16667"
                         android:backgroundTint="@color/white"/>
-                </TableRow>
-            </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
 
             <TableLayout
                 android:layout_marginTop="15dp"
@@ -333,6 +345,7 @@
                 android:layout_height="match_parent">
 
                 <TableRow
+                    android:id="@+id/btnTaiKhoanCuaToi"
                     android:paddingLeft="10dp"
                     android:weightSum="10">
 
@@ -349,7 +362,6 @@
                         android:textColor="#272727"
                         android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/imvRight1"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
@@ -410,6 +422,7 @@
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/btnDoiNgonNgu"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
                     android:weightSum="10">
@@ -426,13 +439,14 @@
                         android:textSize="20dp"
                         android:textColor="#272727"
                         android:layout_weight="8"/>
+
                     <ImageButton
-                        android:id="@+id/imvRight4"
-                        android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1"
+                        android:backgroundTintMode="screen"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </TableRow>
 
                 <TableRow

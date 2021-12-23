@@ -12,12 +12,15 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TableRow;
 
 import java.util.Locale;
 
 public class Activity_TaiKhoan extends AppCompatActivity {
-    ImageView imvRight1,imvThongBao,imvVoucher,imvRight4;
-
+    ImageView imvRight1;
+    LinearLayout btnDonHang, btnVoucher, btnThongBao;
+    TableRow btnTaiKhoanCuaToi, btnDoiNgonNgu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +34,24 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         actionBar.setTitle(getResources().getString(R.string.app_name));
     }
 
+    private void linkViews() {
+
+        btnTaiKhoanCuaToi=findViewById(R.id.btnTaiKhoanCuaToi);
+        btnThongBao=findViewById(R.id.btnThongBao);
+        btnVoucher=findViewById(R.id.btnVoucher);
+        btnDoiNgonNgu=findViewById(R.id.btnDoiNgonNgu);
+
+    }
+
     private void addEvents() {
-        imvRight1.setOnClickListener(new View.OnClickListener() {
+        btnTaiKhoanCuaToi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TaiKhoanCuaToi.class);
                 startActivity(intent);
-
             }
         });
-        imvThongBao.setOnClickListener(new View.OnClickListener() {
+        btnThongBao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Activity_TaiKhoan.this,Fragment_TaiKhoan_ThongBao.class);
@@ -48,14 +59,14 @@ public class Activity_TaiKhoan extends AppCompatActivity {
 
             }
         });
-        imvVoucher.setOnClickListener(new View.OnClickListener() {
+        btnVoucher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Fragment_TaiKhoan_ThongBao.class);
+                Intent intent=new Intent(Activity_TaiKhoan.this,Fragment_TaiKhoan_Voucher.class);
                 startActivity(intent);
             }
         });
-        imvRight4.setOnClickListener(new View.OnClickListener() {
+        btnDoiNgonNgu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showChangeLanguegeDialog();
@@ -96,7 +107,6 @@ public class Activity_TaiKhoan extends AppCompatActivity {
 
 
     }
-
     private void setLocale(String lang) {
         Locale locale=new Locale(lang);
         Locale.setDefault(locale);
@@ -107,18 +117,10 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         SharedPreferences.Editor editor=getSharedPreferences("Đổi ngôn ngữ",MODE_PRIVATE).edit();
         editor.putString("Ngôn ngữ",lang);
     }
+
     public void loadLocale(){
         SharedPreferences preferences=getSharedPreferences("Đổi ngôn ngữ", Activity.MODE_PRIVATE);
         String ngonngu=preferences.getString("Ngôn ngữ","");
         setLocale(ngonngu);
-    }
-
-    private void linkViews() {
-
-        imvRight1=findViewById(R.id.imvRight1);
-        imvThongBao=findViewById(R.id.imvThongBao);
-        imvVoucher=findViewById(R.id.imvVoucher);
-        imvRight4=findViewById(R.id.imvRight4);
-
     }
 }

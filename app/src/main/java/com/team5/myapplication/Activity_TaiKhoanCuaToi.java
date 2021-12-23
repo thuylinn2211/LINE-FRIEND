@@ -45,8 +45,6 @@ public class Activity_TaiKhoanCuaToi extends AppCompatActivity {
     boolean isCamera;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,9 +76,6 @@ public class Activity_TaiKhoanCuaToi extends AppCompatActivity {
             }
         });
     }
-
-
-
 
     private void addEvents() {
         //insert data
