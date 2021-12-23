@@ -39,6 +39,8 @@ public class Activity_DetailedProduct extends AppCompatActivity {
     String giamgia = "";
     int hinhanh = 0;
 
+    SanPham sanPham;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,6 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         loadData();
         getData();
         addEvents();
-
 
     }
 
@@ -103,6 +104,16 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         phanloai.add("Size lớn");
         phanloai.add("Size vừa");
         phanloai.add("Size nhỏ");
+
+        Intent intent = getIntent();
+        if(intent.getExtras() != null){
+            sanpham = (ArrayList<SanPham>) intent.getSerializableExtra("thongtinsanpham");
+            tensanpham = sanPham.getSanphamTen();
+//            giasanpham = sanPham.getSanphamGia();
+//            giamgia = sanPham.getSanphamGiamGia();
+            hinhanh = sanPham.getSanphamHinh();
+
+        }
 
     }
 
