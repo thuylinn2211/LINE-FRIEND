@@ -2,7 +2,9 @@ package com.team5.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -46,5 +48,30 @@ public class Activity_GioHang extends AppCompatActivity {
     }
 
     private void getData() {
+    }
+
+    public void trangchu(MenuItem item) {
+        Intent intent = new Intent(Activity_GioHang.this, com.team5.myapplication.Activity_TrangChu.class);
+        startActivity(intent);
+    }
+
+    public void yeuthich(MenuItem item) {
+        Intent intent = new Intent(Activity_GioHang.this, com.team5.myapplication.Activity_LikedProducts.class);
+        startActivity(intent);
+    }
+
+    public void muasam(MenuItem item) {
+        Intent intent = new Intent(Activity_GioHang.this, com.team5.myapplication.Activity_GioHang.class);
+        startActivity(intent);
+    }
+
+    public void timkiem(MenuItem item) {
+        Intent intent = new Intent(Activity_GioHang.this, com.team5.myapplication.Activity_TimKiem.class);
+        startActivity(intent);
+    }
+
+    public void taikhoan(MenuItem item) {
+        Intent intent = new Intent(Activity_GioHang.this, com.team5.myapplication.Activity_TaiKhoan.class);
+        startActivity(intent);
     }
 }
