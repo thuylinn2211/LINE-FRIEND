@@ -21,7 +21,7 @@ import java.util.Locale;
 public class Activity_TaiKhoan extends AppCompatActivity {
 
     LinearLayout btnDonHang, btnVoucher, btnThongBao;
-    TableRow btnTaiKhoanCuaToi, btnDoiNgonNgu;
+    TableRow btnTaiKhoanCuaToi,btnDiaChi,btnTaiKhoanNganHang, btnDoiNgonNgu, btnHoTro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +38,13 @@ public class Activity_TaiKhoan extends AppCompatActivity {
     private void linkViews() {
 
         btnTaiKhoanCuaToi=findViewById(R.id.btnTaiKhoanCuaToi);
+        btnDiaChi = findViewById(R.id.btnDiaChi);
+        btnTaiKhoanNganHang = findViewById(R.id.btnTaiKhoanNganHang);
+        btnDoiNgonNgu=findViewById(R.id.btnDoiNgonNgu);
+        btnHoTro = findViewById(R.id.btnHoTro);
+
         btnThongBao=findViewById(R.id.btnThongBao);
         btnVoucher=findViewById(R.id.btnVoucher);
-        btnDoiNgonNgu=findViewById(R.id.btnDoiNgonNgu);
         btnDonHang = findViewById(R.id.btnDonHang);
 
     }
@@ -53,6 +57,32 @@ public class Activity_TaiKhoan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnDiaChi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //open dia chi
+            }
+        });
+
+        btnTaiKhoanNganHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //open ngân hàng của tôi
+            }
+        });
+        btnDoiNgonNgu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showChangeLanguegeDialog();
+            }
+        });
+        btnHoTro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //open hỗ trợ
+            }
+        });
+
         btnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,12 +106,7 @@ public class Activity_TaiKhoan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnDoiNgonNgu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showChangeLanguegeDialog();
-            }
-        });
+
 
     }
 
