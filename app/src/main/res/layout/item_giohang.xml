@@ -10,20 +10,19 @@
         <CheckBox
             android:id="@+id/chkSanPham"
             android:layout_width="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_height="wrap_content"/>
         <ImageView
             android:id="@+id/imvHinh"
             android:layout_width="0dp"
             android:layout_weight="3"
-            android:layout_height="match_parent"
-            android:src="@drawable/butbihinhtraitim" />
+            android:layout_height="match_parent"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="6.5"
+            android:layout_weight="6"
             android:orientation="vertical"
             android:padding="10dp">
 

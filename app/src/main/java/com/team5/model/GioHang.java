@@ -1,22 +1,38 @@
 package com.team5.model;
 
 public class GioHang {
+
+
+
+    public int id;
     public int sanphamHinh;
     public String sanphamTen;
     public double sanphamGia;
     public String sanphamGiamGia;
     public int soluongSP;
+    public int sanphamId;
 
-    public GioHang(int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia, int soluongSP) {
+    public GioHang(int id, int hinhanh, String tensanpham, long giaMoi, int soluong) {
+
+    }
+
+    public GioHang(int id, int sanphamHinh,String sanphamTen, double sanphamGia, String sanphamGiamGia, int soluongSP) {
+        this.id = id;
         this.sanphamHinh = sanphamHinh;
         this.sanphamTen = sanphamTen;
         this.sanphamGia = sanphamGia;
         this.sanphamGiamGia = sanphamGiamGia;
         this.soluongSP = soluongSP;
+        this.sanphamId = sanphamId;
     }
 
-    public GioHang(int hinhanh, String tensanpham, long giaMoi, int soluong) {
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getSanphamHinh() {
@@ -57,5 +73,13 @@ public class GioHang {
 
     public void setSoluongSP(int soluongSP) {
         this.soluongSP = soluongSP;
+    }
+
+    public int getSanphamId() {
+        return sanphamId;
+    }
+
+    public void setSanphamId(int sanphamId) {
+        this.sanphamId = sanphamId;
     }
 }
