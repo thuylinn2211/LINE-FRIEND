@@ -43,8 +43,8 @@ public class Activity_LikedProducts extends AppCompatActivity {
 
     private void initAdapter() {
         sanpham = new ArrayList<SanPham>();
-        sanpham.add(new SanPham(R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
-        sanpham.add(new SanPham(R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(1, R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(2, R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
     }
     private void loadData() {
         adapter = new SanPhamAdapter(Activity_LikedProducts.this,R.layout.likeditem_list, sanpham);

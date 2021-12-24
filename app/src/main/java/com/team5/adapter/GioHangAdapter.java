@@ -41,6 +41,7 @@ public class GioHangAdapter extends BaseAdapter {
         return i;
     }
 
+
     public class ViewHolder{
 
         public ImageView imvHinh;

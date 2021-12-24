@@ -47,6 +47,7 @@ public class Activity_TimKiem extends AppCompatActivity {
     GridView gvSearch;
     CustomAdapter customAdapter;
 
+    int[] sanphamId = {1 ,2,2,4,5,6,7,8};
     int[] sanphamHinhs = {R.drawable.mockhoagaubrown,R.drawable.butbihinhtraitim, R.drawable.gaubong, R.drawable.tuixach,
             R.drawable.mockhoatho, R.drawable.giadodt, R.drawable.mockhoavitvang, R.drawable.gaubonghinhtraitim};
     String[] sanphamTens = {"Móc khóa hình Gấu Brown", "Bút bi hình trái tim", "Thú nhồi bông Gấu Brown", "Túi xách thỏ Cony",
@@ -64,7 +65,7 @@ public class Activity_TimKiem extends AppCompatActivity {
         gvSearch = findViewById(R.id.gvSearch);
 
         for(int i = 0; i < sanphamTens.length; i++ ){
-            SanPham sanPham = new SanPham(sanphamHinhs[i], sanphamTens[i], sanphamGia[i], sanphamGiamGia[i]);
+            SanPham sanPham = new SanPham(sanphamId[i], sanphamHinhs[i], sanphamTens[i], sanphamGia[i], sanphamGiamGia[i]);
             sanPhamList.add(sanPham);
         }
 

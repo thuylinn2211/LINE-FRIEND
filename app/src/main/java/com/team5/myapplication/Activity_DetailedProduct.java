@@ -35,10 +35,12 @@ public class Activity_DetailedProduct extends AppCompatActivity {
     ArrayList<SanPham> sanpham;
     SanPhamAdapter sanPhamAdapter;
 
+    int id = 0;
     String tensanpham = "";
     double giasanpham = 0;
     String giamgia = "";
     int hinhanh = 0;
+    int sanphamId = 0;
 
     SanPham sanPham;
 
@@ -71,19 +73,21 @@ public class Activity_DetailedProduct extends AppCompatActivity {
 
     }
 
-    private void getData() {
-
-        String tensanpham = "";
-        double giasanpham = 0;
-        String giamgia = "";
-        int hinhanh = 0;
+    public void getData() {
+//
+//        String tensanpham = "";
+//        double giasanpham = 0;
+//        String giamgia = "";
+//        int hinhanh = 0;
 
         SanPham sanPham = (SanPham) getIntent().getSerializableExtra("thongtinsanpham");
 
+        id = sanPham.getId();
         tensanpham = sanPham.getSanphamTen();
         giasanpham = sanPham.getSanphamGia();
         giamgia = sanPham.getSanphamGiamGia();
         hinhanh = sanPham.getSanphamHinh();
+        sanphamId = sanPham.getSanphamId();
         Intent intent = getIntent();
 
 
@@ -98,8 +102,8 @@ public class Activity_DetailedProduct extends AppCompatActivity {
 
     private void initData() {
         sanpham = new ArrayList<SanPham>();
-        sanpham.add(new SanPham(R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
-        sanpham.add(new SanPham(R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(1, R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(2, R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
 
         phanloai = new ArrayList<String>();
         phanloai.add("Size lớn");
@@ -140,7 +144,7 @@ public class Activity_DetailedProduct extends AppCompatActivity {
                     int sl = Integer.parseInt(spSoLuong.getSelectedItem().toString());
                     boolean exists = false;
                     for (int i = 0; i < Activity_TatCaSanPham.mangGioHang.size(); i++){
-                        if( Activity_TatCaSanPham.mangGioHang.get(i).getSanphamTen() == tensanpham){
+                        if( Activity_TatCaSanPham.mangGioHang.get(i).getId() == id){
                             Activity_TatCaSanPham.mangGioHang.get(i).setSoluongSP(Activity_TatCaSanPham.mangGioHang.get(i).getSoluongSP() + sl);
                             if (Activity_TatCaSanPham.mangGioHang.get(i).getSoluongSP() >= 10){
                                 Activity_TatCaSanPham.mangGioHang.get(i).setSoluongSP(10);
@@ -152,12 +156,12 @@ public class Activity_DetailedProduct extends AppCompatActivity {
                     if( exists == false){
                         int soluong = Integer.parseInt(spSoLuong.getSelectedItem().toString());
                         long giaMoi = (long) (soluong * giasanpham);
-                        Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, giamgia, soluong));
+                        Activity_TatCaSanPham.mangGioHang.add(new GioHang(id, hinhanh, tensanpham, giaMoi, giamgia, soluong));
                     }
                 }else {
                     int soluong = Integer.parseInt(spSoLuong.getSelectedItem().toString());
                     long giaMoi = (long) (soluong * giasanpham);
-                    Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, giamgia, soluong));
+                    Activity_TatCaSanPham.mangGioHang.add(new GioHang(id, hinhanh, tensanpham, giaMoi, giamgia, soluong));
                 }
                 Intent intent = new Intent(getApplicationContext(), Activity_GioHang.class);
                 startActivity(intent);
