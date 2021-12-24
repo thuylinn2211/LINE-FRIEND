@@ -15,11 +15,10 @@
         android:layout_gravity="center">
 
         <TextView
-            android:id="@+id/txtGiohang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:layout_gravity="center"
+            android:padding="10dp"
             android:text="@string/toi"
             android:textColor="@color/black"
             android:textSize="25dp" />

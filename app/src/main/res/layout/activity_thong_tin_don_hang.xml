@@ -68,14 +68,6 @@
                             android:textSize="18sp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="16dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="XEM"
-                            android:layout_gravity="center"
-                            android:textColor="#FF3BB8C3"
-                            android:textSize="20dp"
-                            android:layout_marginLeft="105dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -189,14 +181,7 @@
                             android:textSize="17sp"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="16dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SAO CHÉP"
-                            android:layout_gravity="center"
-                            android:textColor="#FF3BB8C3"
-                            android:textSize="18dp"
-                            android:layout_marginLeft="105dp"/>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -641,7 +626,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="18dp"
-                            android:layout_marginTop="40dp"
+                            android:layout_marginTop="20dp"
                             android:text="Thời gian đặt hàng" />
 
                         <TextView
@@ -681,18 +666,9 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="24dp"
-                            android:gravity="right"
-                            android:text="SAO CHÉP"
-                            android:textColor="#3BB8C3"
-                            android:layout_marginTop="8dp"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
                             android:layout_height="18dp"
                             android:gravity="right"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="20dp"
                             android:text="11-08-2021  07:24" />
 
                         <TextView

@@ -44,10 +44,7 @@ import java.util.List;
 
 public class Activity_TimKiem extends AppCompatActivity {
 
-//    SearchView btnSearch;
     GridView gvSearch;
-//    ImageView btnSearchCamera, btnBack;
-
     CustomAdapter customAdapter;
 
     int[] sanphamHinhs = {R.drawable.mockhoagaubrown,R.drawable.butbihinhtraitim, R.drawable.gaubong, R.drawable.tuixach,
@@ -66,9 +63,6 @@ public class Activity_TimKiem extends AppCompatActivity {
 
         gvSearch = findViewById(R.id.gvSearch);
 
-//        linkViews();
-        addEvents();
-
         for(int i = 0; i < sanphamTens.length; i++ ){
             SanPham sanPham = new SanPham(sanphamHinhs[i], sanphamTens[i], sanphamGia[i], sanphamGiamGia[i]);
             sanPhamList.add(sanPham);
@@ -79,11 +73,6 @@ public class Activity_TimKiem extends AppCompatActivity {
         gvSearch.setAdapter(customAdapter);
     }
 
-//    private void linkViews() {
-//        btnSearch = findViewById(R.id.btnSearch);
-//        btnSearchCamera = findViewById(R.id.btnSearchCamera);
-//        btnBack = findViewById(R.id.btnBack);
-//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -127,36 +116,6 @@ public class Activity_TimKiem extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
-
-    private void addEvents() {
-
-//        gvSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                if(position == 0){
-//                    Intent intent = new Intent(getApplicationContext(), Activity_DetailedProduct.class);
-//                    intent.putExtra("thongtinsanpham", sanPhamList.get(position));
-//                    startActivity(intent);
-//
-//                }else if(position == 1){
-//
-//                }else {
-//
-//                }
-//            }
-//        });
-
-
-    }
-
-    //    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if( requestCode == 101){
-//            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-//
-//        }
-//    }
 
     public class CustomAdapter extends BaseAdapter implements Filterable {
 

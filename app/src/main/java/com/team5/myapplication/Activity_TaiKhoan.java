@@ -18,7 +18,7 @@ import android.widget.TableRow;
 import java.util.Locale;
 
 public class Activity_TaiKhoan extends AppCompatActivity {
-    ImageView imvRight1;
+
     LinearLayout btnDonHang, btnVoucher, btnThongBao;
     TableRow btnTaiKhoanCuaToi, btnDoiNgonNgu;
 
@@ -40,6 +40,7 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnThongBao=findViewById(R.id.btnThongBao);
         btnVoucher=findViewById(R.id.btnVoucher);
         btnDoiNgonNgu=findViewById(R.id.btnDoiNgonNgu);
+        btnDonHang = findViewById(R.id.btnDonHang);
 
     }
 
@@ -49,6 +50,14 @@ public class Activity_TaiKhoan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TaiKhoanCuaToi.class);
                 startActivity(intent);
+            }
+        });
+        btnDonHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_ThongTinDonHang.class);
+                startActivity(intent);
+
             }
         });
         btnThongBao.setOnClickListener(new View.OnClickListener() {

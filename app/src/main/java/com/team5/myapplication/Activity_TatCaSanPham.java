@@ -12,6 +12,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.team5.adapter.SanPhamAdapter;
+import com.team5.model.GioHang;
 import com.team5.model.Product;
 import com.team5.model.SanPham;
 
@@ -25,14 +26,16 @@ public class Activity_TatCaSanPham extends AppCompatActivity {
     SanPhamAdapter adapter;
     ArrayList<SanPham> sanpham;
 
+    public static ArrayList<GioHang> mangGioHang;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tat_ca_san_pham);
 
         linkViews();
-        iniData();
-        iniAdapter();
+        initData();
+        initAdapter();
         addEvents();
 
     }
@@ -40,9 +43,15 @@ public class Activity_TatCaSanPham extends AppCompatActivity {
     private void linkViews() {
         gvTatCaSanPham = findViewById(R.id.gvTatCaSanPham);
         imvBack = findViewById(R.id.imvBack);
+
+        if(mangGioHang != null){
+
+        }else {
+            mangGioHang = new ArrayList<>();
+        }
     }
 
-    private void iniData() {
+    private void initData() {
         sanpham = new ArrayList<SanPham>();
         sanpham.add(new SanPham(R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
         sanpham.add(new SanPham(R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
@@ -55,7 +64,7 @@ public class Activity_TatCaSanPham extends AppCompatActivity {
 
     }
 
-    private void iniAdapter() {
+    private void initAdapter() {
         adapter = new SanPhamAdapter(Activity_TatCaSanPham.this, R.layout.item_list, sanpham);
         gvTatCaSanPham.setAdapter(adapter);
     }
