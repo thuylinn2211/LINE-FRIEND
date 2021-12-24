@@ -218,7 +218,7 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/imvSua1"
+                            android:id="@+id/imvSuaTTLH"
                             android:layout_width="30dp"
                             android:layout_height="120dp"
                             android:src="@drawable/icon_chinhsua"/>
@@ -232,7 +232,8 @@
                             android:id="@+id/chkThongTin"
                             android:layout_width="30dp"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"/>
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
@@ -268,68 +269,85 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:orientation="horizontal"
-                            android:paddingStart="4dp"
-                            android:gravity="center_vertical">
-                            <CheckBox
-                                android:id="@+id/chkDiaChi1"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"/>
-                            <TextView
-                                android:layout_width="300dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:text="thôn 18, xã Ea Ktur, huyện Cư Kuin, tỉnh Đắk Lắk"
-                                android:textSize="12dp"
-                                android:padding="4sp"
-                                android:textColor="@color/black"/>
-                            <ImageView
-                                android:id="@+id/imvSua2"
+                        <RadioGroup
+                            android:layout_width="30dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+                            <RadioButton
+                                android:id="@+id/radDiaChi1"
                                 android:layout_width="30dp"
                                 android:layout_height="50dp"
-                                android:src="@drawable/icon_chinhsua"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal">
+                                android:checked="true"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:orientation="horizontal"
-                            android:paddingStart="4dp"
-                            android:gravity="center_vertical">
-                            <CheckBox
-                                android:id="@+id/chkDiaChi2"
-                                android:layout_width="30dp"
-                                android:layout_height="50dp"/>
-                            <TextView
-                                android:layout_width="300dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:text="KTX Khu B ĐHQG, TP.HCM"
-                                android:textSize="14dp"
-                                android:padding="4sp"
-                                android:textColor="@color/black"/>
-                            <ImageView
-                                android:id="@+id/imvSua3"
+                            <RadioButton
+                                android:id="@+id/radDiaChi2"
                                 android:layout_width="30dp"
                                 android:layout_height="50dp"
-                                android:src="@drawable/icon_chinhsua"/>
+                                android:checked="false" />
+                        </RadioGroup>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:paddingStart="4dp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:padding="4sp"
+                                    android:text="thôn 18, xã Ea Ktur, huyện Cư Kuin, tỉnh Đắk Lắk"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+
+                                <ImageView
+                                    android:id="@+id/imvSuaDC1"
+                                    android:layout_width="30dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/icon_chinhsua" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="4dp"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:padding="4sp"
+                                        android:text="KTX Khu B ĐHQG, TP.HCM"
+                                        android:textColor="@color/black"
+                                        android:textSize="14dp" />
+
+                                    <ImageView
+                                        android:id="@+id/imvSuaDC2"
+                                        android:layout_width="30dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/icon_chinhsua"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
                         </LinearLayout>
                     </LinearLayout>
-
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/btnThemDC"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
@@ -362,7 +380,7 @@
                     android:layout_marginTop="8dp">
 
                     <ImageView
-                        android:id="@+id/imvBack2"
+                        android:id="@+id/imvBackCart"
                         android:layout_width="30dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="8dp"
@@ -378,6 +396,7 @@
                         android:padding="10dp"
                         android:textColor="@color/black"
                         android:layout_gravity="center" />
+
                     <Button
                         android:id="@+id/btnHinhThucVanChuyen"
                         android:layout_width="wrap_content"

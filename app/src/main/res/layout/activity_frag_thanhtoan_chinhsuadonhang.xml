@@ -214,7 +214,7 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/btnSua"
+                        android:id="@+id/btnSuaTT"
                         android:layout_width="30dp"
                         android:layout_height="120dp"
                         android:src="@drawable/icon_chinhsua"/>
@@ -228,7 +228,8 @@
                         android:id="@+id/chkThongTin"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -265,7 +266,7 @@
                     android:id="@+id/edtTen"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Tên (tùy chọn)"
+                    android:hint="Tên (tùy chọn)"
                     android:textSize="16dp"
                     android:background="@drawable/custom_vien"
                     android:gravity="center_vertical"
@@ -275,7 +276,7 @@
                     android:id="@+id/edtHo"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="Họ"
+                    android:hint="Họ"
                     android:textSize="16dp"
                     android:background="@drawable/custom_vien"
                     android:gravity="center_vertical"
@@ -291,7 +292,7 @@
                     android:background="@drawable/custom_vien"
                     android:gravity="center_vertical"
                     android:paddingLeft="16dp"
-                    android:text="Địa chỉ: số nhà, đường, tòa nhà ..." />
+                    android:hint="Địa chỉ: số nhà, đường, tòa nhà ... (*)" />
 
                 <!--Spinner Tỉnh/ Thành phố-->
 
@@ -328,6 +329,7 @@
                 android:layout_margin="12dp"
                 android:background="@drawable/custom_vien">
                 <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/btn_swt_on_off"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:thumb="@drawable/thumb"
@@ -349,7 +351,7 @@
                 android:layout_marginBottom="16dp">
 
                 <ImageView
-                    android:id="@+id/imvBack2"
+                    android:id="@+id/imvBackPayment"
                     android:layout_width="30dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"

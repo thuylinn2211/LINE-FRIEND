@@ -12,6 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final">
         <activity
+            android:name=".Activity_ThanhToan_Momo"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_VanChuyen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_ThanhToan_HienThiThongtin"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".Activity_TinTuc1"
             android:exported="true" />
         <activity
@@ -34,9 +51,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_DetailedProduct"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
@@ -46,7 +61,9 @@
             android:exported="true" />
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Activity_GioHang"
             android:exported="true" />
@@ -67,13 +84,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" />
@@ -88,7 +99,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ThanhToan_TTDC"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true" />
@@ -103,9 +114,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".TurnOnApp"
             android:exported="true" />
