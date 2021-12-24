@@ -40,12 +40,12 @@
                     android:textColor="#6ADE8B"
                     android:textSize="20sp"/>
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/imvYeuThich"-->
-<!--                    android:layout_width="35dp"-->
-<!--                    android:layout_height="35dp"-->
-<!--                    android:layout_weight="0.5"-->
-<!--                    android:src="@drawable/icon_traitim"/>-->
+                <ImageView
+                    android:id="@+id/imvYeuThich"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/heart"/>
 
 <!--                <ImageView-->
 <!--                    android:id="@+id/imvGioHang"-->
@@ -64,5 +64,6 @@
                 android:textSize="15sp" />
         </TableLayout>
     </LinearLayout>
+
 
 </LinearLayout>

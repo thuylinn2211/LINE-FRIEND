@@ -1,23 +1,29 @@
 package com.team5.model;
 
-import java.io.Serializable;
+public class GioHang {
 
-public class SanPham implements Serializable {
-    private int id;
-    private int sanphamHinh;
-    private String sanphamTen;
-    private double sanphamGia;
-    private String sanphamGiamGia;
-    private int sanphamId;
+    public int id;
+    public int sanphamHinh;
+    public String sanphamTen;
+    public double sanphamGia;
+    public String sanphamGiamGia;
+    public int soluongSP;
+    public int sanphamId;
 
-    public SanPham(int id, int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia) {
+    public GioHang(int id, int hinhanh, String tensanpham, long giaMoi, int soluong) {
+
+    }
+
+    public GioHang(int id, int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia, int soluongSP) {
         this.id = id;
         this.sanphamHinh = sanphamHinh;
         this.sanphamTen = sanphamTen;
         this.sanphamGia = sanphamGia;
         this.sanphamGiamGia = sanphamGiamGia;
+        this.soluongSP = soluongSP;
         this.sanphamId = sanphamId;
     }
+
 
     public int getId() {
         return id;
@@ -57,6 +63,14 @@ public class SanPham implements Serializable {
 
     public void setSanphamGiamGia(String sanphamGiamGia) {
         this.sanphamGiamGia = sanphamGiamGia;
+    }
+
+    public int getSoluongSP() {
+        return soluongSP;
+    }
+
+    public void setSoluongSP(int soluongSP) {
+        this.soluongSP = soluongSP;
     }
 
     public int getSanphamId() {

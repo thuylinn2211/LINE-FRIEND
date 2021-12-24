@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team5.myapplication">
-
-    <uses-permission android:name="android.permission.CAMERA" />
+    package="com.team5.myapplication" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Team5_Android_Final">
+        android:theme="@style/Theme.Team5_Android_Final" >
         <activity
+<<<<<<< HEAD
             android:name=".Activity_ThanhToan_Momo"
             android:exported="true" />
         <activity
@@ -30,6 +30,12 @@
         </activity>
         <activity
             android:name=".Activity_TinTuc1"
+=======
+            android:name=".Fragment_TaiKhoan_Voucher"
+            android:exported="true" />
+        <activity
+            android:name=".Fragment_TaiKhoan_ThongBao"
+>>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
             android:exported="true" />
         <activity
             android:name=".Activity_Chat"
@@ -51,7 +57,11 @@
             android:exported="true" />
         <activity
             android:name=".Activity_DetailedProduct"
+<<<<<<< HEAD
             android:exported="true"></activity>
+=======
+            android:exported="true" />
+>>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
@@ -61,9 +71,13 @@
             android:exported="true" />
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+<<<<<<< HEAD
             android:exported="true">
 
         </activity>
+=======
+            android:exported="true" />
+>>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
         <activity
             android:name=".Activity_GioHang"
             android:exported="true" />
@@ -87,7 +101,8 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoan"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
             android:exported="true" />
@@ -107,19 +122,32 @@
             android:name=".Activity_ThemTheNganHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_ThongBao"
-            android:exported="true" />
-        <activity
             android:name=".Activity_ThongTinDonHang"
             android:exported="true" />
         <activity
-            android:name=".Activity_TrangChu"
+            android:name=".Activity_TinTuc1"
             android:exported="true" />
+        <activity
+            android:name=".Activity_TinTuc2"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TinTuc3"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_TrangChu"
+<<<<<<< HEAD
+            android:exported="true" />
+=======
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
         <activity
             android:name=".TurnOnApp"
-            android:exported="true" />
-        <activity
-            android:name=".Activity_Voucher"
             android:exported="true" />
         <activity
             android:name=".Activity_XacNhanMatKhau"

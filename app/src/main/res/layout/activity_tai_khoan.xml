@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_TaiKhoan"
     android:orientation="vertical">
-
     <LinearLayout
+        android:id="@+id/toi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/txtGiohang"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"
-            android:layout_marginStart="170dp"
-            android:text="Tôi"
+            android:text="@string/toi"
             android:textColor="@color/black"
             android:textSize="25dp" />
-
-        <ImageView
-            android:id="@+id/imvSetting"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginLeft="120dp"
-            android:src="@drawable/ic_baseline_settings_24"/>
     </LinearLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toi">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,85 +45,97 @@
                 android:paddingTop="10dp"
                 android:textColor="#272727"
                 android:layout_gravity="center"/>
-
-            <TableLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:stretchColumns="*"
-                android:paddingTop="20dp">
-
-                <TableRow>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:id="@+id/btnDonHang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/btnDonHang"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
+                        android:layout_gravity="center_horizontal"
                         android:src="@drawable/donhang"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/donhang"
+                        android:textColor="#F16667"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/btnVoucher"
+                        android:layout_gravity="center_horizontal"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
                         android:src="@drawable/voucher"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/voucher"
+                        android:textColor="#F16667"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnThongBao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/btnThongBao"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/white"
+                        android:layout_gravity="center_horizontal"
                         android:src="@drawable/thongbao"/>
-                </TableRow>
-                <TableRow>
                     <Button
-                        android:id="@+id/txtDonHang"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Đơn hàng"
+                        android:layout_height="70dp"
+                        android:text="@string/thongbao"
                         android:layout_gravity="center"
                         android:textColor="#F16667"
                         android:backgroundTint="@color/white"/>
-                    <Button
-                        android:id="@+id/txtVoucher"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Voucher"
-                        android:layout_gravity="center"
-                        android:textColor="#F16667"
-                        android:backgroundTint="@color/white"/>
-                    <Button
-                        android:id="@+id/txtThongBao"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Thông báo"
-                        android:layout_gravity="center"
-                        android:textColor="#F16667"
-                        android:backgroundTint="@color/white"/>
-                </TableRow>
-            </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
 
             <TableLayout
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <TableRow
-                android:paddingLeft="15dp">
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/icon_shoppingbag"/>
-                <TextView
-                    android:layout_gravity="center_vertical"
-                    android:text="Mua lại"
-                    android:textColor="#272727"
-                    android:textSize="20sp" />
-                <TextView
-                    android:layout_marginRight="50dp"
-                    android:paddingLeft="185dp"
-                    android:text="Xem thêm..."
-                    android:textColor="#13A7FA"
-                    android:layout_gravity="center_vertical"/>
-            </TableRow>
+                <TableRow
+                    android:paddingLeft="15dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_shoppingbag"/>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/mualai"
+                        android:textColor="#272727"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_marginRight="50dp"
+                        android:paddingLeft="185dp"
+                        android:text="@string/them"
+                        android:textColor="#13A7FA"
+                        android:layout_gravity="center_vertical"/>
+                </TableRow>
             </TableLayout>
 
             <HorizontalScrollView
@@ -154,16 +154,16 @@
                         android:orientation="vertical"
                         android:layout_marginRight="15dp">
 
-                            <ImageView
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:src="@drawable/mockhoavitvang"/>
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:text="Móc khóa hình vịt vàng"
-                                android:textColor="#272727"
-                                android:textSize="15sp"/>
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/mockhoavitvang"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Móc khóa hình vịt vàng"
+                            android:textColor="#272727"
+                            android:textSize="15sp"/>
                         <TableLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
@@ -343,118 +343,140 @@
                 android:layout_height="match_parent">
 
                 <TableRow
-                    android:paddingLeft="10dp">
+                    android:id="@+id/btnTaiKhoanCuaToi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:weightSum="10">
 
                     <ImageView
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_me2"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_me2" />
+
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Tài khoản của tôi"
-                        android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:layout_weight="8"
+                        android:text="@string/tkct"
+                        android:textColor="#272727"
+                        android:textSize="20dp" />
+
                     <ImageButton
-                        android:id="@+id/btnRight1"
-                        android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1"
+                        android:backgroundTintMode="screen"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/btnDiaChi"
                     android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
+                    android:paddingTop="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_diachi"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Địa chỉ"
+                        android:text="@string/diachi"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/btnRight2"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/btnTaiKhoanNganHang"
                     android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
+                    android:paddingTop="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_taikhoan"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Tài khoản ngân hàng"
+                        android:text="@string/tknh"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/btnRight3"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/btnDoiNgonNgu"
                     android:paddingLeft="10dp"
-                    android:paddingTop="10dp">
+                    android:paddingTop="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_thongbao"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Thông báo"
+                        android:text="@string/dnn"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
+
                     <ImageButton
-                        android:id="@+id/btnRight4"
-                        android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1"
+                        android:backgroundTintMode="screen"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </TableRow>
 
                 <TableRow
+                    android:id="@+id/btnHoTro"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
 
                     <ImageView
                         android:layout_marginRight="10dp"
                         android:src="@drawable/icon_hotro"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Hỗ trợ"
+                        android:text="@string/hotro"
                         android:textSize="20dp"
-                        android:textColor="#272727"/>
+                        android:textColor="#272727"
+                        android:layout_weight="8"/>
                     <ImageButton
-                        android:id="@+id/btnRight5"
                         android:backgroundTintMode="screen"
                         android:layout_width="42dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="115dp"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                        android:layout_weight="1" android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
                 </TableRow>
             </TableLayout>
             <LinearLayout
@@ -466,11 +488,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="10dp"
-                    android:text="Đăng xuất"
+                    android:text="@string/dangxuat"
                     android:backgroundTintMode="screen"
                     android:backgroundTint="#95FF0000"/>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/custom_bottom_navigation"
+        app:itemTextColor="@color/custom_bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

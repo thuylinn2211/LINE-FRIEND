@@ -25,7 +25,7 @@ public class FragmentGioiThieu extends Fragment {
     ImageView imvTinTuc1;
 
     SanPhamAdapter adapter;
-    ArrayList<SanPham> sanpham;
+    public static ArrayList<SanPham> sanpham;
 
     ArrayList<SanPham> sanpham2;
 
@@ -83,20 +83,20 @@ public class FragmentGioiThieu extends Fragment {
 
     private ArrayList<SanPham> iniData() {
         sanpham = new ArrayList<>();
-        sanpham.add(new SanPham(R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
-        sanpham.add(new SanPham(R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
-        sanpham.add(new SanPham(R.drawable.gaubong, "Thú nhồi bông Gấu Brown", 50000, "Giảm 10000"));
-        sanpham.add(new SanPham(R.drawable.tuixach, "Túi xách thỏ Cony", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(1, R.drawable.mockhoagaubrown, "Móc khóa hình Gấu Brown", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(2, R.drawable.butbihinhtraitim, "Bút bi hình trái tim", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(3, R.drawable.gaubong, "Thú nhồi bông Gấu Brown", 50000, "Giảm 10000"));
+        sanpham.add(new SanPham(4, R.drawable.tuixach, "Túi xách thỏ Cony", 50000, "Giảm 10000"));
         return sanpham;
 
     }
 
     private ArrayList<SanPham> iniData2() {
         sanpham2 = new ArrayList<>();
-        sanpham2.add(new SanPham(R.drawable.mockhoatho, "Móc khóa hình Thỏ Cony", 50000, "Giảm 10000"));
-        sanpham2.add(new SanPham(R.drawable.giadodt, "Giá đỡ điện thoại Thỏ Cony", 50000, "Giảm 10000"));
-        sanpham2.add(new SanPham(R.drawable.mockhoavitvang, "Móc khóa hình vịt vàng", 50000, "Giảm 10000"));
-        sanpham2.add(new SanPham(R.drawable.gaubonghinhtraitim, "Thú nhồi bông hình trái tim", 50000, "Giảm 10000"));
+        sanpham2.add(new SanPham(5,R.drawable.mockhoatho, "Móc khóa hình Thỏ Cony", 50000, "Giảm 10000"));
+        sanpham2.add(new SanPham(6, R.drawable.giadodt, "Giá đỡ điện thoại Thỏ Cony", 50000, "Giảm 10000"));
+        sanpham2.add(new SanPham(7, R.drawable.mockhoavitvang, "Móc khóa hình vịt vàng", 50000, "Giảm 10000"));
+        sanpham2.add(new SanPham(8, R.drawable.gaubonghinhtraitim, "Thú nhồi bông hình trái tim", 50000, "Giảm 10000"));
 
         return sanpham2;
     }

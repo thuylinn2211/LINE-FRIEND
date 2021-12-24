@@ -11,12 +11,14 @@ import android.widget.TextView;
 
 import com.team5.model.SanPham;
 import com.team5.myapplication.Activity_Chat;
+import com.team5.myapplication.Activity_DetailedProduct;
 import com.team5.myapplication.Activity_LikedProducts;
 import com.team5.myapplication.Activity_TatCaSanPham;
 import com.team5.myapplication.Activity_TrangChu;
 import com.team5.myapplication.FragmentGioiThieu;
 import com.team5.myapplication.R;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class SanPhamAdapter extends BaseAdapter {
@@ -30,6 +32,7 @@ public class SanPhamAdapter extends BaseAdapter {
         this.item_layout = item_layout;
         this.sanpham = sanpham;
     }
+
 
     @Override
     public int getCount() {
@@ -57,8 +60,8 @@ public class SanPhamAdapter extends BaseAdapter {
             holder.txtGia = view.findViewById(R.id.txtGia);
             holder.txtGiamGia = view.findViewById(R.id.txtGiamGia);
             holder.imvHinh = view.findViewById(R.id.imvHinh);
-            holder.imvYeuThich = view.findViewById(R.id.imvYeuThich);
-            holder.imvGioHang = view.findViewById(R.id.imvGioHang);
+//            holder.imvYeuThich = view.findViewById(R.id.im);
+//            holder.imvGioHang = view.findViewById(R.id.imvGioHang);
             view.setTag(holder);
         }else {
             holder = (ViewHolder) view.getTag();
@@ -66,24 +69,25 @@ public class SanPhamAdapter extends BaseAdapter {
 
         SanPham s = sanpham.get(i);
         holder.txtTenSanPham.setText(s.getSanphamTen());
-        holder.txtGia.setText(String.valueOf(s.getSanphamGia()));
+        DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
+        holder.txtGia.setText(decimalFormat.format(s.getSanphamGia()));
         holder.txtGiamGia.setText(s.getSanphamGiamGia());
 
         holder.imvHinh.setImageResource(s.getSanphamHinh());
 
-        holder.imvYeuThich.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //chuyển qua trang yêu thich
-            }
-        });
+//        holder.imvYeuThich.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //chuyển qua trang yêu thich
+//            }
+//        });
 
-        holder.imvGioHang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //chuyển qua trang giỏ hàng
-            }
-        });
+//        holder.imvGioHang.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //chuyển qua trang giỏ hàng
+//            }
+//        });
         return view;
     }
 
