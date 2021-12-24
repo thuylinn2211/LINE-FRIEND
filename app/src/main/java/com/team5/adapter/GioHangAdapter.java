@@ -43,7 +43,7 @@ public class GioHangAdapter extends BaseAdapter {
     public class ViewHolder{
 
         public ImageView imvHinh;
-        public TextView  txtTenSanPham,txtGia, txtGiamGia, txtSoLuong;
+        public TextView  txtTenSanPham,txtGia, txtGiamGia, btnSoLuong;
         public Button btnGiam, btnTang, btnXoa;
     }
     @Override
@@ -59,7 +59,7 @@ public class GioHangAdapter extends BaseAdapter {
             viewHolder.txtTenSanPham = view.findViewById(R.id.txtTenSanPham);
             viewHolder.txtGia = view.findViewById(R.id.txtGia);
             viewHolder.txtGiamGia = view.findViewById(R.id.txtGiamGia);
-            viewHolder.txtSoLuong = view.findViewById(R.id.txtSoLuong);
+            viewHolder.btnSoLuong = view.findViewById(R.id.btnSoLuong);
             viewHolder.btnGiam = view.findViewById(R.id.btnGiam);
             viewHolder.btnTang = view.findViewById(R.id.btnTang);
             viewHolder.btnXoa = view.findViewById(R.id.btnXoa);
@@ -73,11 +73,11 @@ public class GioHangAdapter extends BaseAdapter {
 
         viewHolder.imvHinh.setImageResource(gioHang.getSanphamHinh());
         viewHolder.txtTenSanPham.setText(gioHang.getSanphamTen());
-        DecimalFormat decimalFormat = new DecimalFormat("###, ###, ###");
+        DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         viewHolder.txtGia.setText(decimalFormat.format(gioHang.getSanphamGia()) + "Đ");
-        viewHolder.txtGiamGia.setText(gioHang.sanphamGiamGia);
-        viewHolder.txtSoLuong.setText(gioHang.getSoluongSP() + "");
+        viewHolder.txtGiamGia.setText(gioHang.getSanphamGiamGia());
+        viewHolder.btnSoLuong.setText(gioHang.getSoluongSP() + "");
 
-        return null;
+        return view;
     }
 }

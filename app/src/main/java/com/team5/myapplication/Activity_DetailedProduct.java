@@ -124,11 +124,12 @@ public class Activity_DetailedProduct extends AppCompatActivity {
     }
 
     private void addEvents() {
+
         btnThemGioHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Activity_DetailedProduct.this, Activity_GioHang.class);
-                startActivity(intent);
+//                Intent intent = new Intent(Activity_DetailedProduct.this, Activity_GioHang.class);
+//                startActivity(intent);
             }
         });
 
@@ -151,12 +152,12 @@ public class Activity_DetailedProduct extends AppCompatActivity {
                     if( exists == false){
                         int soluong = Integer.parseInt(spSoLuong.getSelectedItem().toString());
                         long giaMoi = (long) (soluong * giasanpham);
-                        Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, soluong));
+                        Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, giamgia, soluong));
                     }
                 }else {
                     int soluong = Integer.parseInt(spSoLuong.getSelectedItem().toString());
                     long giaMoi = (long) (soluong * giasanpham);
-                    Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, soluong));
+                    Activity_TatCaSanPham.mangGioHang.add(new GioHang(hinhanh, tensanpham, giaMoi, giamgia, soluong));
                 }
                 Intent intent = new Intent(getApplicationContext(), Activity_GioHang.class);
                 startActivity(intent);

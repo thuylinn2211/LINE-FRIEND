@@ -75,13 +75,16 @@
                         android:textColor="#A7A7A7"
                         android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/txtSoLuong"
+                    <Button
+                        android:id="@+id/btnSoLuong"
+                        android:focusable="false"
                         android:layout_width="60dp"
                         android:layout_height="50dp"
+                        android:backgroundTint="@color/white"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="25dp"
                         android:paddingTop="15dp"
+                        android:textSize="26dp"
                         android:text="1" />
 
                     <Button

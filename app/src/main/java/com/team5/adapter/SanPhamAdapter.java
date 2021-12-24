@@ -18,6 +18,7 @@ import com.team5.myapplication.Activity_TrangChu;
 import com.team5.myapplication.FragmentGioiThieu;
 import com.team5.myapplication.R;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class SanPhamAdapter extends BaseAdapter {
@@ -68,7 +69,8 @@ public class SanPhamAdapter extends BaseAdapter {
 
         SanPham s = sanpham.get(i);
         holder.txtTenSanPham.setText(s.getSanphamTen());
-        holder.txtGia.setText(String.valueOf(s.getSanphamGia()));
+        DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
+        holder.txtGia.setText(decimalFormat.format(s.getSanphamGia()));
         holder.txtGiamGia.setText(s.getSanphamGiamGia());
 
         holder.imvHinh.setImageResource(s.getSanphamHinh());

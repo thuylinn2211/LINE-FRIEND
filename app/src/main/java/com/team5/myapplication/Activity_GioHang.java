@@ -17,10 +17,10 @@ import com.team5.model.SanPham;
 import java.text.DecimalFormat;
 
 public class Activity_GioHang extends AppCompatActivity {
-    ImageView imvHinh, btnBack;
-    TextView txtTenSanPham, txtGia, txtGiamGia, txtSumGia, txtSoLuong, txtThongBao;
+    ImageView btnBack;
+    TextView txtSumGia, txtThongBao;
     ListView lvGioHang;
-    Button btnMuaHang, btnTang, btnGiam;
+    Button btnMuaHang;
 
     GioHangAdapter gioHangAdapter;
 
@@ -37,23 +37,15 @@ public class Activity_GioHang extends AppCompatActivity {
     private void linkViews() {
 
         lvGioHang = findViewById(R.id.lvGioHang);
-
         btnBack = findViewById(R.id.btnBack);
 
-        imvHinh = findViewById(R.id.imvHinh);
-        txtTenSanPham = findViewById(R.id.txtTenSanPham);
-        txtGia = findViewById(R.id.txtGia);
-        txtGiamGia = findViewById(R.id.txtGiamGia);
-
-        btnGiam = findViewById(R.id.btnGiam);
-        btnTang = findViewById(R.id.btnTang);
-
         txtThongBao = findViewById(R.id.txtThongBao);
-        txtSoLuong = findViewById(R.id.txtSoLuong);
         txtSumGia = findViewById(R.id.txtSumGia);
-        txtGiamGia = findViewById(R.id.txtGiamGia);
 
         btnMuaHang = findViewById(R.id.btnMuaHang);
+
+        gioHangAdapter = new GioHangAdapter(Activity_GioHang.this, Activity_TatCaSanPham.mangGioHang);
+        lvGioHang.setAdapter(gioHangAdapter);
     }
 
     private void addEvents() {
@@ -75,18 +67,6 @@ public class Activity_GioHang extends AppCompatActivity {
             lvGioHang.setVisibility(View.VISIBLE);
         }
 
-        long tongTien = 0;
-        for(int i = 0; i < Activity_TatCaSanPham.mangGioHang.size(); i++){
-            tongTien += Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
-        }
-        DecimalFormat decimalFormat = new DecimalFormat("###, ###, ###");
-        txtSumGia.setText(decimalFormat.format(tongTien) + "Đ");
-
-
-
-
-
-
 
         btnMuaHang.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +77,12 @@ public class Activity_GioHang extends AppCompatActivity {
     }
 
     private void getData() {
+        long tongTien = 0;
+        for(int i = 0; i < Activity_TatCaSanPham.mangGioHang.size(); i++){
+            tongTien += Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
+        }
+        DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
+        txtSumGia.setText(decimalFormat.format(tongTien) + "Đ");
     }
 
     public void trangchu(MenuItem item) {
