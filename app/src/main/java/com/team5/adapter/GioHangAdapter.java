@@ -1,15 +1,21 @@
 package com.team5.adapter;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.team5.model.GioHang;
+import com.team5.myapplication.Activity_GioHang;
 import com.team5.myapplication.Activity_TatCaSanPham;
 import com.team5.myapplication.R;
 
@@ -46,7 +52,7 @@ public class GioHangAdapter extends BaseAdapter {
 
         public ImageView imvHinh;
         public TextView  txtTenSanPham,txtGia, txtGiamGia, btnSoLuong;
-        public Button btnGiam, btnTang, btnXoa;
+        public Button btnGiam, btnTang;
     }
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
@@ -64,7 +70,6 @@ public class GioHangAdapter extends BaseAdapter {
             viewHolder.btnSoLuong = view.findViewById(R.id.btnSoLuong);
             viewHolder.btnGiam = view.findViewById(R.id.btnGiam);
             viewHolder.btnTang = view.findViewById(R.id.btnTang);
-            viewHolder.btnXoa = view.findViewById(R.id.btnXoa);
 
             view.setTag(viewHolder);
         }else {
@@ -75,6 +80,7 @@ public class GioHangAdapter extends BaseAdapter {
 
         viewHolder.imvHinh.setImageResource(gioHang.getSanphamHinh());
         viewHolder.txtTenSanPham.setText(gioHang.getSanphamTen());
+
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         viewHolder.txtGia.setText(decimalFormat.format(gioHang.getSanphamGia()) + "Đ");
         viewHolder.txtGiamGia.setText(gioHang.getSanphamGiamGia());
@@ -91,12 +97,60 @@ public class GioHangAdapter extends BaseAdapter {
             viewHolder.btnTang.setVisibility(View.VISIBLE);
         }
 
+        ViewHolder finalViewHolder = viewHolder;
         viewHolder.btnTang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                int slmoinhat = Integer.parseInt(viewHolder.btnSoLuong.getText().toString());
+                int slmoinhat = Integer.parseInt(finalViewHolder.btnSoLuong.getText().toString()) +1;
                 int slhientai = Activity_TatCaSanPham.mangGioHang.get(i).getSoluongSP();
                 long giaht = (long) Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
+
+                Activity_TatCaSanPham.mangGioHang.get(i).setSoluongSP(slmoinhat);
+                long giamoinhat = (giaht * slmoinhat) / slhientai;
+                Activity_TatCaSanPham.mangGioHang.get(i).setSanphamGia(giamoinhat);
+
+                DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
+                finalViewHolder.txtGia.setText(decimalFormat.format(giamoinhat) + "Đ");
+
+                //gọi lại sumgia
+                Activity_GioHang.getData();
+                if(slmoinhat > 9){
+                    finalViewHolder.btnTang.setVisibility(View.INVISIBLE);
+                    finalViewHolder.btnGiam.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnSoLuong.setText(String.valueOf(slmoinhat));
+                }else {
+                    finalViewHolder.btnGiam.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnTang.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnSoLuong.setText(String.valueOf(slmoinhat));
+                }
+            }
+        });
+
+        viewHolder.btnGiam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int slmoinhat = Integer.parseInt(finalViewHolder.btnSoLuong.getText().toString()) -1;
+                int slhientai = Activity_TatCaSanPham.mangGioHang.get(i).getSoluongSP();
+                long giaht = (long) Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
+
+                Activity_TatCaSanPham.mangGioHang.get(i).setSoluongSP(slmoinhat);
+                long giamoinhat = (giaht * slmoinhat) / slhientai;
+                Activity_TatCaSanPham.mangGioHang.get(i).setSanphamGia(giamoinhat);
+
+                DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
+                finalViewHolder.txtGia.setText(decimalFormat.format(giamoinhat) + "Đ");
+
+                //gọi lại sumgia
+                Activity_GioHang.getData();
+                if(slmoinhat < 2){
+                    finalViewHolder.btnGiam.setVisibility(View.INVISIBLE);
+                    finalViewHolder.btnTang.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnSoLuong.setText(String.valueOf(slmoinhat));
+                }else {
+                    finalViewHolder.btnGiam.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnTang.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnSoLuong.setText(String.valueOf(slmoinhat));
+                }
             }
         });
 

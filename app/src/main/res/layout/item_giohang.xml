@@ -31,33 +31,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bút bi hình trái tim"
-                android:textSize="22dp" />
+                android:textSize="25dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="50dp">
 
                 <TextView
                     android:id="@+id/txtGia"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
                     android:text="50.000"
                     android:textColor="#6ADE8B"
-                    android:textSize="22dp" />
+                    android:textSize="25dp" />
                 <TextView
                     android:id="@+id/txtGiamGia"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="Giảm 10000"
                     android:textColor="#A7A7A7"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
+                    android:gravity="center"
                     android:paddingLeft="20dp"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:weightSum="5"
                 android:orientation="horizontal">
                 <LinearLayout
@@ -67,47 +68,38 @@
                     <Button
                         android:id="@+id/btnGiam"
                         android:layout_width="60dp"
-                        android:layout_height="50dp"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/white"
-                        android:padding="2dp"
                         android:text="-"
+                        android:gravity="center_horizontal"
+                        android:focusable="false"
                         android:textColor="#A7A7A7"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
 
                     <Button
                         android:id="@+id/btnSoLuong"
                         android:focusable="false"
-                        android:layout_width="60dp"
-                        android:layout_height="50dp"
+                        android:layout_width="90dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="2dp"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/white"
-                        android:layout_gravity="center_vertical"
-                        android:paddingLeft="25dp"
-                        android:paddingTop="15dp"
-                        android:textSize="26dp"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
                         android:text="1" />
 
                     <Button
                         android:id="@+id/btnTang"
                         android:layout_width="60dp"
-                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/white"
-                        android:padding="2dp"
+                        android:focusable="false"
+                        android:layout_marginLeft="2dp"
                         android:text="+"
                         android:textColor="#A7A7A7"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
-
-                <Button
-                    android:id="@+id/btnXoa"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
-                    android:backgroundTint="#C4C4C4"
-                    android:padding="2dp"
-                    android:text="Xóa"
-                    android:textColor="#A7A7A7"
-                    android:textSize="15sp"
-                    android:layout_weight="5"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

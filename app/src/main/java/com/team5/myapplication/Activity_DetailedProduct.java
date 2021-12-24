@@ -132,8 +132,8 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         btnThemGioHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(Activity_DetailedProduct.this, Activity_GioHang.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), Activity_TatCaSanPham.class);
+                startActivity(intent);
             }
         });
 

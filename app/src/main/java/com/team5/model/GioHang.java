@@ -2,8 +2,6 @@ package com.team5.model;
 
 public class GioHang {
 
-
-
     public int id;
     public int sanphamHinh;
     public String sanphamTen;
