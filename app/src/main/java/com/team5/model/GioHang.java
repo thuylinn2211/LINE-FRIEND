@@ -16,7 +16,7 @@ public class GioHang {
 
     }
 
-    public GioHang(int id, int sanphamHinh,String sanphamTen, double sanphamGia, String sanphamGiamGia, int soluongSP) {
+    public GioHang(int id, int sanphamHinh, String sanphamTen, double sanphamGia, String sanphamGiamGia, int soluongSP) {
         this.id = id;
         this.sanphamHinh = sanphamHinh;
         this.sanphamTen = sanphamTen;
