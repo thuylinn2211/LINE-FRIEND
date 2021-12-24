@@ -201,4 +201,28 @@ public class Activity_TimKiem extends AppCompatActivity {
             return null;
         }
     }
+    public void trangchu(MenuItem item) {
+        Intent intent = new Intent(Activity_TimKiem.this, com.team5.myapplication.Activity_TrangChu.class);
+        startActivity(intent);
+    }
+
+    public void yeuthich(MenuItem item) {
+        Intent intent = new Intent(Activity_TimKiem.this, com.team5.myapplication.Activity_LikedProducts.class);
+        startActivity(intent);
+    }
+
+    public void muasam(MenuItem item) {
+        Intent intent = new Intent(Activity_TimKiem.this, com.team5.myapplication.Activity_GioHang.class);
+        startActivity(intent);
+    }
+
+    public void timkiem(MenuItem item) {
+        Intent intent = new Intent(Activity_TimKiem.this, com.team5.myapplication.Activity_TimKiem.class);
+        startActivity(intent);
+    }
+
+    public void taikhoan(MenuItem item) {
+        Intent intent = new Intent(Activity_TimKiem.this, com.team5.myapplication.Activity_TaiKhoan.class);
+        startActivity(intent);
+    }
 }

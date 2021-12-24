@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -131,5 +132,30 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         SharedPreferences preferences=getSharedPreferences("Đổi ngôn ngữ", Activity.MODE_PRIVATE);
         String ngonngu=preferences.getString("Ngôn ngữ","");
         setLocale(ngonngu);
+    }
+
+    public void trangchu(MenuItem item) {
+        Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TrangChu.class);
+        startActivity(intent);
+    }
+
+    public void yeuthich(MenuItem item) {
+        Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_LikedProducts.class);
+        startActivity(intent);
+    }
+
+    public void muasam(MenuItem item) {
+        Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_GioHang.class);
+        startActivity(intent);
+    }
+
+    public void timkiem(MenuItem item) {
+        Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TimKiem.class);
+        startActivity(intent);
+    }
+
+    public void taikhoan(MenuItem item) {
+        Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TaiKhoan.class);
+        startActivity(intent);
     }
 }

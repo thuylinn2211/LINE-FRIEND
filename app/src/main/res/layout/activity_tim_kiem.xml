@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,20 +8,71 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+<<<<<<< HEAD
     <TextView
         android:layout_marginLeft="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Gợi ý"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:gravity="center_vertical"/>
-    <GridView
-        android:id="@+id/gvSearch"
+=======
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:weightSum="10"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/custom_bottom_line">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/btnBack"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_weight="1.2"-->
+<!--            android:src="@drawable/ic_baseline_arrow_back_24"-->
+<!--            android:backgroundTint="@color/white" />-->
+
+<!--        <SearchView-->
+<!--            android:id="@+id/btnSearch"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="7"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:queryHint="Search here"-->
+<!--            android:iconifiedByDefault="false"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/btnSearchCamera"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_weight="1.5"-->
+<!--            android:src="@android:drawable/ic_menu_camera"/>-->
+<!--    </LinearLayout>-->
+    <LinearLayout
+>>>>>>> 745aec09105a95ddbc74b2eab60e39442a593c35
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="1">
-    </GridView>
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Gợi ý"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
 
-</LinearLayout>
+        <GridView
+            android:id="@+id/gvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"></GridView>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/custom_bottom_navigation"
+        app:itemTextColor="@color/custom_bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
