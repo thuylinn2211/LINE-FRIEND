@@ -88,7 +88,6 @@ public class Activity_TaiKhoan extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Activity_TaiKhoan.this,Activity_ThongTinDonHang.class);
                 startActivity(intent);
-
             }
         });
         btnThongBao.setOnClickListener(new View.OnClickListener() {
