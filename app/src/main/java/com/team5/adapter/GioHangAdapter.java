@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.team5.model.GioHang;
+import com.team5.myapplication.Activity_TatCaSanPham;
 import com.team5.myapplication.R;
 
 import java.text.DecimalFormat;
@@ -77,6 +78,26 @@ public class GioHangAdapter extends BaseAdapter {
         viewHolder.txtGia.setText(decimalFormat.format(gioHang.getSanphamGia()) + "Đ");
         viewHolder.txtGiamGia.setText(gioHang.getSanphamGiamGia());
         viewHolder.btnSoLuong.setText(gioHang.getSoluongSP() + "");
+
+        int sl = Integer.parseInt(viewHolder.btnSoLuong.getText().toString());
+        if (sl >= 10){
+            viewHolder.btnTang.setVisibility(View.INVISIBLE);
+            viewHolder.btnGiam.setVisibility(View.VISIBLE);
+        }else  if(sl <= 1){
+            viewHolder.btnGiam.setVisibility(View.INVISIBLE);
+        } else if (sl >=1 ){
+            viewHolder.btnGiam.setVisibility(View.VISIBLE);
+            viewHolder.btnTang.setVisibility(View.VISIBLE);
+        }
+
+        viewHolder.btnTang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                int slmoinhat = Integer.parseInt(viewHolder.btnSoLuong.getText().toString());
+                int slhientai = Activity_TatCaSanPham.mangGioHang.get(i).getSoluongSP();
+                long giaht = (long) Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
+            }
+        });
 
         return view;
     }
