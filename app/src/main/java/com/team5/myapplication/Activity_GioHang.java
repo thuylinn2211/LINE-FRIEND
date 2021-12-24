@@ -75,6 +75,13 @@ public class Activity_GioHang extends AppCompatActivity {
             lvGioHang.setVisibility(View.VISIBLE);
         }
 
+        long tongTien = 0;
+        for(int i = 0; i < Activity_TatCaSanPham.mangGioHang.size(); i++){
+            tongTien += Activity_TatCaSanPham.mangGioHang.get(i).getSanphamGia();
+        }
+        DecimalFormat decimalFormat = new DecimalFormat("###, ###, ###");
+        txtSumGia.setText(decimalFormat.format(tongTien) + "Đ");
+
 
 
 
