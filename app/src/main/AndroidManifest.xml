@@ -58,7 +58,12 @@
             android:exported="true" />
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
+<<<<<<< HEAD
             android:exported="true">
+=======
+            android:exported="true" >
+
+>>>>>>> c2282b4ff6338ddc26218cdae1abf7c427d4c529
         </activity>
         <activity
             android:name=".Activity_GioHang"
@@ -74,7 +79,17 @@
             android:exported="true" />
         <activity
             android:name=".Register"
+<<<<<<< HEAD
             android:exported="true" />
+=======
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> c2282b4ff6338ddc26218cdae1abf7c427d4c529
         <activity
             android:name=".ResetPassword"
             android:exported="true" />
