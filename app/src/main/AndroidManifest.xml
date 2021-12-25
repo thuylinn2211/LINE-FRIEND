@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.team5.myapplication" >
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final" >
         <activity
-<<<<<<< HEAD
             android:name=".Activity_ThanhToan_Momo"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".Activity_VanChuyen"
             android:exported="true">
@@ -29,13 +28,10 @@
 
         </activity>
         <activity
-            android:name=".Activity_TinTuc1"
-=======
             android:name=".Fragment_TaiKhoan_Voucher"
             android:exported="true" />
         <activity
             android:name=".Fragment_TaiKhoan_ThongBao"
->>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
             android:exported="true" />
         <activity
             android:name=".Activity_Chat"
@@ -57,27 +53,23 @@
             android:exported="true" />
         <activity
             android:name=".Activity_DetailedProduct"
-<<<<<<< HEAD
-            android:exported="true"></activity>
-=======
-            android:exported="true" />
->>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
-        <activity android:name=".Activity_DoiNgonNgu" />
+        <activity android:name=".Activity_DoiNgonNgu"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ForgotPassword"
             android:exported="true" />
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
-<<<<<<< HEAD
             android:exported="true">
-
         </activity>
-=======
-            android:exported="true" />
->>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
         <activity
             android:name=".Activity_GioHang"
             android:exported="true" />
@@ -114,7 +106,9 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ThanhToan_TTDC"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true" />
@@ -135,23 +129,14 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-<<<<<<< HEAD
-            android:exported="true" />
-=======
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
->>>>>>> ec8c6bf146e9a3ba54fdc5e4faba2a2ba5b8294a
         <activity
             android:name=".TurnOnApp"
             android:exported="true" />
         <activity
             android:name=".Activity_XacNhanMatKhau"
-            android:exported="true" />
+            android:exported="true"/>
     </application>
-
 </manifest>

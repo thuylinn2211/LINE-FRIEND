@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Activity_VanChuyen extends AppCompatActivity {
 
@@ -76,6 +77,15 @@ public class Activity_VanChuyen extends AppCompatActivity {
         btnThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int selectedId = radVanChuyen.getCheckedRadioButtonId();
+                //kiểm tra xem RadioButton đã được checked hay chưa?
+                if (radVCNhanh.isChecked())
+                    Toast.makeText(getApplication(), "Bạn đã chọn hình thức vận chuyển nhanh", Toast.LENGTH_SHORT).show();
+                else if (radVCSieuToc.isChecked())
+                    Toast.makeText(getApplication(), "Bạn đã chọn hình thức vận chuyển siêu tốc", Toast.LENGTH_SHORT).show();
+                else if (radVCTieuChuan.isChecked())
+                    Toast.makeText(getApplication(), "Bạn đã chọn hình thức vận chuyển tiêu chuẩn", Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(Activity_VanChuyen.this, Activity_ThanhToan_HienThiThongtin.class));
             }
         });
