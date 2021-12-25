@@ -2,9 +2,12 @@ package com.team5.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -14,7 +17,8 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
 
     TextView txtSumGia, txtDoiSdt, txtDoiDiaChi, txtDoiHinhThucGiaoHang;
 
-    Button btnHoanThanhDonHang, btnThanhToan;
+    Button btnThanhToan;
+    LinearLayout btnBack;
 
     RadioButton radCod, radCredit, radMomo, radDiaChi, radThemDiaChi;
 
@@ -36,7 +40,7 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
         txtDoiDiaChi = findViewById(R.id.txtDoiDiaChi);
         txtDoiHinhThucGiaoHang = findViewById(R.id.txtDoiHinhThucGiaoHang);
 
-        btnHoanThanhDonHang = findViewById(R.id.btnHoanThanhDonHang);
+        btnBack = findViewById(R.id.btnBack);
         btnThanhToan = findViewById(R.id.btnThanhToan);
 
         radCod = findViewById(R.id.radCod);
@@ -47,6 +51,22 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
     }
 
     private void addEvent() {
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_VanChuyen.class);
+                startActivity(intent);
+            }
+        });
+
+        btnThanhToan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_ChoXacNhan.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
