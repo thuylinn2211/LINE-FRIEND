@@ -81,9 +81,7 @@ public class Activity_GioHang extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(Activity_TatCaSanPham.mangGioHang.size() >0){
-//                    Intent intent = new Intent(Activity_GioHang.this, Activity_ChoXacNhan.class);
-//                    intent.putExtra();
-//                    startActivity(intent);
+                    startActivity(new Intent(Activity_GioHang.this, Activity_ThanhToan_TTDC.class));
                 }else {
                     Toast toast = Toast.makeText(Activity_GioHang.this, "Giỏ hàng của bạn hiện không có sản phẩm nào !", Toast.LENGTH_SHORT);
                     toast.show();

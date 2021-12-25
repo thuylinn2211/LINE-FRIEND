@@ -15,7 +15,6 @@ public class Activity_ChoXacNhan extends AppCompatActivity {
 
     ImageView btnBack, btnSearch, imvHinh;
     TextView txtTenSanPham,txtChoXacNhan, txtChoLayHang, txtDangGiao, txtDaGiao, txtSumGia, txtSoLuong;
-    ListView lvChoXacNhan;
     Button btnLienHeShop;
 
 
@@ -37,7 +36,6 @@ public class Activity_ChoXacNhan extends AppCompatActivity {
         txtDaGiao = findViewById(R.id.txtDaGiao);
         txtSumGia = findViewById(R.id.txtSumGia);
         txtSoLuong = findViewById(R.id.txtSoLuong);
-        lvChoXacNhan = findViewById(R.id.lvChoXacNhan);
         btnLienHeShop = findViewById(R.id.btnLienHeShop);
 
         imvHinh =findViewById(R.id.imvHinh);
