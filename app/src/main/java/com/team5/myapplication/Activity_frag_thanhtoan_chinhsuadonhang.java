@@ -175,17 +175,17 @@ public class Activity_frag_thanhtoan_chinhsuadonhang extends AppCompatActivity {
             }
         });
 
-        //kiểm tra đã chọn Tỉnh hay chưa
-        tinhSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                return;
-            }
-        });
+//        //kiểm tra đã chọn Tỉnh hay chưa
+//        tinhSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//                return;
+//            }
+//        });
 
         btnHinhThucVanChuyen.setOnClickListener(new View.OnClickListener() {
             @Override

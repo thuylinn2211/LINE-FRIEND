@@ -100,10 +100,10 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
                 else
                     Toast.makeText(getApplication(), "Bạn chưa chọn phương thức thanh toán", Toast.LENGTH_SHORT).show();
 
-                if (radThemDiaChi.isChecked())
-                     startActivity(new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_frag_thanhtoan_chinhsuadonhang.class));
-                else if (radDiaChi.isChecked())
-                    Toast.makeText(getApplication(), "Bạn đã chọn địa chỉ thanh toán!", Toast.LENGTH_SHORT).show();
+//                if (radThemDiaChi.isChecked())
+//                     startActivity(new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_frag_thanhtoan_chinhsuadonhang.class));
+//                else if (radDiaChi.isChecked())
+//                    Toast.makeText(getApplication(), "Bạn đã chọn địa chỉ thanh toán!", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -123,12 +123,5 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
 //            }
 //        });
 
-        btnThanhToan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_ChoXacNhan.class);
-                startActivity(intent);
-            }
-        });
     }
 }

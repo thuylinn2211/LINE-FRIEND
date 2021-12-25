@@ -12,11 +12,7 @@
         <activity
             android:name=".Activity_ThanhToan_Momo"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_VanChuyen"
@@ -69,6 +65,7 @@
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".Activity_GioHang"
@@ -78,7 +75,9 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -91,7 +90,13 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" >
@@ -134,9 +139,6 @@
             android:name=".Activity_TrangChu"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".TurnOnApp"
-            android:exported="true" />
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true"/>
