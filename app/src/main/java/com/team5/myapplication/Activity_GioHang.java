@@ -16,10 +16,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.team5.adapter.GioHangAdapter;
+import com.team5.model.ChoXacNhan;
 import com.team5.model.SanPham;
 
 import java.sql.Connection;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class Activity_GioHang extends AppCompatActivity {
     ImageView btnBack;
@@ -67,7 +69,7 @@ public class Activity_GioHang extends AppCompatActivity {
         if( Activity_TatCaSanPham.mangGioHang.size() <= 0){
             gioHangAdapter.notifyDataSetChanged();
             txtThongBao.setVisibility(View.VISIBLE);
-            lvGioHang.setVisibility(View.VISIBLE);
+            lvGioHang.setVisibility(View.INVISIBLE);
         }else {
             gioHangAdapter.notifyDataSetChanged();
             txtThongBao.setVisibility(View.INVISIBLE);
@@ -79,7 +81,8 @@ public class Activity_GioHang extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(Activity_TatCaSanPham.mangGioHang.size() >0){
-//                    Intent intent = new Intent(Activity_GioHang.this, Activity_ThanhToan_TTDC.class);
+//                    Intent intent = new Intent(Activity_GioHang.this, Activity_ChoXacNhan.class);
+//                    intent.putExtra();
 //                    startActivity(intent);
                 }else {
                     Toast toast = Toast.makeText(Activity_GioHang.this, "Giỏ hàng của bạn hiện không có sản phẩm nào !", Toast.LENGTH_SHORT);
@@ -132,6 +135,7 @@ public class Activity_GioHang extends AppCompatActivity {
                         getData();
                     }
                 });
+                AlertDialog dialog = builder.create();
                 builder.show();
                 return true;
             }
