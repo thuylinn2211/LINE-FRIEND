@@ -46,13 +46,6 @@ public class Activity_TaiKhoanNganHang extends AppCompatActivity {
             }
         });
 
-        btnMyCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Activity_TaiKhoanNganHang.this, Activity_ChoXacNhan.class));
-            }
-        });
-
         btnAddCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +58,7 @@ public class Activity_TaiKhoanNganHang extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //hoàn thành chọn hình thức thanh toán
+                startActivity(new Intent(Activity_TaiKhoanNganHang.this, Activity_ChoLayHang.class));
             }
         });
     }

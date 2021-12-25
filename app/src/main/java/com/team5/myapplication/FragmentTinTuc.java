@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -25,6 +26,7 @@ public class FragmentTinTuc extends Fragment {
 
     TinTucAdapter adapter;
     ArrayList<TinTuc> tintuc;
+
 
     @Nullable
     @Override
@@ -53,6 +55,8 @@ public class FragmentTinTuc extends Fragment {
         });
 
         return view;
+
+
     }
 
     private ArrayList<TinTuc> iniData() {

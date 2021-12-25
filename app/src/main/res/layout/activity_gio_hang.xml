@@ -44,10 +44,11 @@
                 android:layout_gravity="center"
                 android:text="Giỏ hàng bạn đang trống"
                 android:textSize="30sp"/>
-            <ListView
-                android:id="@+id/lvGioHang"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+
+                <ListView
+                    android:id="@+id/lvGioHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
             </FrameLayout>
         </LinearLayout>
 

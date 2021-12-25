@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
 
     TextView txtSumGia, txtDoiSdt, txtDoiDiaChi, txtDoiHinhThucGiaoHang;
 
-    Button btnHoanThanhDonHang;
+    Button btnThanhToan;
 
     RadioButton radCod, radCredit, radMomo, radDiaChi, radThemDiaChi;
     RadioGroup radPayment, radDiaChiNhan;
@@ -47,7 +48,7 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
         txtDoiDiaChi = findViewById(R.id.txtDoiDiaChi);
         txtDoiHinhThucGiaoHang = findViewById(R.id.txtDoiHinhThucGiaoHang);
 
-        btnHoanThanhDonHang = findViewById(R.id.btnHoanThanhDonHang);
+        btnThanhToan = findViewById(R.id.btnThanhToan);
 
         radPayment = findViewById(R.id.radPayment);
         radDiaChiNhan = findViewById(R.id.radDiaChiNhan);
@@ -87,7 +88,7 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
             }
         });
 
-        btnHoanThanhDonHang.setOnClickListener(new View.OnClickListener() {
+        btnThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (radCod.isChecked())
@@ -112,6 +113,21 @@ public class Activity_ThanhToan_HienThiThongtin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_VanChuyen.class));
+            }
+        });
+//        btnBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_VanChuyen.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        btnThanhToan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Activity_ThanhToan_HienThiThongtin.this, Activity_ChoXacNhan.class);
+                startActivity(intent);
             }
         });
     }

@@ -443,7 +443,7 @@
                     android:layout_marginTop="10dp">
 
                     <Button
-                        android:id="@+id/btnHoanThanhDonHang"
+                        android:id="@+id/btnThanhToan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Hoàn thành đơn hàng"
