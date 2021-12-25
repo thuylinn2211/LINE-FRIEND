@@ -10,20 +10,31 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="9"
             android:layout_height="wrap_content"
-            android:text="Thanh toán"
-            android:textSize="25dp"
-            android:padding="10dp"
-            android:textColor="@color/black"
+            android:layout_gravity="center"
             android:gravity="center"
-            android:layout_gravity="center" />
+            android:padding="10dp"
+            android:text="Thanh toán"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,8 +44,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="vertical">
-
+            android:orientation="vertical"
+            android:weightSum="10">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -43,53 +54,59 @@
 
                 <ImageView
                     android:id="@+id/imvGioHang"
-                    android:layout_width="25dp"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:src="@drawable/icon_giohang"/>
 
                 <TextView
-                    android:layout_width="200dp"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:layout_weight="6.2"
                     android:gravity="center"
                     android:text="Hiển thị thông tin đơn hàng"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <ImageView
+                    android:layout_weight="0.5"
                     android:id="@+id/imvDown"
-                    android:layout_width="25dp"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
 
                 <TextView
                     android:id="@+id/txtSumGia"
-                    android:layout_width="wrap_content"
+                    android:layout_weight="2.2"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="150.000"
-                    android:layout_marginLeft="40dp"
                     android:textColor="#FF0000"
                     android:textSize="20dp"/>
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textColor="#FF0000"
                     android:text="@string/đ"
-                    android:layout_marginLeft="1dp"
                     android:textSize="20dp"/>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp"
+            android:weightSum="10">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp">
 
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Giỏ hàng"
@@ -98,56 +115,61 @@
                     android:textSize="14sp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:layout_weight="2"
                     android:gravity="center"
                     android:text="Thông tin"
                     android:textColor="#FF0000"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Vận chuyển"
-                    android:textColor="#FF0000"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
                 <TextView
-                    android:layout_width="80dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Thanh toán"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,26 +191,29 @@
                     android:paddingBottom="8dp"
                     android:background="@drawable/custom_bottom_line">
                     <LinearLayout
-                        android:layout_width="300dp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_weight="8">
                         <TextView
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
                             android:paddingTop="8dp"
                             android:text="Liên hệ"/>
+
                         <TextView
                             android:layout_width="300dp"
-                            android:paddingBottom="8dp"
                             android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
                             android:text="0822 393 545"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtDoiSdt"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Thay đổi"
                         android:textColor="#FF0000"/>
@@ -205,7 +230,8 @@
                     android:paddingBottom="8dp"
                     android:background="@drawable/custom_bottom_line">
                     <LinearLayout
-                        android:layout_width="300dp"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
@@ -225,7 +251,8 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtDoiDiaChi"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Thay đổi"
                         android:textColor="#FF0000"/>
@@ -238,7 +265,8 @@
                     android:gravity="center"
                     android:padding="8dp">
                     <LinearLayout
-                        android:layout_width="300dp"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
@@ -258,7 +286,8 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtDoiHinhThucGiaoHang"
-                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Thay đổi"
                         android:textColor="#FF0000"/>
@@ -286,44 +315,53 @@
                     android:layout_height="60dp"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:background="@drawable/custom_vien">
+                    android:background="@drawable/custom_vien"
+                    android:weightSum="10">
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/paypal"
-                        android:layout_marginRight="180dp"
-                        android:layout_marginLeft="16dp"/>
+                        android:paddingLeft="5dp"/>
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/visa"/>
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/visa"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginRight="10dp"/>
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/mastercard"/>
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/mastercard"
+                        android:layout_marginRight="10dp"/>
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/jcb"/>
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/jcb" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="24dp">
+                    android:padding="10dp">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:src="@drawable/pay"/>
+                        android:layout_height="50dp"
+                        android:src="@drawable/pay" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        android:text="Sau khi nhấp vào “Hoàn thành đơn hàng”, bạn sẽ được chuyển hướng đến NganLuongPayment - PayPal version để hoàn tất việc mua hàng một cách nhanh chóng và an toàn"
-                        android:textAlignment="center"/>
+                        android:layout_marginTop="10dp"
+                        android:text="Sau khi nhấp vào “Hoàn thành đơn hàng”, bạn sẽ được chuyển hướng đến NganLuongPayment - PayPal version để hoàn tất việc mua hàng một cách nhanh chóng và an toàn" />
                 </LinearLayout>
+
                 <RadioGroup
+                    android:id="@+id/radPayment"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -332,7 +370,7 @@
                         android:id="@+id/radCod"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
+                        android:padding="8dp"
                         android:text="Thanh toán tiền mặt khi nhận hàng (COD)"
                         android:background="@drawable/custom_vien"
                         android:textColor="#000000"
@@ -341,8 +379,7 @@
                         android:id="@+id/radCredit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
                         android:text="Chuyển khoản Ngân hàng/Tín dụng/Thẻ ghi nợ"
                         android:background="@drawable/custom_vien"
                         android:textColor="#000000"
@@ -351,8 +388,7 @@
                         android:id="@+id/radMomo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
                         android:text="Ví MoMo"
                         android:background="@drawable/custom_vien"
                         android:textColor="#000000"
@@ -364,7 +400,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="10dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -375,26 +411,28 @@
                     android:layout_height="wrap_content"
                     android:text="Chọn địa chỉ thanh toán khớp với thông tin trên thẻ của bạn (nếu địa chỉ thanh toán qua thẻ)"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
                     android:textSize="14dp"/>
                 <RadioGroup
+                    android:id="@+id/radDiaChiNhan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="8dp">
+                    android:orientation="vertical">
                     <RadioButton
                         android:id="@+id/radDiaChi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
+                        android:padding="8dp"
                         android:text="Giống địa chỉ vận chuyển"
+                        android:background="@drawable/custom_vien"
                         android:textSize="14sp"/>
                     <RadioButton
                         android:id="@+id/radThemDiaChi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
                         android:text="Sử dụng địa chỉ thanh toán khác"
+                        android:background="@drawable/custom_vien"
                         android:textColor="@color/black"
                         android:textSize="14sp"/>
                 </RadioGroup>
@@ -402,7 +440,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="16dp">
+                    android:layout_marginTop="10dp">
 
                     <Button
                         android:id="@+id/btnHoanThanhDonHang"
@@ -416,14 +454,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="8dp">
+                        android:layout_marginTop="5dp"
+                        android:weightSum="10">
                         <ImageButton
-                            android:layout_width="wrap_content"
+                            android:id="@+id/btnBackVanChuyen"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_arrow_back_24"/>
                         <Button
-                            android:id="@+id/btnThanhToan"
-                            android:layout_width="match_parent"
+                            android:layout_weight="9"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="Quay lại hình thức vận chuyển"
                             android:textColor="@color/black"
@@ -432,9 +473,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
 </LinearLayout>

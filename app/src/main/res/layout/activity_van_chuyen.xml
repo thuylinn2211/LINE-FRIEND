@@ -60,14 +60,14 @@
                         android:src="@drawable/icon_giohang"/>
 
                     <TextView
-                        android:layout_weight="6.2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_weight="6.2"
                         android:gravity="center"
                         android:text="Hiển thị thông tin đơn hàng"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_weight="0.5"
