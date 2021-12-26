@@ -49,7 +49,8 @@ public class Activity_ThanhToan_Momo extends AppCompatActivity {
         btnHoanThanh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Activity_ThanhToan_Momo.this, Activity_ChoLayHang.class));
+                if (btnMyPhone.isSelected())
+                    startActivity(new Intent(Activity_ThanhToan_Momo.this, Activity_ChoLayHang.class));
             }
         });
     }

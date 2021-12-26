@@ -37,7 +37,8 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ChoXacNhan"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".Activity_DaGiao"
             android:exported="true" />
@@ -137,7 +138,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-            android:exported="true">
+            android:exported="true" >
         </activity>
         <activity
             android:name=".Activity_XacNhanMatKhau"
