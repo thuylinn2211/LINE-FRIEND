@@ -36,7 +36,7 @@ public class Activity_TaiKhoanCuaToi extends AppCompatActivity {
 
     EditText edtTen,edtEmail,edtGioiTinh,edtNgaySinh,edtSoDienThoai;
     Button btnLuuThayDoi;
-    ImageView imvHinhDaiDien,imvLich;
+    ImageView imvHinhDaiDien,imvLich,imvBack;
     TextView txtTenTaiKhoan;
     DatabaseHelper_TaiKhoan db;
     BottomSheetDialog sheetDialog=null;
@@ -145,6 +145,7 @@ public class Activity_TaiKhoanCuaToi extends AppCompatActivity {
         txtTenTaiKhoan=findViewById(R.id.txtTenTaiKhoan);
         imvHinhDaiDien=findViewById(R.id.imvHinhDaiDien);
         imvLich=findViewById(R.id.imvLich);
+        imvBack=findViewById(R.id.imvBack);
 
     }
     private void createBottomSheet() {

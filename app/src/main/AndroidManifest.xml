@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team5.myapplication" >
-    <uses-permission android:name="android.permission.CAMERA"/>
+    package="com.team5.myapplication">
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@drawable/logo"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Team5_Android_Final" >
+        android:theme="@style/Theme.Team5_Android_Final">
+        <activity
+            android:name=".Activity_DoiMatKhau"
+            android:exported="true" />
         <activity
             android:name=".Activity_ThanhToan_Momo"
             android:exported="true">
@@ -19,10 +23,11 @@
         <activity
             android:name=".Activity_VanChuyen"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".Activity_ThanhToan_HienThiThongtin"
-            android:exported="true" >
+            android:exported="true">
 
         </activity>
         <activity
@@ -39,21 +44,20 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ChoXacNhan"
-            android:exported="true" >
+            android:exported="true">
 
         </activity>
         <activity
             android:name=".Activity_DaGiao"
-            android:exported="true" >
-        </activity>
+            android:exported="true">
 
+        </activity>
         <activity
             android:name=".Activity_DangGiao"
             android:exported="true" />
         <activity
             android:name=".Activity_DanhGiaSanPham"
             android:exported="true" />
-
         <activity
             android:name=".Activity_DetailedProduct"
             android:exported="true">
@@ -62,7 +66,8 @@
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
-        <activity android:name=".Activity_DoiNgonNgu"
+        <activity
+            android:name=".Activity_DoiNgonNgu"
             android:exported="true">
 
         </activity>
@@ -82,36 +87,30 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-<<<<<<< HEAD
-=======
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
->>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".Register"
-            android:exported="true" >
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".ResetPassword"
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Activity_TaiKhoan"
-            android:exported="true" >
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_TaiKhoanCuaToi"
@@ -149,16 +148,12 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-<<<<<<< HEAD
-            android:exported="true" >
+            android:exported="true">
 
         </activity>
-=======
-            android:exported="true" />
-
->>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
         <activity
             android:name=".Activity_XacNhanMatKhau"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
+
 </manifest>

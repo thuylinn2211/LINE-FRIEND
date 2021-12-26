@@ -1,29 +1,29 @@
 package com.team5.myapplication;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
+//import androidx.appcompat.app.ActionBar;
+//import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.DialogInterface;
+//import android.app.Activity;
+//import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
+//import android.content.SharedPreferences;
+//import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+//import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import java.util.Locale;
+//import java.util.Locale;
 
 public class Activity_TaiKhoan extends AppCompatActivity {
     LinearLayout btnDonHang, btnVoucher, btnThongBao;
 
-    TableRow btnTaiKhoanCuaToi,btnDiaChi,btnTaiKhoanNganHang, btnDoiMatKhau;
+    TableRow btnTaiKhoanCuaToi, btnDiaChi, btnTaiKhoanNganHang, btnDoiMatKhau;
 
     Button btnDangXuat;
 
@@ -38,15 +38,15 @@ public class Activity_TaiKhoan extends AppCompatActivity {
     }
 
     private void linkViews() {
-        btnTaiKhoanCuaToi=findViewById(R.id.btnTaiKhoanCuaToi);
+        btnTaiKhoanCuaToi = findViewById(R.id.btnTaiKhoanCuaToi);
         btnDiaChi = findViewById(R.id.btnDiaChi);
         btnTaiKhoanNganHang = findViewById(R.id.btnTaiKhoanNganHang);
         btnDoiMatKhau = findViewById(R.id.btnDoiMatKhau);
-        btnDangXuat=findViewById(R.id.btnDangXuat);
-        btnThongBao=findViewById(R.id.btnThongBao);
-        btnVoucher=findViewById(R.id.btnVoucher);
+        btnDangXuat = findViewById(R.id.btnDangXuat);
+        btnThongBao = findViewById(R.id.btnThongBao);
+        btnVoucher = findViewById(R.id.btnVoucher);
         btnDonHang = findViewById(R.id.btnDonHang);
-        txtXemThem=findViewById(R.id.txtXemThem);
+        txtXemThem = findViewById(R.id.txtXemThem);
 
 
     }
@@ -55,14 +55,14 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnTaiKhoanCuaToi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TaiKhoanCuaToi.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_TaiKhoanCuaToi.class);
                 startActivity(intent);
             }
         });
         btnDiaChi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DiaChi.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_DiaChi.class);
                 startActivity(intent);
             }
         });
@@ -70,14 +70,14 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnTaiKhoanNganHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TaiKhoanNganHang.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_TaiKhoanNganHang.class);
                 startActivity(intent);
             }
         });
         btnDoiMatKhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DoiMatKhau.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_DoiMatKhau.class);
                 startActivity(intent);
             }
         });
@@ -85,14 +85,14 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DangGiao.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_DangGiao.class);
                 startActivity(intent);
             }
         });
         btnThongBao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Fragment_TaiKhoan_ThongBao.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Fragment_TaiKhoan_ThongBao.class);
                 startActivity(intent);
 
             }
@@ -100,29 +100,27 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnVoucher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Fragment_TaiKhoan_Voucher.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Fragment_TaiKhoan_Voucher.class);
                 startActivity(intent);
             }
         });
         txtXemThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TatCaSanPham.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Activity_TatCaSanPham.class);
                 startActivity(intent);
             }
         });
         btnDangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Login.class);
+                Intent intent = new Intent(Activity_TaiKhoan.this, Login.class);
                 startActivity(intent);
 
             }
         });
 
     }
-
-
 
     public void trangchu(MenuItem item) {
         Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TrangChu.class);
@@ -148,4 +146,5 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TaiKhoan.class);
         startActivity(intent);
     }
-    }
+}
+

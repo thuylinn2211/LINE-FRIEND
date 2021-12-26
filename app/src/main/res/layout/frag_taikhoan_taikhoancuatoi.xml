@@ -23,7 +23,7 @@
                 android:weightSum="10">
 
                 <ImageView
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:id="@+id/imvBack"
                     android:layout_width="42dp"
                     android:layout_height="35dp"
@@ -31,7 +31,7 @@
                     android:src="@drawable/ic_baseline_arrow_back_24" />
 
                 <TextView
-                    android:layout_weight="6"
+                    android:layout_weight="9"
                     android:id="@+id/txtTaiKhoanCuaToi"
                     android:layout_width="275dp"
                     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
     <ImageView
         android:id="@+id/imvHinhDaiDien"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:src="@drawable/hinhkhachhang3"
         android:layout_gravity="center_vertical"
         android:paddingTop="20dp"
@@ -230,16 +230,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/luu"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:backgroundTintMode="screen"
-            android:backgroundTint="#00D665"/>
-
-        <Button
-            android:id="@+id/btnDoiMatKhau"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/doimk"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:backgroundTintMode="screen"
