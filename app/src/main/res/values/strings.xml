@@ -1,11 +1,9 @@
 <resources>
-    <string name="app_name">Line Friends</string>
-
-
-    <string name="tinh">Thành phố/ Tỉnh thành*</string>
-    <string name="huyen">Quận/ Huyện*</string>
-    <string name="xa">Phường/ Xã</string>
-    <string name="đ"><u>đ</u></string>
+    <string name="app_name" translatable="false">Line Friends</string>
+    <string name="tinh" translatable="false">Thành phố/ Tỉnh thành*</string>
+    <string name="huyen" translatable="false">Quận/ Huyện*</string>
+    <string name="xa" translatable="false">Phường/ Xã</string>
+    <string name="đ" translatable="false"><u>đ</u></string>
     <string-array name="array_tinh">
 
         <item>Thành phố/ Tỉnh thành (*)</item>

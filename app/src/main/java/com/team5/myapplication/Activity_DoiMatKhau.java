@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,7 +15,8 @@ import android.widget.Toast;
 public class Activity_DoiMatKhau extends AppCompatActivity {
 
     EditText edtMKCu,edtMKMoi,edtNhapLaiMKMoi;
-    Button btnLuuMK,btnBack;
+    Button btnLuuMK;
+    ImageButton btnBack;
     TextView txtQuenMK;
     DBHelper myDB;
 
@@ -26,8 +28,6 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
         addEvents();
     }
 
-
-
     private void linkViews() {
         edtMKCu=findViewById(R.id.edtMKCu);
         edtMKMoi=findViewById(R.id.edtMKMoi);
@@ -36,7 +36,6 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
         btnBack=findViewById(R.id.btnBack);
         txtQuenMK=findViewById(R.id.txtQuenMK);
         myDB= new DBHelper(this);
-
     }
     private void addEvents() {
         btnLuuMK.setOnClickListener(new View.OnClickListener() {
@@ -54,18 +53,13 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
                         if (checkpasswordupdate == true)
                         {
                             Toast.makeText(Activity_DoiMatKhau.this, "Password Updated Success", Toast.LENGTH_SHORT).show();
-
                         }
                     }
-                    else
-                    {
+                    else {
                         Toast.makeText(Activity_DoiMatKhau.this, "Mật khẩu không trùng nhau", Toast.LENGTH_SHORT).show();
                     }
-
-
                 }
-                else
-                {
+                else {
                     Toast.makeText(Activity_DoiMatKhau.this, "Sai mật khẩu", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -77,8 +71,5 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
                 startActivity(new Intent(Activity_DoiMatKhau.this, Activity_TaiKhoan.class));
             }
         });
-
-
-
     }
 }

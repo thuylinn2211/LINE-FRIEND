@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     EditText edtName, edtPass;
-    Button btnLogin, btnForgotPass, btnRegister ;
+    Button btnLogin, btnForgotPass, btnRegister, btnSkip ;
     DBHelper myDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity {
         btnLogin=findViewById(R.id.btnLogin);
         btnForgotPass=findViewById(R.id.btnForgotPass);
         btnRegister=findViewById(R.id.btnRegister);
+        btnSkip = findViewById(R.id.btnSkip);
 
         myDB= new DBHelper(this);
     }
@@ -58,15 +59,22 @@ public class Login extends AppCompatActivity {
     public void onClick(View view) {
         Intent intent=new Intent(getApplicationContext(), ForgotPassword.class);
         startActivity(intent);
-    }
-});
+        }
+    });
+
+    btnSkip.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(Login.this, Activity_TrangChu.class));
+        }
+    });
+
     btnRegister.setOnClickListener((new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent=new Intent(getApplicationContext(), Register.class);
             startActivity(intent);
-        }
-    }));
-
+            }
+        }));
     }
 }
