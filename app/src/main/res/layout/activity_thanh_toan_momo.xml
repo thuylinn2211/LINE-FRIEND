@@ -55,14 +55,15 @@
             android:layout_height="60dp"
             android:src="@drawable/momo"/>
 
-        <EditText
-            android:id="@+id/edtMyPhone"
+        <Button
+            android:id="@+id/btnMyPhone"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
             android:text="+ (84) 822 *** ***"
+            android:backgroundTint="@color/white"
             android:textColor="#FF0000"
-            android:textSize="20sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,14 +79,15 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/momo"/>
-        <EditText
-            android:id="@+id/edtAddPhone"
+        <Button
+            android:id="@+id/btnAddPhone"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
             android:text="+ Thêm số điện thoại"
+            android:backgroundTint="@color/white"
             android:textColor="#FF0000"
-            android:textSize="20sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <Button

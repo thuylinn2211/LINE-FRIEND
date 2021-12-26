@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.team5.myapplication" >
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final" >
         <activity
             android:name=".Activity_ThanhToan_Momo"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_VanChuyen"
@@ -41,16 +39,21 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ChoXacNhan"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Activity_DaGiao"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
+
         <activity
             android:name=".Activity_DangGiao"
             android:exported="true" />
         <activity
             android:name=".Activity_DanhGiaSanPham"
             android:exported="true" />
+
         <activity
             android:name=".Activity_DetailedProduct"
             android:exported="true">
@@ -69,6 +72,7 @@
         <activity
             android:name=".Activity_frag_thanhtoan_chinhsuadonhang"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".Activity_GioHang"
@@ -78,7 +82,20 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+<<<<<<< HEAD
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+>>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -91,7 +108,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true" />
+            android:exported="true"/>
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" >
@@ -132,12 +149,18 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
+<<<<<<< HEAD
             android:exported="true">
+=======
+<<<<<<< HEAD
+            android:exported="true" >
+>>>>>>> f4fa79fe93955545b6a91675cf8d7b65bb205b45
 
         </activity>
-        <activity
-            android:name=".TurnOnApp"
+=======
             android:exported="true" />
+
+>>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true"/>
