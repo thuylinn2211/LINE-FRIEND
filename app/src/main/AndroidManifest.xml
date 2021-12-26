@@ -13,18 +13,13 @@
         android:theme="@style/Theme.Team5_Android_Final" >
         <activity
             android:name=".Activity_ThanhToan_Momo"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_VanChuyen"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_ThanhToan_HienThiThongtin"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Fragment_TaiKhoan_Voucher"
             android:exported="true" />
@@ -39,14 +34,10 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ChoXacNhan"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_DaGiao"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".Activity_DangGiao"
             android:exported="true" />
@@ -56,16 +47,12 @@
 
         <activity
             android:name=".Activity_DetailedProduct"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_DiaChi"
             android:exported="true" />
         <activity android:name=".Activity_DoiNgonNgu"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ForgotPassword"
             android:exported="true" />
@@ -83,15 +70,10 @@
         <activity
             android:name=".Login"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-<<<<<<< HEAD
-=======
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
->>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -124,16 +106,13 @@
             android:exported="true" />
         <activity
             android:name=".Activity_ThanhToan_TTDC"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_ThayDoiMatKhau1"
             android:exported="true" />
         <activity
             android:name=".Activity_ThemTheNganHang"
             android:exported="true">
-
         </activity>
         <activity
             android:name=".Activity_ThongTinDonHang"
@@ -149,18 +128,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
-<<<<<<< HEAD
-            android:exported="true">
-=======
-<<<<<<< HEAD
-            android:exported="true" >
->>>>>>> f4fa79fe93955545b6a91675cf8d7b65bb205b45
-
-        </activity>
-=======
-            android:exported="true" />
-
->>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
+            android:exported="true"/>
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true"/>
