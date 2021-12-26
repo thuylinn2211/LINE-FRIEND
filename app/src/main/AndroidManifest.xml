@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.team5.myapplication" >
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.CAMERA"/>
 
-=======
->>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -48,12 +45,7 @@
         <activity
             android:name=".Activity_DaGiao"
             android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+        </activity>
 
         <activity
             android:name=".Activity_DangGiao"
@@ -90,14 +82,15 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-<<<<<<< HEAD
-            android:exported="true" />
-
-=======
             android:exported="true" >
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
->>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -110,13 +103,7 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TimKiem"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Activity_TaiKhoan"
             android:exported="true" >
@@ -159,16 +146,6 @@
             android:name=".Activity_TrangChu"
             android:exported="true" />
 
-<<<<<<< HEAD
-
-        <activity
-            android:name=".TurnOnApp"
-            android:exported="true" />
-=======
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
->>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true"/>
