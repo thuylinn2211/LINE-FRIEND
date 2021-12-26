@@ -6,10 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< HEAD
+=======
 import android.widget.ImageView;
 import android.widget.TextView;
+>>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
 
 public class Activity_DaGiao extends AppCompatActivity {
+    Button btnDanhGia;
 
     ImageView btnBack, btnSearch, imvHinh;
     TextView txtTenSanPham,txtChoXacNhan, txtChoLayHang, txtDangGiao, txtDaGiao, txtSumGia, txtSoLuong;
@@ -19,6 +23,22 @@ public class Activity_DaGiao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_da_giao);
+<<<<<<< HEAD
+        linkView();
+        addEvent();
+    }
+
+    private void linkView() {
+        btnDanhGia=findViewById(R.id.btnDanhGia);
+    }
+
+    private void addEvent() {
+        btnDanhGia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), Activity_DanhGiaSanPham.class);
+                startActivity(intent);
+=======
 
         linkViews();
         addEvents();
@@ -89,6 +109,7 @@ public class Activity_DaGiao extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Activity_DaGiao.this, Activity_DaGiao.class));
+>>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
             }
         });
     }
