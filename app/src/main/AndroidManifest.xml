@@ -8,7 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Team5_Android_Final" >
         <activity
@@ -83,10 +83,15 @@
         <activity
             android:name=".Login"
             android:exported="true" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+<<<<<<< HEAD
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+>>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -144,8 +149,18 @@
             android:exported="true" />
         <activity
             android:name=".Activity_TrangChu"
+<<<<<<< HEAD
+            android:exported="true">
+=======
+<<<<<<< HEAD
+            android:exported="true" >
+>>>>>>> f4fa79fe93955545b6a91675cf8d7b65bb205b45
+
+        </activity>
+=======
             android:exported="true" />
 
+>>>>>>> 6180ef4f70d6c94ca84b29bb185a254f61cacf5f
         <activity
             android:name=".Activity_XacNhanMatKhau"
             android:exported="true"/>

@@ -12,16 +12,22 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
 
 import java.util.Locale;
 
 public class Activity_TaiKhoan extends AppCompatActivity {
-
     LinearLayout btnDonHang, btnVoucher, btnThongBao;
-    TableRow btnTaiKhoanCuaToi,btnDiaChi,btnTaiKhoanNganHang, btnDoiNgonNgu, btnHoTro;
+
+    TableRow btnTaiKhoanCuaToi,btnDiaChi,btnTaiKhoanNganHang, btnDoiMatKhau;
+
+    Button btnDangXuat;
+
+    TextView txtXemThem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,23 +35,19 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         setContentView(R.layout.activity_tai_khoan);
         linkViews();
         addEvents();
-        loadLocale();
-
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
     }
 
     private void linkViews() {
-
         btnTaiKhoanCuaToi=findViewById(R.id.btnTaiKhoanCuaToi);
         btnDiaChi = findViewById(R.id.btnDiaChi);
         btnTaiKhoanNganHang = findViewById(R.id.btnTaiKhoanNganHang);
-        btnDoiNgonNgu=findViewById(R.id.btnDoiNgonNgu);
-        btnHoTro = findViewById(R.id.btnHoTro);
-
+        btnDoiMatKhau = findViewById(R.id.btnDoiMatKhau);
+        btnDangXuat=findViewById(R.id.btnDangXuat);
         btnThongBao=findViewById(R.id.btnThongBao);
         btnVoucher=findViewById(R.id.btnVoucher);
         btnDonHang = findViewById(R.id.btnDonHang);
+        txtXemThem=findViewById(R.id.txtXemThem);
+
 
     }
 
@@ -60,33 +62,30 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnDiaChi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //open dia chi
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DiaChi.class);
+                startActivity(intent);
             }
         });
 
         btnTaiKhoanNganHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //open ngân hàng của tôi
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TaiKhoanNganHang.class);
+                startActivity(intent);
             }
         });
-        btnDoiNgonNgu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showChangeLanguegeDialog();
-            }
-        });
-        btnHoTro.setOnClickListener(new View.OnClickListener() {
+        btnDoiMatKhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //open hỗ trợ
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DoiMatKhau.class);
+                startActivity(intent);
             }
         });
 
         btnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_ThongTinDonHang.class);
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_DangGiao.class);
                 startActivity(intent);
             }
         });
@@ -105,58 +104,25 @@ public class Activity_TaiKhoan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-    }
-
-    private void showChangeLanguegeDialog() {
-        final String[] listItems={"Việt Nam","English","대한민국","日本"};
-        AlertDialog.Builder mBuider=new AlertDialog.Builder(Activity_TaiKhoan.this);
-        mBuider.setTitle("Chọn ngôn ngữ");
-        mBuider.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener() {
+        txtXemThem.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int i) {
-                if(i==0){
-                    setLocale("vi");
-                    recreate();
-                }
-                else if(i==1){
-                    setLocale("en");
-                    recreate();
-                }
-                else if(i==2){
-                    setLocale("ko");
-                    recreate();
-                }
-                else if(i==3){
-                    setLocale("ja");
-                    recreate();
-                }
-                dialog.dismiss();
+            public void onClick(View v) {
+                Intent intent=new Intent(Activity_TaiKhoan.this,Activity_TatCaSanPham.class);
+                startActivity(intent);
+            }
+        });
+        btnDangXuat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Activity_TaiKhoan.this,Login.class);
+                startActivity(intent);
+
             }
         });
 
-        AlertDialog mDialog=mBuider.create();
-        mDialog.show();
-
-
-    }
-    private void setLocale(String lang) {
-        Locale locale=new Locale(lang);
-        Locale.setDefault(locale);
-        Configuration configuration=new Configuration();
-        configuration.locale=locale;
-        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
-
-        SharedPreferences.Editor editor=getSharedPreferences("Đổi ngôn ngữ",MODE_PRIVATE).edit();
-        editor.putString("Ngôn ngữ",lang);
     }
 
-    public void loadLocale(){
-        SharedPreferences preferences=getSharedPreferences("Đổi ngôn ngữ", Activity.MODE_PRIVATE);
-        String ngonngu=preferences.getString("Ngôn ngữ","");
-        setLocale(ngonngu);
-    }
+
 
     public void trangchu(MenuItem item) {
         Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TrangChu.class);
@@ -182,4 +148,4 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         Intent intent = new Intent(Activity_TaiKhoan.this, com.team5.myapplication.Activity_TaiKhoan.class);
         startActivity(intent);
     }
-}
+    }
