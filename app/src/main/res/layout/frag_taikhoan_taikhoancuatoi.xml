@@ -10,60 +10,50 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/white"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:weightSum="10">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imvBack"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
 
-            <TableRow android:layout_height="match_parent"
-                android:weightSum="10">
-
-                <ImageView
-                    android:layout_weight="2"
-                    android:id="@+id/imvBack"
-                    android:layout_width="42dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_baseline_arrow_back_24" />
-
-                <TextView
-                    android:layout_weight="6"
-                    android:id="@+id/txtTaiKhoanCuaToi"
-                    android:layout_width="275dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="@string/tkct"
-                    android:textColor="@color/black"
-                    android:textSize="25dp"/>
-
-            </TableRow>
-        </TableLayout>
+        <TextView
+            android:layout_weight="9"
+            android:id="@+id/txtTaiKhoanCuaToi"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tkct"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imvHinhDaiDien"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="0dp"
         android:src="@drawable/hinhkhachhang3"
         android:layout_gravity="center_vertical"
         android:paddingTop="20dp"
-        android:layout_weight="1"/>
+        android:layout_weight="2"/>
     <TextView
         android:id="@+id/txtTenTaiKhoan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:text="An Nguyễn"
         android:textSize="25sp"
-        android:paddingTop="10dp"
         android:textColor="#272727"
-        android:layout_gravity="center"
-        android:layout_weight="1"/>
+        android:gravity="center"
+        android:layout_weight="0.5"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,12 +61,14 @@
         android:background="@color/white"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_weight="1">
+        android:layout_weight="0.5"
+        android:weightSum="10">
 
         <TextView
             android:id="@+id/txtThongTinTaiKhoan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"
@@ -87,8 +79,9 @@
 
         <ImageView
             android:id="@+id/imvSua"
-            android:layout_width="20dp"
-            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
             android:gravity="center"
@@ -98,7 +91,7 @@
     <TableLayout
         android:layout_weight="4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:paddingTop="10dp">
@@ -217,34 +210,26 @@
         </TableRow>
     </TableLayout>
 
-    <LinearLayout
-        android:layout_weight="2"
+    <Button
+        android:id="@+id/btnLuuThayDoi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical"
-        android:paddingTop="10dp">
-        <Button
-            android:id="@+id/btnLuuThayDoi"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/luu"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:backgroundTintMode="screen"
-            android:backgroundTint="#00D665"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/luu"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTintMode="screen"
+        android:backgroundTint="#00D665"/>
 
-        <Button
-            android:id="@+id/btnDoiMatKhau"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/doimk"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:backgroundTintMode="screen"
-            android:backgroundTint="#00D665"/>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnDoiMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/doimk"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTintMode="screen"
+        android:backgroundTint="#00D665"/>
 
 </LinearLayout>
