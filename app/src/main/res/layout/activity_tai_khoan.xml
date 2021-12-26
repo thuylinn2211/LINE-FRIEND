@@ -90,34 +90,6 @@
                         android:layout_gravity="center_horizontal"
                         android:backgroundTint="@color/white"/>
 
-                    <TableRow
-                        android:id="@+id/btnTaiKhoanNganHang"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:weightSum="10">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/icon_taikhoan" />
-
-                        <TextView
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="8"
-                            android:text="@string/tknh"
-                            android:textColor="#272727"
-                            android:textSize="20dp" />
-
-                        <ImageButton
-                            android:layout_width="42dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="115dp"
-                            android:layout_weight="1"
-                            android:backgroundTintMode="screen"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
-                    </TableRow>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/btnThongBao"
@@ -429,23 +401,24 @@
                 </TableRow>
 
                 <TableRow
-                    android:id="@+id/btnDoiNgonNgu"
+                    android:id="@+id/btnTaiKhoanNganHang"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
                     android:weightSum="10">
 
                     <ImageView
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_thongbao"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_weight="1"/>
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_taikhoan" />
+
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="@string/dnn"
-                        android:textSize="20dp"
+                        android:layout_weight="8"
+                        android:text="@string/tknh"
                         android:textColor="#272727"
-                        android:layout_weight="8"/>
+                        android:textSize="20dp" />
 
                     <ImageButton
                         android:layout_width="42dp"
@@ -471,7 +444,7 @@
                         android:layout_weight="1"/>
                     <TextView
                         android:layout_gravity="center_vertical"
-                        android:text="Đổi mật khẩu"
+                        android:text="@string/dmk"
                         android:textSize="20dp"
                         android:textColor="#272727"
                         android:layout_weight="8"/>

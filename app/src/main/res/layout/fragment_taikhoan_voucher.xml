@@ -23,15 +23,16 @@
                 android:layout_marginLeft="16dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_baseline_arrow_back_24" />
+
             <TextView
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:text="Đơn hàng"
-                android:textSize="25dp"
-                android:padding="10dp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_gravity="center" />
+                android:padding="10dp"
+                android:text="Voucher"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
 
         </LinearLayout>
         <ScrollView

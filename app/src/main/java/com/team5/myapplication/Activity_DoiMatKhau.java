@@ -1,21 +1,20 @@
 
 package com.team5.myapplication;
 
-        import androidx.appcompat.app.AppCompatActivity;
-
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.TextView;
-        import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Activity_DoiMatKhau extends AppCompatActivity {
 
-
     EditText edtMKCu,edtMKMoi,edtNhapLaiMKMoi;
-    Button btnLuuMK;
+    Button btnLuuMK,btnBack;
     TextView txtQuenMK;
     DBHelper myDB;
 
@@ -34,6 +33,7 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
         edtMKMoi=findViewById(R.id.edtMKMoi);
         edtNhapLaiMKMoi=findViewById(R.id.edtNhapLaiMKMoi);
         btnLuuMK=findViewById(R.id.btnLuuMK);
+        btnBack=findViewById(R.id.btnBack);
         txtQuenMK=findViewById(R.id.txtQuenMK);
         myDB= new DBHelper(this);
 
@@ -68,6 +68,13 @@ public class Activity_DoiMatKhau extends AppCompatActivity {
                 {
                     Toast.makeText(Activity_DoiMatKhau.this, "Sai mật khẩu", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Activity_DoiMatKhau.this, Activity_TaiKhoan.class));
             }
         });
 

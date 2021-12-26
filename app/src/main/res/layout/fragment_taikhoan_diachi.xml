@@ -20,7 +20,7 @@
             <TableRow android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imvBack"
+                    android:id="@+id/btnBack"
                     android:layout_width="42dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"

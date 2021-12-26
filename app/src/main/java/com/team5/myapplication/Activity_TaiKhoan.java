@@ -47,8 +47,6 @@ public class Activity_TaiKhoan extends AppCompatActivity {
         btnVoucher = findViewById(R.id.btnVoucher);
         btnDonHang = findViewById(R.id.btnDonHang);
         txtXemThem = findViewById(R.id.txtXemThem);
-
-
     }
 
     private void addEvents() {
@@ -102,6 +100,7 @@ public class Activity_TaiKhoan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Activity_TaiKhoan.this, Fragment_TaiKhoan_Voucher.class);
                 startActivity(intent);
+
             }
         });
         txtXemThem.setOnClickListener(new View.OnClickListener() {
