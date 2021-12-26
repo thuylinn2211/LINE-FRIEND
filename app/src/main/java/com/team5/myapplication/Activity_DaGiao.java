@@ -13,7 +13,7 @@ public class Activity_DaGiao extends AppCompatActivity {
 
     ImageView btnBack, btnSearch, imvHinh;
     TextView txtTenSanPham,txtChoXacNhan, txtChoLayHang, txtDangGiao, txtDaGiao, txtSumGia, txtSoLuong;
-    Button btnLienHeShop;
+    Button btnDanhGia, btnMuaLai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,8 @@ public class Activity_DaGiao extends AppCompatActivity {
         txtDaGiao = findViewById(R.id.txtDaGiao);
         txtSumGia = findViewById(R.id.txtSumGia);
         txtSoLuong = findViewById(R.id.txtSoLuong);
-        btnLienHeShop = findViewById(R.id.btnLienHeShop);
+        btnDanhGia = findViewById(R.id.btnDanhGia);
+        btnMuaLai = findViewById(R.id.btnMuaLai);
 
         imvHinh =findViewById(R.id.imvHinh);
     }
@@ -53,10 +54,17 @@ public class Activity_DaGiao extends AppCompatActivity {
             }
         });
 
-        btnLienHeShop.setOnClickListener(new View.OnClickListener() {
+        btnDanhGia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Activity_DaGiao.this, Activity_Chat.class));
+                startActivity(new Intent(Activity_DaGiao.this, Activity_DanhGiaSanPham.class));
+            }
+        });
+
+        btnMuaLai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Activity_DaGiao.this, Activity_TatCaSanPham.class));
             }
         });
         txtChoXacNhan.setOnClickListener(new View.OnClickListener() {

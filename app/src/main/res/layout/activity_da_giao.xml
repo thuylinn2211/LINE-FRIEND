@@ -430,12 +430,12 @@
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:weightSum="9">
+        android:weightSum="10">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="5">
+            android:layout_weight="4">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -446,11 +446,18 @@
                 android:text="01-01-2022"/>
         </LinearLayout>
         <Button
-            android:id="@+id/btnLienHeShop"
+            android:id="@+id/btnDanhGia"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:text="Liên hệ Shop"
+            android:text="Đánh giá"
+            android:backgroundTint="#34C759"/>
+        <Button
+            android:id="@+id/btnMuaLai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Mua lại"
             android:backgroundTint="#34C759"/>
     </LinearLayout>
 </LinearLayout>
