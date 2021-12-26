@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Activity_ThongTinDonHang extends AppCompatActivity {
 
     ImageView btnBack;
+    Button btnLienHeShop, btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class Activity_ThongTinDonHang extends AppCompatActivity {
 
     private void linkViews() {
         btnBack = findViewById(R.id.btnBack);
+        btnLienHeShop = findViewById(R.id.btnLienHeShop);
+        btnAdd = findViewById(R.id.btnAdd);
     }
 
     private void addEvents() {
@@ -30,6 +34,19 @@ public class Activity_ThongTinDonHang extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Activity_ThongTinDonHang.this, Activity_TrangChu.class);
                 startActivity(intent);
+            }
+        });
+        btnLienHeShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Activity_ThongTinDonHang.this, Activity_Chat.class));
+            }
+        });
+
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Activity_ThongTinDonHang.this, Activity_TatCaSanPham.class));
             }
         });
     }

@@ -67,6 +67,13 @@ public class Activity_ThanhToan_TTDC extends AppCompatActivity {
             }
         });
 
+        imvSuaTTLH.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Activity_ThanhToan_TTDC.this, Activity_TaiKhoanCuaToi.class));
+            }
+        });
+
         btnThemDC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

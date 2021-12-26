@@ -21,13 +21,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+<<<<<<< HEAD
 import android.widget.Toast;
+=======
+>>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
+<<<<<<< HEAD
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+=======
+    Button btnDang;
+    LinearLayout btnCamera, btnVideo;
+    ImageView imvHinhDanhia;
+    EditText edtDanhGia;
+>>>>>>> 5780659272d4ee503dc18df2c1bbced8824c1bb7
 
 public class Activity_DanhGiaSanPham extends AppCompatActivity {
     Button btnDang;
