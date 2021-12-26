@@ -115,7 +115,7 @@ public class Activity_DetailedProduct extends AppCompatActivity {
         ArrayAdapter<Integer> soluongAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_dropdown_item, soluong);
         spSoLuong.setAdapter(soluongAdapter);
 
-        String[] phanloai = new String[]{"Gấu bông", "Móc khóa", "Giá đỡ điện thoai"};
+        String[] phanloai = new String[]{"Size lớn", "Size vừa", "Size nhỏ"};
         ArrayAdapter<String> phanloaiAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, phanloai);
         spPhanLoai.setAdapter(phanloaiAdapter);
 
