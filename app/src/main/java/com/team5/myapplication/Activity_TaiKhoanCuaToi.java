@@ -78,6 +78,12 @@ public class Activity_TaiKhoanCuaToi extends AppCompatActivity {
     }
 
     private void addEvents() {
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               startActivity(new Intent(Activity_TaiKhoanCuaToi.this, Activity_TaiKhoan.class));
+            }
+        });
         //insert data
         imvHinhDaiDien.setOnClickListener(new View.OnClickListener() {
             @Override
