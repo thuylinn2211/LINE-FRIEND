@@ -106,7 +106,7 @@ public class Activity_GioHang extends AppCompatActivity {
     private void xoa() {
         lvGioHang.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long l) {
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int position, long l) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Activity_GioHang.this);
                 builder.setTitle("Xác nhận xóa sản phẩm");
                 builder.setMessage("Bạn có chắc muốn xóa sản phẩm này? ");
@@ -125,6 +125,7 @@ public class Activity_GioHang extends AppCompatActivity {
                                 txtThongBao.setVisibility(View.INVISIBLE);
                                 gioHangAdapter.notifyDataSetChanged();
                                 getData();
+//                                test
                             }
                         }
                     }
@@ -136,7 +137,6 @@ public class Activity_GioHang extends AppCompatActivity {
                         getData();
                     }
                 });
-                AlertDialog dialog = builder.create();
                 builder.show();
                 return true;
             }
